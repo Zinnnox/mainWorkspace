@@ -2559,6 +2559,12 @@
       "type": "itemstack",
       "scope": "player_lifetime",
       "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "slot9",
+      "type": "itemstack",
+      "scope": "player_lifetime",
+      "value": "ItemStack.EMPTY"
     }
   ],
   "sound_elements": [

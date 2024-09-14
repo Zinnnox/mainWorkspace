@@ -1,0 +1,52 @@
+{
+  "_fv": 66,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 175,
+    "height": 100,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "name": "button_save_current_position",
+          "text": "Save Current Position",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SaveCurrentPosition"
+          },
+          "width": 134,
+          "height": 20,
+          "x": 150,
+          "y": 98
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_teleport_to_saved_position",
+          "text": "Teleport to Saved Position",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "TeleportToSavedPosition"
+          },
+          "width": 160,
+          "height": 20,
+          "x": 132,
+          "y": 134
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

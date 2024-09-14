@@ -7,17 +7,23 @@ package net.mcreator.cristiansmaster.init;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.common.DeferredSpawnEggItem;
+import net.neoforged.neoforge.capabilities.RegisterCapabilitiesEvent;
+import net.neoforged.neoforge.capabilities.Capabilities;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
 
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.core.registries.BuiltInRegistries;
 
+import net.mcreator.cristiansmaster.item.inventory.TeleporterButtonInventoryCapability;
 import net.mcreator.cristiansmaster.item.XRayAmuletItem;
 import net.mcreator.cristiansmaster.item.WyrmPotionItem;
 import net.mcreator.cristiansmaster.item.WindStaffItem;
 import net.mcreator.cristiansmaster.item.WallOfIceCastItem;
 import net.mcreator.cristiansmaster.item.TeleporterItem;
+import net.mcreator.cristiansmaster.item.TeleporterButtonItem;
 import net.mcreator.cristiansmaster.item.TNTDimensionItem;
 import net.mcreator.cristiansmaster.item.SwordThatShootsItem;
 import net.mcreator.cristiansmaster.item.ShootTheExplodingProjectileItemItem;
@@ -46,6 +52,7 @@ import net.mcreator.cristiansmaster.item.BackpackItem;
 import net.mcreator.cristiansmaster.item.AntManWatchItem;
 import net.mcreator.cristiansmaster.CristianSMasterMod;
 
+@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public class CristianSMasterModItems {
 	public static final DeferredRegister<Item> REGISTRY = DeferredRegister.create(BuiltInRegistries.ITEM, CristianSMasterMod.MODID);
 	public static final DeferredHolder<Item, Item> DRAGON_SPAWN_EGG = REGISTRY.register("dragon_spawn_egg", () -> new DeferredSpawnEggItem(CristianSMasterModEntities.DRAGON, -1, -1, new Item.Properties()));
@@ -92,9 +99,15 @@ public class CristianSMasterModItems {
 	public static final DeferredHolder<Item, Item> OUTLINE_SPAWN_EGG = REGISTRY.register("outline_spawn_egg", () -> new DeferredSpawnEggItem(CristianSMasterModEntities.OUTLINE, -1, -1, new Item.Properties()));
 	public static final DeferredHolder<Item, Item> X_RAY_AMULET = REGISTRY.register("x_ray_amulet", XRayAmuletItem::new);
 	public static final DeferredHolder<Item, Item> BACKPACK = REGISTRY.register("backpack", BackpackItem::new);
+	public static final DeferredHolder<Item, Item> TELEPORTER_BUTTON = REGISTRY.register("teleporter_button", TeleporterButtonItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items
+	@SubscribeEvent
+	public static void registerCapabilities(RegisterCapabilitiesEvent event) {
+		event.registerItem(Capabilities.ItemHandler.ITEM, (stack, context) -> new TeleporterButtonInventoryCapability(stack), TELEPORTER_BUTTON.get());
+	}
+
 	private static DeferredHolder<Item, Item> block(DeferredHolder<Block, Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
 	}

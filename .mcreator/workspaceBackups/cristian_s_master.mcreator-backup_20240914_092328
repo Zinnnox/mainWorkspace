@@ -2559,6 +2559,12 @@
       "type": "itemstack",
       "scope": "player_lifetime",
       "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "slot9",
+      "type": "itemstack",
+      "scope": "player_lifetime",
+      "value": "ItemStack.EMPTY"
     }
   ],
   "sound_elements": [
@@ -2689,8 +2695,8 @@
       "gui.cristian_s_master.magic_example_display.label_ok": "ok",
       "effect.cristian_s_master.x_ray": "X Ray",
       "key.cristian_s_master.key_pressed_space": "Is Space Pressed",
-      "subtitles.phoenixcry": "",
       "entity.cristian_s_master.ironclad": "Ironclad",
+      "subtitles.phoenixcry": "",
       "item.cristian_s_master.nerf_gun_2": "Nerf Gun 2",
       "item.minecraft.splash_potion.effect.xray_potion": "Splash Potion of XRay",
       "item.cristian_s_master.op_axe": "OP Axe",

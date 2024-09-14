@@ -9,6 +9,7 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.api.distmarker.Dist;
 
+import net.mcreator.cristiansmaster.client.gui.TeleporterButtonGuiScreen;
 import net.mcreator.cristiansmaster.client.gui.GoooScreen;
 import net.mcreator.cristiansmaster.client.gui.BackpackGuiScreen;
 
@@ -18,5 +19,6 @@ public class CristianSMasterModScreens {
 	public static void clientLoad(RegisterMenuScreensEvent event) {
 		event.register(CristianSMasterModMenus.GUIFORREPLICATRO.get(), GoooScreen::new);
 		event.register(CristianSMasterModMenus.BACKPACK_GUI.get(), BackpackGuiScreen::new);
+		event.register(CristianSMasterModMenus.TELEPORTER_BUTTON_GUI.get(), TeleporterButtonGuiScreen::new);
 	}
 }

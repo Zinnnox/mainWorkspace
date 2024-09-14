@@ -2408,7 +2408,7 @@
     {
       "name": "Fetch",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": true,
       "registry_name": "fetch",
       "metadata": {
@@ -2427,8 +2427,8 @@
     {
       "name": "CallFetch",
       "type": "procedure",
-      "compiles": false,
-      "locked_code": false,
+      "compiles": true,
+      "locked_code": true,
       "registry_name": "call_fetch",
       "metadata": {
         "files": [
@@ -2447,7 +2447,7 @@
       "name": "SaveContents",
       "type": "procedure",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "save_contents",
       "metadata": {
         "files": [
@@ -2556,6 +2556,12 @@
     },
     {
       "name": "slot8",
+      "type": "itemstack",
+      "scope": "player_lifetime",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "slot9",
       "type": "itemstack",
       "scope": "player_lifetime",
       "value": "ItemStack.EMPTY"
@@ -2801,6 +2807,10 @@
       },
       {
         "name": "Backpack",
+        "children": []
+      },
+      {
+        "name": "TeleportationButton",
         "children": []
       }
     ]

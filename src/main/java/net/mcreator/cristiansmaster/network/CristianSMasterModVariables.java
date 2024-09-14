@@ -148,6 +148,9 @@ public class CristianSMasterModVariables {
 		public double Mana = 100.0;
 		public boolean hasGrimoireBeenUsed = false;
 		public double hasPhoenixFeatherBeenUsed = 0;
+		public double tpPosX = 0;
+		public double tpPosY = 0;
+		public double tpPosZ = 0;
 
 		public static MapVariables load(CompoundTag tag, HolderLookup.Provider lookupProvider) {
 			MapVariables data = new MapVariables();
@@ -161,6 +164,9 @@ public class CristianSMasterModVariables {
 			Mana = nbt.getDouble("Mana");
 			hasGrimoireBeenUsed = nbt.getBoolean("hasGrimoireBeenUsed");
 			hasPhoenixFeatherBeenUsed = nbt.getDouble("hasPhoenixFeatherBeenUsed");
+			tpPosX = nbt.getDouble("tpPosX");
+			tpPosY = nbt.getDouble("tpPosY");
+			tpPosZ = nbt.getDouble("tpPosZ");
 		}
 
 		@Override
@@ -170,6 +176,9 @@ public class CristianSMasterModVariables {
 			nbt.putDouble("Mana", Mana);
 			nbt.putBoolean("hasGrimoireBeenUsed", hasGrimoireBeenUsed);
 			nbt.putDouble("hasPhoenixFeatherBeenUsed", hasPhoenixFeatherBeenUsed);
+			nbt.putDouble("tpPosX", tpPosX);
+			nbt.putDouble("tpPosY", tpPosY);
+			nbt.putDouble("tpPosZ", tpPosZ);
 			return nbt;
 		}
 
