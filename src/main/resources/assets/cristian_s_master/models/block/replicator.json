@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "cristian_s_master:block/newportal",
+    "up": "cristian_s_master:block/newportal",
+    "north": "cristian_s_master:block/newportal",
+    "east": "cristian_s_master:block/newportal",
+    "south": "cristian_s_master:block/newportal",
+    "west": "cristian_s_master:block/newportal",
+    "particle": "cristian_s_master:block/newportal"
+  },
+  "render_type": "solid"
+}

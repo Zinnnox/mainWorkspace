@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:tnt",
+    "minecraft:reinforced_deepslate",
+    "minecraft:end_stone"
+  ]
+}

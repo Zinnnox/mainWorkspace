@@ -1,0 +1,12 @@
+{
+  "_fv": 66,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "J",
+    "keyBindingName": "Shoot Iceshard",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "ShootIceshardCheck"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+/gamemode survival
+/give Dev cristian_s_master:op_axe
+/gamemode creative
+/gamemode survival
+/gamemode creative
+/gamemode survival
+/gamemode creative
+/gamemode survival
+/gamemode creative
+/gamemode survival
+/gamemode creative
+/gamemode survival
+/gamemode creative
+/gamemode survival
+/locate biome minecraft:jungle
+/tp @s -1312 71 708
+/gamemode survival
+/give Dev cristian_s_master:x
+/give Dev cristian_s_master:x_ray_amulet
+/gamemode creative
+/gamemode survival
+/gamemode creative
+/tp -1311.00
+/tp Dev 1000 100 100
+/time set day

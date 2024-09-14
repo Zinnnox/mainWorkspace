@@ -1,0 +1,2830 @@
+{
+  "mod_elements": [
+    {
+      "name": "KeyPressedSpaceOnKeyPressed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "key_pressed_space_on_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/KeyPressedSpaceOnKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "KeyPressedSpace",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "key_pressed_space",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/network/KeyPressedSpaceMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "DragonOnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dragon_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/DragonOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Dragon",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dragon",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/entity/DragonEntity.java",
+          "src/main/resources/assets/cristian_s_master/models/item/dragon_spawn_egg.json",
+          "src/main/java/net/mcreator/cristiansmaster/client/renderer/DragonRenderer.java",
+          "src/main/resources/data/cristian_s_master/neoforge/biome_modifier/dragon_biome_modifier.json"
+        ]
+      }
+    },
+    {
+      "name": "KeyPressedSpaceOnKeyReleased",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "key_pressed_space_on_key_released",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/KeyPressedSpaceOnKeyReleasedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SwordThatShootsEntitySwingsItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sword_that_shoots_entity_swings_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/SwordThatShootsEntitySwingsItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SwordThatShoots",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sword_that_shoots",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/item/SwordThatShootsItem.java",
+          "src/main/resources/assets/cristian_s_master/models/item/sword_that_shoots.json"
+        ]
+      }
+    },
+    {
+      "name": "EntityFromSwordProjectile",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "entity_from_sword_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/entity/EntityFromSwordProjectileEntity.java",
+          "src/main/java/net/mcreator/cristiansmaster/client/renderer/EntityFromSwordProjectileRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "NukerAxeEntitySwingsItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nuker_axe_entity_swings_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/NukerAxeEntitySwingsItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "NukerAxe",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nuker_axe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cristian_s_master/models/item/nuker_axe.json",
+          "src/main/java/net/mcreator/cristiansmaster/item/NukerAxeItem.java"
+        ]
+      }
+    },
+    {
+      "name": "RandomizeHeightOfMob",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "randomize_height_of_mob",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/RandomizeHeightOfMobProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "RandomizeMobHeightEffect",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "randomize_mob_height_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/potion/RandomizeMobHeightEffectMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "RandomizerPotion",
+      "type": "potion",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "randomizer_potion",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "AntManSizePotion",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ant_man_size_potion",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/AntManSizePotionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AntManWatch",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ant_man_watch",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cristian_s_master/models/item/ant_man_watch.json",
+          "src/main/java/net/mcreator/cristiansmaster/item/AntManWatchItem.java"
+        ]
+      }
+    },
+    {
+      "name": "MiningLaserEntitySwingsItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mining_laser_entity_swings_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/MiningLaserEntitySwingsItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MiningLaser",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mining_laser",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cristian_s_master/models/item/mining_laser.json",
+          "src/main/java/net/mcreator/cristiansmaster/item/MiningLaserItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Deletethreebythree",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deletethreebythree",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/DeletethreebythreeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TeleporterRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "teleporter_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/TeleporterRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Teleporter",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "teleporter",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cristian_s_master/models/item/teleporter.json",
+          "src/main/java/net/mcreator/cristiansmaster/item/TeleporterItem.java"
+        ]
+      }
+    },
+    {
+      "name": "CloakingDeviceRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cloaking_device_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/CloakingDeviceRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CloakingDeviceItemInInventoryTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cloaking_device_item_in_inventory_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/CloakingDeviceItemInInventoryTickProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "CloakingDevice",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cloaking_device",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cristian_s_master/models/item/cloaking_device.json",
+          "src/main/java/net/mcreator/cristiansmaster/item/CloakingDeviceItem.java"
+        ]
+      }
+    },
+    {
+      "name": "MoonDimension",
+      "type": "dimension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "moon_dimension",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cristian_s_master/dimension/moon_dimension.json",
+          "src/main/java/net/mcreator/cristiansmaster/world/teleporter/MoonDimensionPortalShape.java",
+          "src/main/resources/data/cristian_s_master/dimension_type/moon_dimension.json",
+          "src/main/java/net/mcreator/cristiansmaster/world/dimension/MoonDimensionDimension.java",
+          "src/main/resources/assets/cristian_s_master/models/block/moon_dimension_portal_ew.json",
+          "src/main/java/net/mcreator/cristiansmaster/block/MoonDimensionPortalBlock.java",
+          "src/main/resources/assets/cristian_s_master/models/block/moon_dimension_portal_ns.json",
+          "src/main/resources/assets/cristian_s_master/blockstates/moon_dimension_portal.json",
+          "src/main/java/net/mcreator/cristiansmaster/world/teleporter/MoonDimensionTeleporter.java"
+        ]
+      }
+    },
+    {
+      "name": "MoonDimensionPortalGun",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "moon_dimension_portal_gun",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/item/MoonDimensionPortalGunItem.java",
+          "src/main/resources/assets/cristian_s_master/models/item/moon_dimension_portal_gun.json"
+        ]
+      }
+    },
+    {
+      "name": "MoonDimensionPortalGunRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "moon_dimension_portal_gun_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/MoonDimensionPortalGunRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ShootToSpawnPortalProjectileHitsBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shoot_to_spawn_portal_projectile_hits_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/ShootToSpawnPortalProjectileHitsBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ShootToSpawnPortal",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shoot_to_spawn_portal",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/entity/ShootToSpawnPortalEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "LightsaberProjectile",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lightsaber_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/entity/LightsaberProjectileEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "Lightsaber",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lightsaber",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cristian_s_master/models/item/lightsaber.json",
+          "src/main/java/net/mcreator/cristiansmaster/item/LightsaberItem.java"
+        ]
+      }
+    },
+    {
+      "name": "NewDimension",
+      "type": "dimension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "new_dimension",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cristian_s_master/dimension_type/new_dimension.json",
+          "src/main/java/net/mcreator/cristiansmaster/world/teleporter/NewDimensionPortalShape.java",
+          "src/main/resources/assets/cristian_s_master/models/block/new_dimension_portal_ew.json",
+          "src/main/resources/assets/cristian_s_master/models/item/new_dimension.json",
+          "src/main/java/net/mcreator/cristiansmaster/world/teleporter/NewDimensionTeleporter.java",
+          "src/main/resources/assets/cristian_s_master/blockstates/new_dimension_portal.json",
+          "src/main/resources/assets/cristian_s_master/models/block/new_dimension_portal_ns.json",
+          "src/main/java/net/mcreator/cristiansmaster/world/dimension/NewDimensionDimension.java",
+          "src/main/java/net/mcreator/cristiansmaster/block/NewDimensionPortalBlock.java",
+          "src/main/java/net/mcreator/cristiansmaster/item/NewDimensionItem.java",
+          "src/main/resources/data/cristian_s_master/dimension/new_dimension.json"
+        ]
+      }
+    },
+    {
+      "name": "NewPortalGun",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "new_portal_gun",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/item/NewPortalGunItem.java",
+          "src/main/resources/assets/cristian_s_master/models/item/new_portal_gun.json"
+        ]
+      }
+    },
+    {
+      "name": "PortalprojectileProjectileHitsBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "portalprojectile_projectile_hits_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/PortalprojectileProjectileHitsBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Portalprojectile",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "portalprojectile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/entity/PortalprojectileEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "NewPortalGunRightclickedOnBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "new_portal_gun_rightclicked_on_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/NewPortalGunRightclickedOnBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MaryannTheSlime",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "maryann_the_slime",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/client/renderer/MaryannTheSlimeRenderer.java",
+          "src/main/java/net/mcreator/cristiansmaster/entity/MaryannTheSlimeEntity.java",
+          "src/main/resources/assets/cristian_s_master/models/item/maryann_the_slime_spawn_egg.json",
+          "src/main/resources/data/cristian_s_master/neoforge/biome_modifier/maryann_the_slime_biome_modifier.json"
+        ]
+      }
+    },
+    {
+      "name": "Hello",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hello",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/entity/HelloEntity.java",
+          "src/main/resources/assets/cristian_s_master/models/item/hello_spawn_egg.json",
+          "src/main/java/net/mcreator/cristiansmaster/client/renderer/HelloRenderer.java",
+          "src/main/resources/data/cristian_s_master/neoforge/biome_modifier/hello_biome_modifier.json"
+        ]
+      }
+    },
+    {
+      "name": "Test",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/TestProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Jor",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "replicator",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cristian_s_master/models/item/replicator.json",
+          "src/main/resources/data/cristian_s_master/loot_tables/blocks/replicator.json",
+          "src/main/resources/assets/cristian_s_master/blockstates/replicator.json",
+          "src/main/java/net/mcreator/cristiansmaster/block/JorBlock.java",
+          "src/main/resources/assets/cristian_s_master/models/block/replicator.json"
+        ]
+      }
+    },
+    {
+      "name": "Gooo",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guiforreplicatro",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/world/inventory/GoooMenu.java",
+          "src/main/java/net/mcreator/cristiansmaster/client/gui/GoooScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "Foodoutput",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "foodoutput",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/FoodoutputProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Diamondoutput",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamondoutput",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/DiamondoutputProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ScrapMetal",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scrap_metal",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cristian_s_master/models/item/scrap_metal.json",
+          "src/main/java/net/mcreator/cristiansmaster/item/ScrapMetalItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Helo",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "helo",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/item/HeloItem.java",
+          "src/main/resources/assets/cristian_s_master/models/item/helo.json"
+        ]
+      }
+    },
+    {
+      "name": "WyrmPotionRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wyrm_potion_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/WyrmPotionRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "WyrmPotion",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wyrm_potion",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/item/WyrmPotionItem.java",
+          "src/main/resources/assets/cristian_s_master/models/item/wyrm_potion.json"
+        ]
+      }
+    },
+    {
+      "name": "BioScannerRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bio_scanner_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/BioScannerRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BioScanner",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bio_scanner",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/item/BioScannerItem.java",
+          "src/main/resources/assets/cristian_s_master/models/item/bio_scanner.json"
+        ]
+      }
+    },
+    {
+      "name": "Grimoire",
+      "type": "animateditem",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grimoire",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/item/GrimoireItem.java",
+          "src/main/java/net/mcreator/cristiansmaster/item/renderer/GrimoireItemRenderer.java",
+          "src/main/java/net/mcreator/cristiansmaster/item/model/GrimoireItemModel.java",
+          "src/main/resources/assets/cristian_s_master/models/item/grimoire.json"
+        ]
+      },
+      "path": "~/MedievalFantasy"
+    },
+    {
+      "name": "Iceshard",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iceshard",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/client/renderer/IceshardRenderer.java",
+          "src/main/java/net/mcreator/cristiansmaster/entity/IceshardEntity.java"
+        ]
+      },
+      "path": "~/MedievalFantasy"
+    },
+    {
+      "name": "RegenerateMana",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "regenerate_mana",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/RegenerateManaProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/MedievalFantasy"
+    },
+    {
+      "name": "ManaDisplay",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_display",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/client/screens/ManaDisplayOverlay.java"
+        ]
+      },
+      "path": "~/MedievalFantasy"
+    },
+    {
+      "name": "DisplayManaOverlay",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "display_mana_overlay",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/DisplayManaOverlayProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/MedievalFantasy"
+    },
+    {
+      "name": "ShootFireball",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shoot_fireball",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/network/ShootFireballMessage.java"
+        ]
+      },
+      "path": "~/MedievalFantasy"
+    },
+    {
+      "name": "ShootIceshard",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shoot_iceshard",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/network/ShootIceshardMessage.java"
+        ]
+      },
+      "path": "~/MedievalFantasy"
+    },
+    {
+      "name": "Fireball",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fireball",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/entity/FireballEntity.java",
+          "src/main/java/net/mcreator/cristiansmaster/client/renderer/FireballRenderer.java"
+        ]
+      },
+      "path": "~/MedievalFantasy"
+    },
+    {
+      "name": "ShootFireballCheck",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shoot_fireball_check",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/ShootFireballCheckProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/MedievalFantasy"
+    },
+    {
+      "name": "ShootIceshardCheck",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shoot_iceshard_check",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/ShootIceshardCheckProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/MedievalFantasy"
+    },
+    {
+      "name": "SetManaWhenJoin",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_mana_when_join",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/SetManaWhenJoinProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/MedievalFantasy"
+    },
+    {
+      "name": "GrimoireItemInHandTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grimoire_item_in_hand_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/GrimoireItemInHandTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/MedievalFantasy"
+    },
+    {
+      "name": "MagicMirrorTrigger",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_mirror_trigger",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/MagicMirrorTriggerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/MedievalFantasy"
+    },
+    {
+      "name": "MagicMirror",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_mirror",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/item/MagicMirrorItem.java",
+          "src/main/resources/assets/cristian_s_master/models/item/magic_mirror.json"
+        ]
+      },
+      "path": "~/MedievalFantasy"
+    },
+    {
+      "name": "Ironclad",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ironclad",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/entity/IroncladEntity.java",
+          "src/main/java/net/mcreator/cristiansmaster/entity/model/IroncladModel.java",
+          "src/main/java/net/mcreator/cristiansmaster/client/renderer/IroncladRenderer.java",
+          "src/main/resources/assets/cristian_s_master/models/item/ironclad_spawn_egg.json"
+        ]
+      },
+      "path": "~/MedievalFantasy"
+    },
+    {
+      "name": "Ironcladspawned",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ironcladspawned",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/network/IroncladspawnedMessage.java"
+        ]
+      },
+      "path": "~/MedievalFantasy"
+    },
+    {
+      "name": "Ironcladspawncheck",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ironcladspawncheck",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/IroncladspawncheckProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/MedievalFantasy"
+    },
+    {
+      "name": "FairyDustCheck",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fairy_dust_check",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/FairyDustCheckProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/MedievalFantasy"
+    },
+    {
+      "name": "FairyDust",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fairy_dust",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cristian_s_master/models/item/fairy_dust.json",
+          "src/main/java/net/mcreator/cristiansmaster/item/FairyDustItem.java"
+        ]
+      },
+      "path": "~/MedievalFantasy"
+    },
+    {
+      "name": "PhoenixFeatherCheck",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "phoenix_feather_check",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/PhoenixFeatherCheckProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/MedievalFantasy"
+    },
+    {
+      "name": "PhoenixFeather",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "phoenix_feather",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cristian_s_master/models/item/phoenix_feather.json",
+          "src/main/java/net/mcreator/cristiansmaster/item/PhoenixFeatherItem.java"
+        ]
+      },
+      "path": "~/MedievalFantasy"
+    },
+    {
+      "name": "PhoenixFeatherItemInInventoryTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "phoenix_feather_item_in_inventory_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/PhoenixFeatherItemInInventoryTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/MedievalFantasy"
+    },
+    {
+      "name": "BurntPheonixFeathter",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "burnt_pheonix_feathter",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cristian_s_master/models/item/burnt_pheonix_feathter.json",
+          "src/main/java/net/mcreator/cristiansmaster/item/BurntPheonixFeathterItem.java"
+        ]
+      },
+      "path": "~/MedievalFantasy"
+    },
+    {
+      "name": "BurntPheonixFeathterItemInHandTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "burnt_pheonix_feathter_item_in_hand_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/BurntPheonixFeathterItemInHandTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/MedievalFantasy"
+    },
+    {
+      "name": "TemplateForSpellCheck",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "template_for_spell_check",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/TemplateForSpellCheckProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/MedievalFantasy"
+    },
+    {
+      "name": "SpawnSILLYGOOSE",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawn_sillygoose",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/network/SpawnSILLYGOOSEMessage.java"
+        ]
+      },
+      "path": "~/MedievalFantasy"
+    },
+    {
+      "name": "MagicExampleDisplay",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_example_display",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/client/screens/MagicExampleDisplayOverlay.java"
+        ]
+      },
+      "path": "~/MedievalFantasy"
+    },
+    {
+      "name": "SpawnSillyGooseCheck",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawn_silly_goose_check",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/SpawnSillyGooseCheckProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/MedievalFantasy"
+    },
+    {
+      "name": "Spawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/SpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/MedievalFantasy"
+    },
+    {
+      "name": "ExampleForMagicMirror",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "example_for_magic_mirror",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/ExampleForMagicMirrorProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/MedievalFantasy/ExamplesInClass"
+    },
+    {
+      "name": "MagicArmor",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_armor",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/item/MagicArmorItem.java",
+          "src/main/resources/assets/cristian_s_master/models/item/magic_armor_chestplate.json",
+          "src/main/resources/assets/cristian_s_master/models/item/magic_armor_leggings.json",
+          "src/main/resources/assets/cristian_s_master/models/item/magic_armor_boots.json",
+          "src/main/resources/assets/cristian_s_master/models/item/magic_armor_helmet.json"
+        ]
+      },
+      "path": "~/MedievalFantasy"
+    },
+    {
+      "name": "FlyMagicArmor",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fly_magic_armor",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/FlyMagicArmorProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/MedievalFantasy"
+    },
+    {
+      "name": "EXAMPLEFEATHER",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "examplefeather",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/EXAMPLEFEATHERProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/MedievalFantasy"
+    },
+    {
+      "name": "MagicalDart",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magical_dart",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/entity/MagicalDartEntity.java",
+          "src/main/java/net/mcreator/cristiansmaster/client/renderer/MagicalDartRenderer.java"
+        ]
+      },
+      "path": "~/MedievalFantasy"
+    },
+    {
+      "name": "NerfGun",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nerf_gun",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/item/NerfGunItem.java",
+          "src/main/resources/assets/cristian_s_master/models/item/nerf_gun.json"
+        ]
+      },
+      "path": "~/MedievalFantasy"
+    },
+    {
+      "name": "NerfGun2",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nerf_gun_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cristian_s_master/models/item/nerf_gun_2.json",
+          "src/main/java/net/mcreator/cristiansmaster/item/NerfGun2Item.java"
+        ]
+      },
+      "path": "~/MedievalFantasy"
+    },
+    {
+      "name": "Tornado",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tornado",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/client/renderer/TornadoRenderer.java",
+          "src/main/resources/assets/cristian_s_master/models/item/tornado_spawn_egg.json",
+          "src/main/java/net/mcreator/cristiansmaster/entity/TornadoEntity.java"
+        ]
+      },
+      "path": "~/MedievalFantasy"
+    },
+    {
+      "name": "WindStaffRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wind_staff_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/WindStaffRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/MedievalFantasy"
+    },
+    {
+      "name": "TornadoOnInitialEntitySpawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tornado_on_initial_entity_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/TornadoOnInitialEntitySpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/MedievalFantasy"
+    },
+    {
+      "name": "WindStaff",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wind_staff",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/item/WindStaffItem.java",
+          "src/main/resources/assets/cristian_s_master/models/item/wind_staff.json"
+        ]
+      },
+      "path": "~/MedievalFantasy"
+    },
+    {
+      "name": "TestForElyasin",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_for_elyasin",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cristian_s_master/loot_tables/chests/test_for_elyasin.json"
+        ]
+      }
+    },
+    {
+      "name": "ExplodingProjectileProjectileHitsBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "exploding_projectile_projectile_hits_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/ExplodingProjectileProjectileHitsBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/TrialStuff"
+    },
+    {
+      "name": "ExplodingProjectile",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "exploding_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/entity/ExplodingProjectileEntity.java"
+        ]
+      },
+      "path": "~/TrialStuff"
+    },
+    {
+      "name": "ShootTheExplodingProjectileItem",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shoot_the_exploding_projectile_item",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cristian_s_master/models/item/shoot_the_exploding_projectile_item.json",
+          "src/main/java/net/mcreator/cristiansmaster/item/ShootTheExplodingProjectileItemItem.java"
+        ]
+      },
+      "path": "~/TrialStuff"
+    },
+    {
+      "name": "TheBOMBProjectileHitsBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_bomb_projectile_hits_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/TheBOMBProjectileHitsBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/MedievalFantasy"
+    },
+    {
+      "name": "TheBOMB",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_bomb",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/entity/TheBOMBEntity.java"
+        ]
+      },
+      "path": "~/MedievalFantasy"
+    },
+    {
+      "name": "RocketLauncher",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rocket_launcher",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cristian_s_master/models/item/rocket_launcher.json",
+          "src/main/java/net/mcreator/cristiansmaster/item/RocketLauncherItem.java"
+        ]
+      },
+      "path": "~/MedievalFantasy"
+    },
+    {
+      "name": "Pop",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pop",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cristian_s_master/models/item/pop_spawn_egg.json",
+          "src/main/resources/data/cristian_s_master/neoforge/biome_modifier/pop_biome_modifier.json",
+          "src/main/java/net/mcreator/cristiansmaster/client/renderer/PopRenderer.java",
+          "src/main/java/net/mcreator/cristiansmaster/entity/PopEntity.java"
+        ]
+      },
+      "path": "~/TrialStuff"
+    },
+    {
+      "name": "BigGuy",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "big_guy",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/entity/BigGuyEntity.java",
+          "src/main/resources/data/cristian_s_master/neoforge/biome_modifier/big_guy_biome_modifier.json",
+          "src/main/resources/assets/cristian_s_master/models/item/big_guy_spawn_egg.json",
+          "src/main/java/net/mcreator/cristiansmaster/client/renderer/BigGuyRenderer.java"
+        ]
+      },
+      "path": "~/TrialStuff"
+    },
+    {
+      "name": "TNTDimension",
+      "type": "dimension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tnt_dimension",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/world/teleporter/TNTDimensionPortalShape.java",
+          "src/main/resources/assets/cristian_s_master/models/item/tnt_dimension.json",
+          "src/main/java/net/mcreator/cristiansmaster/world/teleporter/TNTDimensionTeleporter.java",
+          "src/main/java/net/mcreator/cristiansmaster/block/TNTDimensionPortalBlock.java",
+          "src/main/java/net/mcreator/cristiansmaster/world/dimension/TNTDimensionDimension.java",
+          "src/main/java/net/mcreator/cristiansmaster/item/TNTDimensionItem.java",
+          "src/main/resources/data/cristian_s_master/dimension_type/tnt_dimension.json",
+          "src/main/resources/data/cristian_s_master/dimension/tnt_dimension.json",
+          "src/main/resources/assets/cristian_s_master/blockstates/tnt_dimension_portal.json",
+          "src/main/resources/assets/cristian_s_master/models/block/tnt_dimension_portal_ew.json",
+          "src/main/resources/assets/cristian_s_master/models/block/tnt_dimension_portal_ns.json"
+        ]
+      },
+      "path": "~/TrialStuff"
+    },
+    {
+      "name": "ExplosiveShooterThingyRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "explosive_shooter_thingy_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/ExplosiveShooterThingyRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/TrialStuff"
+    },
+    {
+      "name": "IdontknowRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "idontknow_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/IdontknowRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/MedievalFantasy"
+    },
+    {
+      "name": "Idontknow",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "idontknow",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cristian_s_master/models/item/idontknow.json",
+          "src/main/java/net/mcreator/cristiansmaster/item/IdontknowItem.java"
+        ]
+      },
+      "path": "~/MedievalFantasy"
+    },
+    {
+      "name": "OPAxe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "op_axe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cristian_s_master/models/item/op_axe.json",
+          "src/main/java/net/mcreator/cristiansmaster/item/OPAxeItem.java"
+        ]
+      },
+      "path": "~/TreeCapitator"
+    },
+    {
+      "name": "OPAxeBlockDestroyedWithTool",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "op_axe_block_destroyed_with_tool",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/OPAxeBlockDestroyedWithToolProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/TreeCapitator"
+    },
+    {
+      "name": "WallOfIceCastRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wall_of_ice_cast_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/WallOfIceCastRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/TreeCapitator"
+    },
+    {
+      "name": "WallOfIceCast",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wall_of_ice_cast",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/item/WallOfIceCastItem.java",
+          "src/main/resources/assets/cristian_s_master/models/item/wall_of_ice_cast.json"
+        ]
+      },
+      "path": "~/TreeCapitator"
+    },
+    {
+      "name": "Outline",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "outline",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/client/renderer/OutlineRenderer.java",
+          "src/main/resources/assets/cristian_s_master/models/item/outline_spawn_egg.json",
+          "src/main/java/net/mcreator/cristiansmaster/entity/OutlineEntity.java"
+        ]
+      },
+      "path": "~/XRayEffect"
+    },
+    {
+      "name": "OutlinePlayerCollidesWithThisEntity",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "outline_player_collides_with_this_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/OutlinePlayerCollidesWithThisEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/XRayEffect"
+    },
+    {
+      "name": "OutlineEntityIsHurt",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "outline_entity_is_hurt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/OutlineEntityIsHurtProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/XRayEffect"
+    },
+    {
+      "name": "OutlineOnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "outline_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/OutlineOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/XRayEffect"
+    },
+    {
+      "name": "XRay",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "x_ray",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/potion/XRayMobEffect.java"
+        ]
+      },
+      "path": "~/XRayEffect"
+    },
+    {
+      "name": "XrayPotion",
+      "type": "potion",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xray_potion",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/XRayEffect"
+    },
+    {
+      "name": "XRayAmulet",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "x_ray_amulet",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/item/XRayAmuletItem.java",
+          "src/main/resources/assets/cristian_s_master/models/item/x_ray_amulet.json"
+        ]
+      },
+      "path": "~/XRayEffect"
+    },
+    {
+      "name": "XRayAmuletRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "x_ray_amulet_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/XRayAmuletRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/XRayEffect"
+    },
+    {
+      "name": "XRayPotionEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "x_ray_potion_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/XRayPotionEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/XRayEffect"
+    },
+    {
+      "name": "XRayEffectExpires",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "x_ray_effect_expires",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/XRayEffectExpiresProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/XRayEffect"
+    },
+    {
+      "name": "Backpack",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "backpack",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/item/inventory/BackpackInventoryCapability.java",
+          "src/main/java/net/mcreator/cristiansmaster/item/BackpackItem.java",
+          "src/main/resources/assets/cristian_s_master/models/item/backpack.json",
+          "src/main/java/net/mcreator/cristiansmaster/client/renderer/BackpackRenderer.java"
+        ]
+      },
+      "path": "~/Backpack"
+    },
+    {
+      "name": "OpenBackpack",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_backpack",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/network/OpenBackpackMessage.java"
+        ]
+      },
+      "path": "~/Backpack"
+    },
+    {
+      "name": "BackpackGui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "backpack_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/world/inventory/BackpackGuiMenu.java",
+          "src/main/java/net/mcreator/cristiansmaster/client/gui/BackpackGuiScreen.java"
+        ]
+      },
+      "path": "~/Backpack"
+    },
+    {
+      "name": "OpenBackpackOnKeyPressed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_backpack_on_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/OpenBackpackOnKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Backpack"
+    },
+    {
+      "name": "Fetch",
+      "type": "procedure",
+      "compiles": false,
+      "locked_code": true,
+      "registry_name": "fetch",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/FetchProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Backpack"
+    },
+    {
+      "name": "CallFetch",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "call_fetch",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/CallFetchProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Backpack"
+    },
+    {
+      "name": "SaveContents",
+      "type": "procedure",
+      "compiles": false,
+      "locked_code": true,
+      "registry_name": "save_contents",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/SaveContentsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Backpack"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "i",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "usageCounter",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "CloakingCooldown",
+      "type": "number",
+      "scope": "global",
+      "value": "0.0"
+    },
+    {
+      "name": "Mana",
+      "type": "number",
+      "scope": "map",
+      "value": "100.0"
+    },
+    {
+      "name": "hasGrimoireBeenUsed",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "hasPhoenixFeatherBeenUsed",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "savingBackpackContent",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "true"
+    },
+    {
+      "name": "slot0",
+      "type": "itemstack",
+      "scope": "player_lifetime",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "slot1",
+      "type": "itemstack",
+      "scope": "player_lifetime",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "slot2",
+      "type": "itemstack",
+      "scope": "player_lifetime",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "slot3",
+      "type": "itemstack",
+      "scope": "player_lifetime",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "slot4",
+      "type": "itemstack",
+      "scope": "player_lifetime",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "slot5",
+      "type": "itemstack",
+      "scope": "player_lifetime",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "slot6",
+      "type": "itemstack",
+      "scope": "player_lifetime",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "slot7",
+      "type": "itemstack",
+      "scope": "player_lifetime",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "slot8",
+      "type": "itemstack",
+      "scope": "player_lifetime",
+      "value": "ItemStack.EMPTY"
+    }
+  ],
+  "sound_elements": [
+    {
+      "name": "evil_laugh",
+      "files": [
+        "evil-laugh-89423"
+      ],
+      "category": "player",
+      "subtitle": ""
+    },
+    {
+      "name": "vanished",
+      "files": [
+        "poof-of-smoke-87381"
+      ],
+      "category": "player",
+      "subtitle": ""
+    },
+    {
+      "name": "wyrmspawn",
+      "files": [
+        "god_of_war_3_-_kratos_vs_zeus_battle_song_tuberipper.cc"
+      ],
+      "category": "hostile",
+      "subtitle": ""
+    },
+    {
+      "name": "fireball",
+      "files": [
+        "442827__qubodup__fireball"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "iceshard",
+      "files": [
+        "628839__robinhood76__11111-freeze-ray-spell"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "magicmirrorvanish",
+      "files": [
+        "702515__robinhood76__11762-quick-air-pop-and-vanish"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "reappear",
+      "files": [
+        "735062__gammagool__fast-warp-in"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "alert",
+      "files": [
+        "214048__taira-komori__reflection"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "ironcladambient",
+      "files": [
+        "738439__qubodup__orc-grunt-3"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "ironcladspawn",
+      "files": [
+        "untitled_video_-_made_with_clipchamp"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "phoenixcry",
+      "files": [
+        "realizationshock_sound_effect_epic_sfx"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    }
+  ],
+  "tag_elements": {
+    "ITEMS:minecraft:chest_armor": [
+      "~CUSTOM:MagicArmor.body"
+    ],
+    "ITEMS:minecraft:enchantable/durability": [
+      "~CUSTOM:FairyDust"
+    ],
+    "ITEMS:minecraft:pickaxes": [
+      "~CUSTOM:XRayAmulet",
+      "~CUSTOM:WallOfIceCast"
+    ],
+    "ITEMS:minecraft:axes": [
+      "~CUSTOM:OPAxe"
+    ],
+    "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~Blocks.TNT",
+      "~Blocks.REINFORCED_DEEPSLATE",
+      "~Blocks.END_STONE"
+    ],
+    "ITEMS:minecraft:head_armor": [
+      "~CUSTOM:MagicArmor.helmet"
+    ],
+    "ITEMS:minecraft:foot_armor": [
+      "~CUSTOM:MagicArmor.boots"
+    ],
+    "ITEMS:minecraft:leg_armor": [
+      "~CUSTOM:MagicArmor.legs"
+    ]
+  },
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "entity.cristian_s_master.maryann_the_slime": "Maryann The Slime",
+      "subtitles.evil_laugh": "",
+      "subtitles.reappear": "",
+      "gui.cristian_s_master.magic_example_display.label_ok": "ok",
+      "effect.cristian_s_master.x_ray": "X Ray",
+      "key.cristian_s_master.key_pressed_space": "Is Space Pressed",
+      "subtitles.phoenixcry": "",
+      "entity.cristian_s_master.ironclad": "Ironclad",
+      "item.cristian_s_master.nerf_gun_2": "Nerf Gun 2",
+      "item.minecraft.splash_potion.effect.xray_potion": "Splash Potion of XRay",
+      "item.cristian_s_master.op_axe": "OP Axe",
+      "item.cristian_s_master.nerf_gun": "Nerf Gun",
+      "item.cristian_s_master.grimoire": "Grimoire",
+      "item.cristian_s_master.wall_of_ice_cast": "Wall Of Ice Cast",
+      "item.cristian_s_master.fairy_dust": "Fairy Dust",
+      "item.cristian_s_master.hello_spawn_egg": "Hello Spawn Egg",
+      "item.cristian_s_master.nuker_axe": "Nuker Axe",
+      "entity.cristian_s_master.pop": "Pop",
+      "item.minecraft.lingering_potion.effect.randomizer_potion": "Lingering Randomizer Potion",
+      "subtitles.iceshard": "",
+      "item.cristian_s_master.helo": "Helo",
+      "item.cristian_s_master.wyrm_potion": "Wyrm Potion",
+      "item.cristian_s_master.burnt_pheonix_feathter": "Burnt Pheonix Feather",
+      "item.cristian_s_master.shoot_the_exploding_projectile_item": "Shoot The Exploding Projectile Item",
+      "gui.cristian_s_master.mana_display.label_mana": "ManaCount",
+      "key.cristian_s_master.shoot_fireball": "Shoot Fireball",
+      "item.minecraft.tipped_arrow.effect.xray_potion": "Arrow of XRay",
+      "entity.cristian_s_master.tornado": "Tornado",
+      "item.cristian_s_master.scrap_metal": "Scrap Metal",
+      "item.cristian_s_master.ant_man_watch": "Ant Man Watch",
+      "item.cristian_s_master.mining_laser": "Mining Laser",
+      "item.cristian_s_master.magic_armor_helmet": "Magic Armor Helmet",
+      "item.minecraft.potion.effect.randomizer_potion": "Randomizer Potion",
+      "item.cristian_s_master.bio_scanner": "Bio Scanner",
+      "key.cristian_s_master.open_backpack": "Open Backpack",
+      "item.minecraft.tipped_arrow.effect.randomizer_potion": "Arrow Randomizer Potion",
+      "item.cristian_s_master.wind_staff": "Wind Staff",
+      "item.cristian_s_master.big_guy_spawn_egg": "Big Guy Spawn Egg",
+      "item.cristian_s_master.rocket_launcher": "Rocket Launcher",
+      "item.cristian_s_master.magic_armor_boots": "Magic Armor Boots",
+      "gui.cristian_s_master.guiforreplicatro.button_food": "food",
+      "item.cristian_s_master.tornado_spawn_egg": "Tornado Spawn Egg",
+      "subtitles.wyrmspawn": "",
+      "item.cristian_s_master.sword_that_shoots": "Sword That Shoots",
+      "item.cristian_s_master.tnt_dimension": "TNT Dimension Portal Igniter",
+      "item.cristian_s_master.magic_armor_chestplate": "Magic Armor Chestplate",
+      "subtitles.ironcladspawn": "",
+      "item.cristian_s_master.backpack": "Backpack",
+      "item.cristian_s_master.moon_dimension_portal_gun": "Moon Dimension Portal Gun",
+      "subtitles.fireball": "",
+      "item.cristian_s_master.new_dimension": "New Dimension Portal Igniter",
+      "item.cristian_s_master.idontknow": "Idontknow",
+      "item.cristian_s_master.lightsaber": "Lightsaber",
+      "item.minecraft.lingering_potion.effect.xray_potion": "Lingering Potion of XRay",
+      "item.cristian_s_master.teleporter": "Teleporter",
+      "entity.cristian_s_master.dragon": "Dragon",
+      "block.cristian_s_master.replicator": "Replicator",
+      "item.cristian_s_master.pop_spawn_egg": "Pop Spawn Egg",
+      "item.cristian_s_master.outline_spawn_egg": "Outline Spawn Egg",
+      "subtitles.alert": "",
+      "item.cristian_s_master.x_ray_amulet": "X Ray Amulet",
+      "item.cristian_s_master.phoenix_feather": "Phoenix Feather",
+      "item.cristian_s_master.maryann_the_slime_spawn_egg": "Maryann The Slime Spawn Egg",
+      "item.cristian_s_master.dragon_spawn_egg": "Dragon Spawn Egg",
+      "gui.cristian_s_master.guiforreplicatro.button_diamond": "diamond",
+      "item.cristian_s_master.ironclad_spawn_egg": "Ironclad Spawn Egg",
+      "item.minecraft.splash_potion.effect.randomizer_potion": "Splash Randomizer Potion",
+      "subtitles.magicmirrorvanish": "",
+      "item.minecraft.potion.effect.xray_potion": "Potion of XRay",
+      "item.cristian_s_master.magic_mirror": "Magic Mirror",
+      "entity.cristian_s_master.big_guy": "Big Guy",
+      "effect.cristian_s_master.randomize_mob_height_effect": "Randomize Mob Height Effect",
+      "entity.cristian_s_master.outline": "Outline",
+      "key.cristian_s_master.ironcladspawned": "Shoot Iceshard",
+      "item.cristian_s_master.new_portal_gun": "New Portal Gun",
+      "entity.cristian_s_master.hello": "Hello",
+      "key.cristian_s_master.shoot_iceshard": "Shoot Iceshard",
+      "subtitles.vanished": "",
+      "item.cristian_s_master.cloaking_device": "Cloaking Device",
+      "item.cristian_s_master.magic_armor_leggings": "Magic Armor Leggings",
+      "key.cristian_s_master.spawn_sillygoose": "Spawn SILLYGOOSE",
+      "subtitles.ironcladambient": ""
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "MedievalFantasy",
+        "children": [
+          {
+            "name": "ExamplesInClass",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Superheroes",
+        "children": []
+      },
+      {
+        "name": "TrialStuff",
+        "children": []
+      },
+      {
+        "name": "TreeCapitator",
+        "children": []
+      },
+      {
+        "name": "XRayEffect",
+        "children": []
+      },
+      {
+        "name": "LaserVision",
+        "children": []
+      },
+      {
+        "name": "Backpack",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "cristian_s_master",
+    "modName": "Cristian\u0027sMASTER",
+    "version": "1.0.0",
+    "author": "User, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "kleidersplayerrenderer",
+      "pehkui",
+      "curios_api",
+      "geckolib"
+    ],
+    "currentGenerator": "neoforge-1.20.6",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.cristiansmaster"
+  },
+  "mcreatorVersion": 202400232117
+}

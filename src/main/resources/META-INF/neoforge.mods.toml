@@ -1,0 +1,58 @@
+modLoader="javafml"
+loaderVersion="[2,)"
+license="Not specified"
+
+[[mods]]
+modId="cristian_s_master"
+version="1.0.0"
+displayName="Cristian'sMASTER"
+displayURL="https://mcreator.net"
+credits="Created using mod maker MCreator - https://mcreator.net/about"
+authors="User, MCreator"
+
+# Start of user code block mod configuration
+# End of user code block mod configuration
+
+[[dependencies.cristian_s_master]]
+    modId="neoforge"
+    type="required"
+    versionRange="[20.6.117,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.cristian_s_master]]
+    modId="minecraft"
+    type="required"
+    versionRange="[1.20.6]"
+    ordering="AFTER"
+    side="BOTH"
+
+
+[[dependencies.cristian_s_master]]
+    modId="kleidersplayerrenderer"
+    type="optional"
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.cristian_s_master]]
+    modId="pehkui"
+    type="optional"
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.cristian_s_master]]
+    modId="curios_api"
+    type="optional"
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.cristian_s_master]]
+    modId="geckolib"
+    type="optional"
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+
+
+# Start of user code block dependencies configuration
+# End of user code block dependencies configuration

@@ -1,0 +1,21 @@
+{
+  "_fv": 66,
+  "_type": "potion",
+  "definition": {
+    "potionName": "Randomizer Potion",
+    "splashName": "Splash Randomizer Potion",
+    "lingeringName": "Lingering Randomizer Potion",
+    "arrowName": "Arrow Randomizer Potion",
+    "effects": [
+      {
+        "effect": {
+          "value": "CUSTOM:RandomizeMobHeightEffect"
+        },
+        "duration": 3600,
+        "amplifier": 0,
+        "ambient": false,
+        "showParticles": true
+      }
+    ]
+  }
+}

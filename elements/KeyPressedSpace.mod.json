@@ -1,0 +1,15 @@
+{
+  "_fv": 66,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "SPACE",
+    "keyBindingName": "Is Space Pressed",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "KeyPressedSpaceOnKeyPressed"
+    },
+    "onKeyReleased": {
+      "name": "KeyPressedSpaceOnKeyReleased"
+    }
+  }
+}

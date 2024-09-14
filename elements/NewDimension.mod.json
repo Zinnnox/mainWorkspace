@@ -1,0 +1,52 @@
+{
+  "_fv": 66,
+  "_type": "dimension",
+  "definition": {
+    "biomesInDimension": [
+      {
+        "value": "jungle"
+      },
+      {
+        "value": "beaches"
+      }
+    ],
+    "worldGenType": "Normal world gen",
+    "mainFillerBlock": {
+      "value": "Blocks.REINFORCED_DEEPSLATE"
+    },
+    "fluidBlock": {
+      "value": "Blocks.SLIME_BLOCK"
+    },
+    "canRespawnHere": false,
+    "hasFog": false,
+    "isDark": false,
+    "doesWaterVaporize": false,
+    "sleepResult": "ALLOW",
+    "hasSkyLight": false,
+    "imitateOverworldBehaviour": true,
+    "portalFrame": {
+      "value": "Blocks.DIRT#0"
+    },
+    "portalParticles": {
+      "value": "DRIP_LAVA"
+    },
+    "portalLuminance": 0,
+    "portalSound": {
+      "value": "block.portal.ambient"
+    },
+    "enableIgniter": true,
+    "igniterName": "New Dimension Portal Igniter",
+    "igniterRarity": "COMMON",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "creativeTabs": [
+      {
+        "value": "TOOLS"
+      }
+    ],
+    "texture": "rick_and_morty_portal_gun_by_rodprimata",
+    "portalTexture": "newportal",
+    "enablePortal": true
+  }
+}

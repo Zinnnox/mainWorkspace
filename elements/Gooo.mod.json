@@ -1,0 +1,76 @@
+{
+  "_fv": 66,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 0,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 151,
+          "y": 76
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 1,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 259,
+          "y": 74
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_food",
+          "text": "food",
+          "isUndecorated": false,
+          "width": 46,
+          "height": 20,
+          "x": 190,
+          "y": 57
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_diamond",
+          "text": "diamond",
+          "isUndecorated": false,
+          "width": 61,
+          "height": 20,
+          "x": 184,
+          "y": 84
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

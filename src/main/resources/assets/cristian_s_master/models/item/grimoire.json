@@ -1,0 +1,6 @@
+{
+  "parent": "cristian_s_master:displaysettings/grimoire.item",
+  "textures": {
+    "layer0": "cristian_s_master:item/grimoire"
+  }
+}

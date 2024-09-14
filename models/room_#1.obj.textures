@@ -1,0 +1,22 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "Guitar": "guitar",
+        "Floor": "guitar",
+        "Mat": "guitar",
+        "Cabinet": "guitar",
+        "moh": "guitar",
+        "Remote": "",
+        "leaf.001": "",
+        "sand": "",
+        "gorshok": "",
+        "Tea_Table_": "",
+        "Wall_Frame": "",
+        "BookCover": "",
+        "stem": ""
+      },
+      "name": "default"
+    }
+  }
+}

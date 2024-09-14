@@ -1,0 +1,19 @@
+{
+  "_fv": 66,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "CUSTOM:Grimoire"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "igniteFire": true,
+    "power": 2.0,
+    "damage": 50.0,
+    "knockback": 5,
+    "entityModel": "Modelfireball",
+    "customModelTexture": "fireball.png"
+  }
+}

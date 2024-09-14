@@ -1,0 +1,84 @@
+# MCreator specific
+/.gradle/
+/build/
+/out/
+logs/
+crash-reports/
+config/
+.cache/
+*.tmp
+*.log
+usercache.json
+
+# Ignore Minecraft-related files and folders
+saves/
+resourcepacks/
+mods/
+shaderpacks/
+options.txt
+servers.dat
+*.pid
+*.swp
+mods/
+
+# Gradle specific
+.gradle/
+/build/
+/gradle-app.setting
+.gradle/
+/gradle/
+gradlew
+gradlew.bat
+gradle-wrapper.jar
+gradle-wrapper.properties
+
+# Eclipse specific files
+.project
+.classpath
+.settings/
+
+# IntelliJ IDEA specific files
+.idea/
+*.iml
+*.iws
+
+# VS Code specific files
+.vscode/
+
+# Ignore package files
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Ignore Maven and Gradle wrapper files
+/.gradle/
+/.gradle/
+/target/
+/build/
+
+# Ignore compiled Java class files
+*.class
+
+# Ignore DS_Store (Mac OS)
+.DS_Store
+
+# Ignore Thumbs.db (Windows)
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+*~
+
+# Ignore binaries and output files
+*.o
+*.out
+*.exe
+*.dll
+
+# Generated or cached files
+.cache/

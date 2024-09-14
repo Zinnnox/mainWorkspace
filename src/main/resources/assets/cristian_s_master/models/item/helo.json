@@ -1,0 +1,7 @@
+{
+  "parent": "cristian_s_master:custom/model",
+  "textures": {
+    "missing": "cristian_s_master:block/texture",
+    "particle": "cristian_s_master:item/thorhammer"
+  }
+}

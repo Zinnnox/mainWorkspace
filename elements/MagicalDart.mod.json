@@ -1,0 +1,19 @@
+{
+  "_fv": 66,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "CUSTOM:NerfGun"
+    },
+    "showParticles": true,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "igniteFire": false,
+    "power": 1.0,
+    "damage": 50.0,
+    "knockback": 5,
+    "entityModel": "ModelDart",
+    "customModelTexture": "bulletdartthing.png"
+  }
+}

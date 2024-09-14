@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "texture": "iron_door_base"
+      },
+      "name": "default"
+    }
+  }
+}

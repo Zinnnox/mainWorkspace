@@ -1,0 +1,53 @@
+{
+  "_fv": 66,
+  "_type": "dimension",
+  "definition": {
+    "biomesInDimension": [
+      {
+        "value": "mutated_mesa"
+      }
+    ],
+    "worldGenType": "Normal world gen",
+    "mainFillerBlock": {
+      "value": "Blocks.END_STONE"
+    },
+    "fluidBlock": {
+      "value": "Blocks.BUBBLE_COLUMN"
+    },
+    "airColor": {
+      "value": -6710785,
+      "falpha": 0.0
+    },
+    "canRespawnHere": true,
+    "hasFog": true,
+    "isDark": true,
+    "doesWaterVaporize": false,
+    "sleepResult": "ALLOW",
+    "hasSkyLight": true,
+    "imitateOverworldBehaviour": false,
+    "portalFrame": {
+      "value": "Blocks.POLISHED_BLACKSTONE"
+    },
+    "portalParticles": {
+      "value": "PORTAL"
+    },
+    "portalLuminance": 10,
+    "portalSound": {
+      "value": "block.portal.ambient"
+    },
+    "enableIgniter": false,
+    "igniterName": "Moon Dimension Portal Igniter",
+    "igniterRarity": "COMMON",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "creativeTabs": [
+      {
+        "value": "TOOLS"
+      }
+    ],
+    "texture": "rick_and_morty_portal_gun_by_rodprimata",
+    "portalTexture": "f0df3748c6f3f49",
+    "enablePortal": true
+  }
+}

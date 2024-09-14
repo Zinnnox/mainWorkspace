@@ -1,0 +1,19 @@
+{
+  "_fv": 66,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "CUSTOM:Grimoire"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "igniteFire": false,
+    "power": 1.0,
+    "damage": 45.0,
+    "knockback": 15,
+    "entityModel": "Modeliceshard",
+    "customModelTexture": "iceshard.png"
+  }
+}
