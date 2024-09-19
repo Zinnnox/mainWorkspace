@@ -820,8 +820,8 @@
       "registry_name": "wyrm_potion",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cristiansmaster/item/WyrmPotionItem.java",
-          "src/main/resources/assets/cristian_s_master/models/item/wyrm_potion.json"
+          "src/main/resources/assets/cristian_s_master/models/item/wyrm_potion.json",
+          "src/main/java/net/mcreator/cristiansmaster/item/WyrmPotionItem.java"
         ]
       }
     },
@@ -2120,9 +2120,9 @@
       "registry_name": "outline",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cristiansmaster/client/renderer/OutlineRenderer.java",
+          "src/main/java/net/mcreator/cristiansmaster/entity/OutlineEntity.java",
           "src/main/resources/assets/cristian_s_master/models/item/outline_spawn_egg.json",
-          "src/main/java/net/mcreator/cristiansmaster/entity/OutlineEntity.java"
+          "src/main/java/net/mcreator/cristiansmaster/client/renderer/OutlineRenderer.java"
         ]
       },
       "path": "~/XRayEffect"
@@ -2364,8 +2364,8 @@
       "registry_name": "backpack_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cristiansmaster/world/inventory/BackpackGuiMenu.java",
-          "src/main/java/net/mcreator/cristiansmaster/client/gui/BackpackGuiScreen.java"
+          "src/main/java/net/mcreator/cristiansmaster/client/gui/BackpackGuiScreen.java",
+          "src/main/java/net/mcreator/cristiansmaster/world/inventory/BackpackGuiMenu.java"
         ]
       },
       "path": "~/Backpack"
@@ -2537,6 +2537,237 @@
         ]
       },
       "path": "~/TeleportationButton"
+    },
+    {
+      "name": "SpawnerAnvilRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawner_anvil_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/SpawnerAnvilRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/SpawnAnvilWhereLooking"
+    },
+    {
+      "name": "SpawnerAnvil",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawner_anvil",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/item/SpawnerAnvilItem.java",
+          "src/main/resources/assets/cristian_s_master/models/item/spawner_anvil.json"
+        ]
+      },
+      "path": "~/SpawnAnvilWhereLooking"
+    },
+    {
+      "name": "BuildersWand",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "builders_wand",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/item/BuildersWandItem.java",
+          "src/main/resources/assets/cristian_s_master/models/item/builders_wand.json"
+        ]
+      },
+      "path": "~/BuildersWand"
+    },
+    {
+      "name": "BuildersWandRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "builders_wand_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/BuildersWandRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          }
+        ]
+      },
+      "path": "~/BuildersWand"
+    },
+    {
+      "name": "BuildersWandEntitySwingsItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "builders_wand_entity_swings_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/BuildersWandEntitySwingsItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          }
+        ]
+      },
+      "path": "~/BuildersWand"
+    },
+    {
+      "name": "SelectBlock",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "select_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/client/gui/SelectBlockScreen.java",
+          "src/main/java/net/mcreator/cristiansmaster/world/inventory/SelectBlockMenu.java",
+          "src/main/java/net/mcreator/cristiansmaster/network/SelectBlockButtonMessage.java"
+        ]
+      },
+      "path": "~/BuildersWand"
+    },
+    {
+      "name": "OpenGuiBuildersWandOnKeyPressed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_gui_builders_wand_on_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/OpenGuiBuildersWandOnKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/BuildersWand"
+    },
+    {
+      "name": "OpenGuiBuildersWand",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_gui_builders_wand",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/network/OpenGuiBuildersWandMessage.java"
+        ]
+      },
+      "path": "~/BuildersWand"
+    },
+    {
+      "name": "SelectBlockProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "select_block_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/SelectBlockProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          }
+        ]
+      },
+      "path": "~/BuildersWand"
+    },
+    {
+      "name": "BuildersWandItemInHandTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "builders_wand_item_in_hand_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/BuildersWandItemInHandTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/BuildersWand"
+    },
+    {
+      "name": "FillWithBuildersWand",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fill_with_builders_wand",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/network/FillWithBuildersWandMessage.java"
+        ]
+      },
+      "path": "~/BuildersWand"
     }
   ],
   "variable_elements": [
@@ -2659,6 +2890,60 @@
       "type": "number",
       "scope": "map",
       "value": "0"
+    },
+    {
+      "name": "bwPosX",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "bwPosY",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "bwPosZ",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "bw2PosX",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "bw2PosY",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "bw2PosZ",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "bwFirstPos",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "bwSecondPos",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "selectedBlock",
+      "type": "blockstate",
+      "scope": "player_lifetime",
+      "value": "Blocks.AIR.defaultBlockState()"
     }
   ],
   "sound_elements": [
@@ -2789,6 +3074,7 @@
       "gui.cristian_s_master.magic_example_display.label_ok": "ok",
       "effect.cristian_s_master.x_ray": "X Ray",
       "key.cristian_s_master.key_pressed_space": "Is Space Pressed",
+      "gui.cristian_s_master.select_block.input": "Input Block Name",
       "subtitles.phoenixcry": "",
       "entity.cristian_s_master.ironclad": "Ironclad",
       "item.cristian_s_master.nerf_gun_2": "Nerf Gun 2",
@@ -2804,11 +3090,15 @@
       "entity.cristian_s_master.pop": "Pop",
       "item.minecraft.lingering_potion.effect.randomizer_potion": "Lingering Randomizer Potion",
       "subtitles.iceshard": "",
+      "gui.cristian_s_master.select_block.InputNameOfBlock": "Input Block Name",
       "gui.cristian_s_master.teleporter_button_gui.button_teleport_to_saved_position": "Teleport to Saved Position",
       "item.cristian_s_master.helo": "Helo",
+      "item.cristian_s_master.spawner_anvil": "Spawner Anvil",
       "item.cristian_s_master.wyrm_potion": "Wyrm Potion",
       "item.cristian_s_master.burnt_pheonix_feathter": "Burnt Pheonix Feather",
+      "gui.cristian_s_master.select_block.label_select_a_block": "Select a Block",
       "item.cristian_s_master.shoot_the_exploding_projectile_item": "Shoot The Exploding Projectile Item",
+      "key.cristian_s_master.open_gui_builders_wand": "Open Gui Builders Wand",
       "gui.cristian_s_master.mana_display.label_mana": "ManaCount",
       "key.cristian_s_master.shoot_fireball": "Shoot Fireball",
       "item.minecraft.tipped_arrow.effect.xray_potion": "Arrow of XRay",
@@ -2828,11 +3118,13 @@
       "item.cristian_s_master.magic_armor_boots": "Magic Armor Boots",
       "gui.cristian_s_master.guiforreplicatro.button_food": "food",
       "item.cristian_s_master.tornado_spawn_egg": "Tornado Spawn Egg",
+      "gui.cristian_s_master.select_block.button_stone": "Stone",
       "subtitles.wyrmspawn": "",
       "item.cristian_s_master.sword_that_shoots": "Sword That Shoots",
       "item.cristian_s_master.tnt_dimension": "TNT Dimension Portal Igniter",
       "item.cristian_s_master.magic_armor_chestplate": "Magic Armor Chestplate",
       "subtitles.ironcladspawn": "",
+      "item.cristian_s_master.builders_wand": "Builders Wand",
       "item.cristian_s_master.backpack": "Backpack",
       "item.cristian_s_master.moon_dimension_portal_gun": "Moon Dimension Portal Gun",
       "subtitles.fireball": "",
@@ -2841,14 +3133,17 @@
       "item.cristian_s_master.lightsaber": "Lightsaber",
       "item.minecraft.lingering_potion.effect.xray_potion": "Lingering Potion of XRay",
       "item.cristian_s_master.teleporter": "Teleporter",
+      "gui.cristian_s_master.select_block.button_diamond_block": "Save",
       "entity.cristian_s_master.dragon": "Dragon",
       "block.cristian_s_master.replicator": "Replicator",
       "item.cristian_s_master.pop_spawn_egg": "Pop Spawn Egg",
       "item.cristian_s_master.outline_spawn_egg": "Outline Spawn Egg",
+      "key.cristian_s_master.fill_with_builders_wand": "Open Gui Builders Wand",
       "subtitles.alert": "",
       "item.cristian_s_master.x_ray_amulet": "X Ray Amulet",
       "item.cristian_s_master.phoenix_feather": "Phoenix Feather",
       "item.cristian_s_master.maryann_the_slime_spawn_egg": "Maryann The Slime Spawn Egg",
+      "gui.cristian_s_master.select_block.button_dirt": "Dirt",
       "item.cristian_s_master.dragon_spawn_egg": "Dragon Spawn Egg",
       "gui.cristian_s_master.guiforreplicatro.button_diamond": "diamond",
       "item.cristian_s_master.ironclad_spawn_egg": "Ironclad Spawn Egg",
@@ -2908,6 +3203,18 @@
       },
       {
         "name": "TeleportationButton",
+        "children": []
+      },
+      {
+        "name": "BuildersWand",
+        "children": []
+      },
+      {
+        "name": "SpawnAnvilWhereLooking",
+        "children": []
+      },
+      {
+        "name": "SpawnEntityWhereLooking",
         "children": []
       }
     ]

@@ -1,0 +1,12 @@
+{
+  "_fv": 66,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "K",
+    "keyBindingName": "Open Gui Builders Wand",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "OpenGuiBuildersWandOnKeyPressed"
+    }
+  }
+}

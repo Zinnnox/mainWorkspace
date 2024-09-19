@@ -23,3 +23,4 @@
 /tp -1311.00
 /tp Dev 1000 100 100
 /time set day
+/give Dev cristian_s_master:spawner_anvil

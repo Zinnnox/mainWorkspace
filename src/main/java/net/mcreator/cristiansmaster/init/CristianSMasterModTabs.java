@@ -38,6 +38,7 @@ public class CristianSMasterModTabs {
 			tabData.accept(CristianSMasterModItems.SHOOT_THE_EXPLODING_PROJECTILE_ITEM.get());
 			tabData.accept(CristianSMasterModItems.ROCKET_LAUNCHER.get());
 			tabData.accept(CristianSMasterModItems.IDONTKNOW.get());
+			tabData.accept(CristianSMasterModItems.BUILDERS_WAND.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
 			tabData.accept(CristianSMasterModItems.DRAGON_SPAWN_EGG.get());
 			tabData.accept(CristianSMasterModItems.MARYANN_THE_SLIME_SPAWN_EGG.get());

@@ -12,6 +12,8 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 
 import net.minecraft.world.level.saveddata.SavedData;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
@@ -25,7 +27,9 @@ import net.minecraft.network.protocol.PacketFlow;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.RegistryFriendlyByteBuf;
+import net.minecraft.nbt.NbtUtils;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.HolderLookup;
 
 import net.mcreator.cristiansmaster.CristianSMasterMod;
@@ -81,6 +85,15 @@ public class CristianSMasterModVariables {
 				clone.slot7 = original.slot7;
 				clone.slot8 = original.slot8;
 				clone.slot9 = original.slot9;
+				clone.bwPosX = original.bwPosX;
+				clone.bwPosY = original.bwPosY;
+				clone.bwPosZ = original.bwPosZ;
+				clone.bw2PosX = original.bw2PosX;
+				clone.bw2PosY = original.bw2PosY;
+				clone.bw2PosZ = original.bw2PosZ;
+				clone.bwFirstPos = original.bwFirstPos;
+				clone.bwSecondPos = original.bwSecondPos;
+				clone.selectedBlock = original.selectedBlock;
 			}
 			event.getEntity().setData(PLAYER_VARIABLES, clone);
 		}
@@ -251,6 +264,15 @@ public class CristianSMasterModVariables {
 		public ItemStack slot7 = ItemStack.EMPTY;
 		public ItemStack slot8 = ItemStack.EMPTY;
 		public ItemStack slot9 = ItemStack.EMPTY;
+		public double bwPosX = 0;
+		public double bwPosY = 0;
+		public double bwPosZ = 0;
+		public double bw2PosX = 0;
+		public double bw2PosY = 0;
+		public double bw2PosZ = 0;
+		public boolean bwFirstPos = false;
+		public boolean bwSecondPos = false;
+		public BlockState selectedBlock = Blocks.AIR.defaultBlockState();
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -266,6 +288,15 @@ public class CristianSMasterModVariables {
 			nbt.put("slot7", slot7.saveOptional(lookupProvider));
 			nbt.put("slot8", slot8.saveOptional(lookupProvider));
 			nbt.put("slot9", slot9.saveOptional(lookupProvider));
+			nbt.putDouble("bwPosX", bwPosX);
+			nbt.putDouble("bwPosY", bwPosY);
+			nbt.putDouble("bwPosZ", bwPosZ);
+			nbt.putDouble("bw2PosX", bw2PosX);
+			nbt.putDouble("bw2PosY", bw2PosY);
+			nbt.putDouble("bw2PosZ", bw2PosZ);
+			nbt.putBoolean("bwFirstPos", bwFirstPos);
+			nbt.putBoolean("bwSecondPos", bwSecondPos);
+			nbt.put("selectedBlock", NbtUtils.writeBlockState(selectedBlock));
 			return nbt;
 		}
 
@@ -282,6 +313,15 @@ public class CristianSMasterModVariables {
 			slot7 = ItemStack.parseOptional(lookupProvider, nbt.getCompound("slot7"));
 			slot8 = ItemStack.parseOptional(lookupProvider, nbt.getCompound("slot8"));
 			slot9 = ItemStack.parseOptional(lookupProvider, nbt.getCompound("slot9"));
+			bwPosX = nbt.getDouble("bwPosX");
+			bwPosY = nbt.getDouble("bwPosY");
+			bwPosZ = nbt.getDouble("bwPosZ");
+			bw2PosX = nbt.getDouble("bw2PosX");
+			bw2PosY = nbt.getDouble("bw2PosY");
+			bw2PosZ = nbt.getDouble("bw2PosZ");
+			bwFirstPos = nbt.getBoolean("bwFirstPos");
+			bwSecondPos = nbt.getBoolean("bwSecondPos");
+			selectedBlock = NbtUtils.readBlockState(lookupProvider.lookupOrThrow(BuiltInRegistries.BLOCK.key()), nbt.getCompound("selectedBlock"));
 		}
 
 		public void syncPlayerVariables(Entity entity) {

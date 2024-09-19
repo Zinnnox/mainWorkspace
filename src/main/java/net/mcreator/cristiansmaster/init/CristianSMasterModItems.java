@@ -26,6 +26,7 @@ import net.mcreator.cristiansmaster.item.TeleporterItem;
 import net.mcreator.cristiansmaster.item.TeleporterButtonItem;
 import net.mcreator.cristiansmaster.item.TNTDimensionItem;
 import net.mcreator.cristiansmaster.item.SwordThatShootsItem;
+import net.mcreator.cristiansmaster.item.SpawnerAnvilItem;
 import net.mcreator.cristiansmaster.item.ShootTheExplodingProjectileItemItem;
 import net.mcreator.cristiansmaster.item.ScrapMetalItem;
 import net.mcreator.cristiansmaster.item.RocketLauncherItem;
@@ -47,6 +48,7 @@ import net.mcreator.cristiansmaster.item.GrimoireItem;
 import net.mcreator.cristiansmaster.item.FairyDustItem;
 import net.mcreator.cristiansmaster.item.CloakingDeviceItem;
 import net.mcreator.cristiansmaster.item.BurntPheonixFeathterItem;
+import net.mcreator.cristiansmaster.item.BuildersWandItem;
 import net.mcreator.cristiansmaster.item.BioScannerItem;
 import net.mcreator.cristiansmaster.item.BackpackItem;
 import net.mcreator.cristiansmaster.item.AntManWatchItem;
@@ -100,6 +102,8 @@ public class CristianSMasterModItems {
 	public static final DeferredHolder<Item, Item> X_RAY_AMULET = REGISTRY.register("x_ray_amulet", XRayAmuletItem::new);
 	public static final DeferredHolder<Item, Item> BACKPACK = REGISTRY.register("backpack", BackpackItem::new);
 	public static final DeferredHolder<Item, Item> TELEPORTER_BUTTON = REGISTRY.register("teleporter_button", TeleporterButtonItem::new);
+	public static final DeferredHolder<Item, Item> SPAWNER_ANVIL = REGISTRY.register("spawner_anvil", SpawnerAnvilItem::new);
+	public static final DeferredHolder<Item, Item> BUILDERS_WAND = REGISTRY.register("builders_wand", BuildersWandItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items

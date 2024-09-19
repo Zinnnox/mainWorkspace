@@ -19,9 +19,11 @@ import net.minecraft.client.KeyMapping;
 import net.mcreator.cristiansmaster.network.SpawnSILLYGOOSEMessage;
 import net.mcreator.cristiansmaster.network.ShootIceshardMessage;
 import net.mcreator.cristiansmaster.network.ShootFireballMessage;
+import net.mcreator.cristiansmaster.network.OpenGuiBuildersWandMessage;
 import net.mcreator.cristiansmaster.network.OpenBackpackMessage;
 import net.mcreator.cristiansmaster.network.KeyPressedSpaceMessage;
 import net.mcreator.cristiansmaster.network.IroncladspawnedMessage;
+import net.mcreator.cristiansmaster.network.FillWithBuildersWandMessage;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
 public class CristianSMasterModKeyMappings {
@@ -108,6 +110,32 @@ public class CristianSMasterModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
+	public static final KeyMapping OPEN_GUI_BUILDERS_WAND = new KeyMapping("key.cristian_s_master.open_gui_builders_wand", GLFW.GLFW_KEY_K, "key.categories.misc") {
+		private boolean isDownOld = false;
+
+		@Override
+		public void setDown(boolean isDown) {
+			super.setDown(isDown);
+			if (isDownOld != isDown && isDown) {
+				PacketDistributor.sendToServer(new OpenGuiBuildersWandMessage(0, 0));
+				OpenGuiBuildersWandMessage.pressAction(Minecraft.getInstance().player, 0, 0);
+			}
+			isDownOld = isDown;
+		}
+	};
+	public static final KeyMapping FILL_WITH_BUILDERS_WAND = new KeyMapping("key.cristian_s_master.fill_with_builders_wand", GLFW.GLFW_KEY_C, "key.categories.misc") {
+		private boolean isDownOld = false;
+
+		@Override
+		public void setDown(boolean isDown) {
+			super.setDown(isDown);
+			if (isDownOld != isDown && isDown) {
+				PacketDistributor.sendToServer(new FillWithBuildersWandMessage(0, 0));
+				FillWithBuildersWandMessage.pressAction(Minecraft.getInstance().player, 0, 0);
+			}
+			isDownOld = isDown;
+		}
+	};
 	private static long KEY_PRESSED_SPACE_LASTPRESS = 0;
 
 	@SubscribeEvent
@@ -118,6 +146,8 @@ public class CristianSMasterModKeyMappings {
 		event.register(IRONCLADSPAWNED);
 		event.register(SPAWN_SILLYGOOSE);
 		event.register(OPEN_BACKPACK);
+		event.register(OPEN_GUI_BUILDERS_WAND);
+		event.register(FILL_WITH_BUILDERS_WAND);
 	}
 
 	@EventBusSubscriber({Dist.CLIENT})
@@ -131,6 +161,8 @@ public class CristianSMasterModKeyMappings {
 				IRONCLADSPAWNED.consumeClick();
 				SPAWN_SILLYGOOSE.consumeClick();
 				OPEN_BACKPACK.consumeClick();
+				OPEN_GUI_BUILDERS_WAND.consumeClick();
+				FILL_WITH_BUILDERS_WAND.consumeClick();
 			}
 		}
 	}

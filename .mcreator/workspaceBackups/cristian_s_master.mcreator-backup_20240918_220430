@@ -820,8 +820,8 @@
       "registry_name": "wyrm_potion",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cristiansmaster/item/WyrmPotionItem.java",
-          "src/main/resources/assets/cristian_s_master/models/item/wyrm_potion.json"
+          "src/main/resources/assets/cristian_s_master/models/item/wyrm_potion.json",
+          "src/main/java/net/mcreator/cristiansmaster/item/WyrmPotionItem.java"
         ]
       }
     },
@@ -2120,9 +2120,9 @@
       "registry_name": "outline",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cristiansmaster/client/renderer/OutlineRenderer.java",
+          "src/main/java/net/mcreator/cristiansmaster/entity/OutlineEntity.java",
           "src/main/resources/assets/cristian_s_master/models/item/outline_spawn_egg.json",
-          "src/main/java/net/mcreator/cristiansmaster/entity/OutlineEntity.java"
+          "src/main/java/net/mcreator/cristiansmaster/client/renderer/OutlineRenderer.java"
         ]
       },
       "path": "~/XRayEffect"
@@ -2364,8 +2364,8 @@
       "registry_name": "backpack_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cristiansmaster/world/inventory/BackpackGuiMenu.java",
-          "src/main/java/net/mcreator/cristiansmaster/client/gui/BackpackGuiScreen.java"
+          "src/main/java/net/mcreator/cristiansmaster/client/gui/BackpackGuiScreen.java",
+          "src/main/java/net/mcreator/cristiansmaster/world/inventory/BackpackGuiMenu.java"
         ]
       },
       "path": "~/Backpack"
@@ -2471,7 +2471,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/cristian_s_master/models/item/teleporter_button.json",
-          "src/main/java/net/mcreator/cristiansmaster/item/TeleporterButtonItem.java"
+          "src/main/java/net/mcreator/cristiansmaster/item/TeleporterButtonItem.java",
+          "src/main/java/net/mcreator/cristiansmaster/item/inventory/TeleporterButtonInventoryCapability.java"
         ]
       },
       "path": "~/TeleportationButton"
@@ -2484,11 +2485,128 @@
       "registry_name": "teleporter_button_gui",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/cristiansmaster/network/TeleporterButtonGuiButtonMessage.java",
           "src/main/java/net/mcreator/cristiansmaster/world/inventory/TeleporterButtonGuiMenu.java",
           "src/main/java/net/mcreator/cristiansmaster/client/gui/TeleporterButtonGuiScreen.java"
         ]
       },
       "path": "~/TeleportationButton"
+    },
+    {
+      "name": "SaveCurrentPosition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "save_current_position",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/SaveCurrentPositionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/TeleportationButton"
+    },
+    {
+      "name": "TeleportToSavedPosition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "teleport_to_saved_position",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/TeleportToSavedPositionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/TeleportationButton"
+    },
+    {
+      "name": "SpawnerAnvilRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawner_anvil_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/SpawnerAnvilRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/SpawnAnvilWhereLooking"
+    },
+    {
+      "name": "SpawnerAnvil",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawner_anvil",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/item/SpawnerAnvilItem.java",
+          "src/main/resources/assets/cristian_s_master/models/item/spawner_anvil.json"
+        ]
+      },
+      "path": "~/SpawnAnvilWhereLooking"
+    },
+    {
+      "name": "BuildersWand",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "builders_wand",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/item/BuildersWandItem.java",
+          "src/main/resources/assets/cristian_s_master/models/item/builders_wand.json"
+        ]
+      },
+      "path": "~/BuildersWand"
+    },
+    {
+      "name": "BuildersWandRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "builders_wand_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/BuildersWandRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/BuildersWand"
     }
   ],
   "variable_elements": [
@@ -2593,6 +2711,72 @@
       "type": "itemstack",
       "scope": "player_lifetime",
       "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "tpPosX",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "tpPosY",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "tpPosZ",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "bwPosX",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "bwPosY",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "bwPosZ",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "bw2PosX",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "bw2PosY",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "bw2PosZ",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "bwFirstPos",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "bwSecondPos",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
     }
   ],
   "sound_elements": [
@@ -2740,6 +2924,7 @@
       "subtitles.iceshard": "",
       "gui.cristian_s_master.teleporter_button_gui.button_teleport_to_saved_position": "Teleport to Saved Position",
       "item.cristian_s_master.helo": "Helo",
+      "item.cristian_s_master.spawner_anvil": "Spawner Anvil",
       "item.cristian_s_master.wyrm_potion": "Wyrm Potion",
       "item.cristian_s_master.burnt_pheonix_feathter": "Burnt Pheonix Feather",
       "item.cristian_s_master.shoot_the_exploding_projectile_item": "Shoot The Exploding Projectile Item",
@@ -2767,6 +2952,7 @@
       "item.cristian_s_master.tnt_dimension": "TNT Dimension Portal Igniter",
       "item.cristian_s_master.magic_armor_chestplate": "Magic Armor Chestplate",
       "subtitles.ironcladspawn": "",
+      "item.cristian_s_master.builders_wand": "Builders Wand",
       "item.cristian_s_master.backpack": "Backpack",
       "item.cristian_s_master.moon_dimension_portal_gun": "Moon Dimension Portal Gun",
       "subtitles.fireball": "",
@@ -2842,6 +3028,18 @@
       },
       {
         "name": "TeleportationButton",
+        "children": []
+      },
+      {
+        "name": "BuildersWand",
+        "children": []
+      },
+      {
+        "name": "SpawnAnvilWhereLooking",
+        "children": []
+      },
+      {
+        "name": "SpawnEntityWhereLooking",
         "children": []
       }
     ]
