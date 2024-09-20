@@ -45,6 +45,7 @@ import net.mcreator.cristiansmaster.item.LightsaberItem;
 import net.mcreator.cristiansmaster.item.IdontknowItem;
 import net.mcreator.cristiansmaster.item.HeloItem;
 import net.mcreator.cristiansmaster.item.GrimoireItem;
+import net.mcreator.cristiansmaster.item.FlyingCarpetItem;
 import net.mcreator.cristiansmaster.item.FairyDustItem;
 import net.mcreator.cristiansmaster.item.CloakingDeviceItem;
 import net.mcreator.cristiansmaster.item.BurntPheonixFeathterItem;
@@ -104,6 +105,7 @@ public class CristianSMasterModItems {
 	public static final DeferredHolder<Item, Item> TELEPORTER_BUTTON = REGISTRY.register("teleporter_button", TeleporterButtonItem::new);
 	public static final DeferredHolder<Item, Item> SPAWNER_ANVIL = REGISTRY.register("spawner_anvil", SpawnerAnvilItem::new);
 	public static final DeferredHolder<Item, Item> BUILDERS_WAND = REGISTRY.register("builders_wand", BuildersWandItem::new);
+	public static final DeferredHolder<Item, Item> FLYING_CARPET = REGISTRY.register("flying_carpet", FlyingCarpetItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items

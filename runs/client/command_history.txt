@@ -24,3 +24,9 @@
 /tp Dev 1000 100 100
 /time set day
 /give Dev cristian_s_master:spawner_anvil
+/weather rain
+/time set day
+/give dev cristian_s_master:flying_carpet
+/gamemode survival
+/attribute Dev neoforge:creative_flight base set 1
+/attribute Dev neoforge:creative_flight base set 0

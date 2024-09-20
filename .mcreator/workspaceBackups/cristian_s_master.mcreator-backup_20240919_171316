@@ -2660,7 +2660,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/cristiansmaster/client/gui/SelectBlockScreen.java",
-          "src/main/java/net/mcreator/cristiansmaster/world/inventory/SelectBlockMenu.java"
+          "src/main/java/net/mcreator/cristiansmaster/world/inventory/SelectBlockMenu.java",
+          "src/main/java/net/mcreator/cristiansmaster/network/SelectBlockButtonMessage.java"
         ]
       },
       "path": "~/BuildersWand"
@@ -2731,6 +2732,73 @@
           {
             "name": "guistate",
             "type": "map"
+          }
+        ]
+      },
+      "path": "~/BuildersWand"
+    },
+    {
+      "name": "BuildersWandItemInHandTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "builders_wand_item_in_hand_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/BuildersWandItemInHandTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/BuildersWand"
+    },
+    {
+      "name": "FillWithBuildersWand",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fill_with_builders_wand",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/network/FillWithBuildersWandMessage.java"
+        ]
+      },
+      "path": "~/BuildersWand"
+    },
+    {
+      "name": "FillWithBuildersWandOnKeyPressed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fill_with_builders_wand_on_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/FillWithBuildersWandOnKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -3105,6 +3173,7 @@
       "block.cristian_s_master.replicator": "Replicator",
       "item.cristian_s_master.pop_spawn_egg": "Pop Spawn Egg",
       "item.cristian_s_master.outline_spawn_egg": "Outline Spawn Egg",
+      "key.cristian_s_master.fill_with_builders_wand": "Open Gui Builders Wand",
       "subtitles.alert": "",
       "item.cristian_s_master.x_ray_amulet": "X Ray Amulet",
       "item.cristian_s_master.phoenix_feather": "Phoenix Feather",
