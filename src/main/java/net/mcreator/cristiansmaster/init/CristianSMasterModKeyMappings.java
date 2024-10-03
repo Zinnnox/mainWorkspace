@@ -132,11 +132,17 @@ public class CristianSMasterModKeyMappings {
 			if (isDownOld != isDown && isDown) {
 				PacketDistributor.sendToServer(new FillWithBuildersWandMessage(0, 0));
 				FillWithBuildersWandMessage.pressAction(Minecraft.getInstance().player, 0, 0);
+				FILL_WITH_BUILDERS_WAND_LASTPRESS = System.currentTimeMillis();
+			} else if (isDownOld != isDown && !isDown) {
+				int dt = (int) (System.currentTimeMillis() - FILL_WITH_BUILDERS_WAND_LASTPRESS);
+				PacketDistributor.sendToServer(new FillWithBuildersWandMessage(1, dt));
+				FillWithBuildersWandMessage.pressAction(Minecraft.getInstance().player, 1, dt);
 			}
 			isDownOld = isDown;
 		}
 	};
 	private static long KEY_PRESSED_SPACE_LASTPRESS = 0;
+	private static long FILL_WITH_BUILDERS_WAND_LASTPRESS = 0;
 
 	@SubscribeEvent
 	public static void registerKeyMappings(RegisterKeyMappingsEvent event) {

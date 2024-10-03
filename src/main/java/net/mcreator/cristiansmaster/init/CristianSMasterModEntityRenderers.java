@@ -11,6 +11,7 @@ import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 
+import net.mcreator.cristiansmaster.client.renderer.TwocolorRenderer;
 import net.mcreator.cristiansmaster.client.renderer.TornadoRenderer;
 import net.mcreator.cristiansmaster.client.renderer.PopRenderer;
 import net.mcreator.cristiansmaster.client.renderer.OutlineRenderer;
@@ -45,5 +46,6 @@ public class CristianSMasterModEntityRenderers {
 		event.registerEntityRenderer(CristianSMasterModEntities.POP.get(), PopRenderer::new);
 		event.registerEntityRenderer(CristianSMasterModEntities.BIG_GUY.get(), BigGuyRenderer::new);
 		event.registerEntityRenderer(CristianSMasterModEntities.OUTLINE.get(), OutlineRenderer::new);
+		event.registerEntityRenderer(CristianSMasterModEntities.TWOCOLOR.get(), TwocolorRenderer::new);
 	}
 }

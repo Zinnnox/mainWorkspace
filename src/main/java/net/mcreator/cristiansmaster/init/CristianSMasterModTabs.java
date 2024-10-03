@@ -48,6 +48,7 @@ public class CristianSMasterModTabs {
 			tabData.accept(CristianSMasterModItems.POP_SPAWN_EGG.get());
 			tabData.accept(CristianSMasterModItems.BIG_GUY_SPAWN_EGG.get());
 			tabData.accept(CristianSMasterModItems.OUTLINE_SPAWN_EGG.get());
+			tabData.accept(CristianSMasterModItems.TWOCOLOR_SPAWN_EGG.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {
 			tabData.accept(CristianSMasterModItems.SCRAP_METAL.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {

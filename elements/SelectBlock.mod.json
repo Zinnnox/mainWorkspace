@@ -26,32 +26,27 @@
         }
       },
       {
-        "type": "button",
+        "type": "checkbox",
         "data": {
-          "name": "button_diamond_block",
-          "text": "Save",
-          "isUndecorated": false,
-          "onClick": {
-            "name": "SelectBlockProcedure"
-          },
-          "width": 93,
-          "height": 20,
-          "x": 168,
-          "y": 134
+          "name": "dirtCheck",
+          "text": "Dirt?",
+          "x": 159,
+          "y": 71
         }
       },
       {
-        "type": "textfield",
+        "type": "checkbox",
         "data": {
-          "placeholder": "Input Block Name",
-          "name": "input",
-          "width": 120,
-          "height": 20,
-          "x": 150,
-          "y": 89
+          "name": "stoneCheck",
+          "text": "Stone?",
+          "x": 222,
+          "y": 71
         }
       }
     ],
+    "onClosed": {
+      "name": "SelectBlockProcedure"
+    },
     "gridSettings": {
       "sx": 18,
       "sy": 18,

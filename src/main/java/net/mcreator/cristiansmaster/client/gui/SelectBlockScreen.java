@@ -1,20 +1,15 @@
 package net.mcreator.cristiansmaster.client.gui;
 
-import net.neoforged.neoforge.network.PacketDistributor;
-
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
-import net.minecraft.client.gui.components.EditBox;
-import net.minecraft.client.gui.components.Button;
+import net.minecraft.client.gui.components.Checkbox;
 import net.minecraft.client.gui.GuiGraphics;
-import net.minecraft.client.Minecraft;
 
 import net.mcreator.cristiansmaster.world.inventory.SelectBlockMenu;
-import net.mcreator.cristiansmaster.network.SelectBlockButtonMessage;
 
 import java.util.HashMap;
 
@@ -25,8 +20,8 @@ public class SelectBlockScreen extends AbstractContainerScreen<SelectBlockMenu> 
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
-	EditBox input;
-	Button button_diamond_block;
+	Checkbox dirtCheck;
+	Checkbox stoneCheck;
 
 	public SelectBlockScreen(SelectBlockMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -45,7 +40,6 @@ public class SelectBlockScreen extends AbstractContainerScreen<SelectBlockMenu> 
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
 		this.renderBackground(guiGraphics, mouseX, mouseY, partialTicks);
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
-		input.render(guiGraphics, mouseX, mouseY, partialTicks);
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
 	}
 
@@ -64,16 +58,7 @@ public class SelectBlockScreen extends AbstractContainerScreen<SelectBlockMenu> 
 			this.minecraft.player.closeContainer();
 			return true;
 		}
-		if (input.isFocused())
-			return input.keyPressed(key, b, c);
 		return super.keyPressed(key, b, c);
-	}
-
-	@Override
-	public void resize(Minecraft minecraft, int width, int height) {
-		String inputValue = input.getValue();
-		super.resize(minecraft, width, height);
-		input.setValue(inputValue);
 	}
 
 	@Override
@@ -84,36 +69,15 @@ public class SelectBlockScreen extends AbstractContainerScreen<SelectBlockMenu> 
 	@Override
 	public void init() {
 		super.init();
-		input = new EditBox(this.font, this.leftPos + 25, this.topPos + 53, 118, 18, Component.translatable("gui.cristian_s_master.select_block.input")) {
-			@Override
-			public void insertText(String text) {
-				super.insertText(text);
-				if (getValue().isEmpty())
-					setSuggestion(Component.translatable("gui.cristian_s_master.select_block.input").getString());
-				else
-					setSuggestion(null);
-			}
+		dirtCheck = Checkbox.builder(Component.translatable("gui.cristian_s_master.select_block.dirtCheck"), this.font).pos(this.leftPos + 33, this.topPos + 34)
 
-			@Override
-			public void moveCursorTo(int pos, boolean flag) {
-				super.moveCursorTo(pos, flag);
-				if (getValue().isEmpty())
-					setSuggestion(Component.translatable("gui.cristian_s_master.select_block.input").getString());
-				else
-					setSuggestion(null);
-			}
-		};
-		input.setMaxLength(32767);
-		input.setSuggestion(Component.translatable("gui.cristian_s_master.select_block.input").getString());
-		guistate.put("text:input", input);
-		this.addWidget(this.input);
-		button_diamond_block = Button.builder(Component.translatable("gui.cristian_s_master.select_block.button_diamond_block"), e -> {
-			if (true) {
-				PacketDistributor.sendToServer(new SelectBlockButtonMessage(0, x, y, z));
-				SelectBlockButtonMessage.handleButtonAction(entity, 0, x, y, z);
-			}
-		}).bounds(this.leftPos + 42, this.topPos + 97, 93, 20).build();
-		guistate.put("button:button_diamond_block", button_diamond_block);
-		this.addRenderableWidget(button_diamond_block);
+				.build();
+		guistate.put("checkbox:dirtCheck", dirtCheck);
+		this.addRenderableWidget(dirtCheck);
+		stoneCheck = Checkbox.builder(Component.translatable("gui.cristian_s_master.select_block.stoneCheck"), this.font).pos(this.leftPos + 96, this.topPos + 34)
+
+				.build();
+		guistate.put("checkbox:stoneCheck", stoneCheck);
+		this.addRenderableWidget(stoneCheck);
 	}
 }

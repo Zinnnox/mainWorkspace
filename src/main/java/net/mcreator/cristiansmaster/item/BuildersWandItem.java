@@ -23,7 +23,7 @@ public class BuildersWandItem extends Item {
 	@Override
 	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
 		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
-		BuildersWandRightclickedProcedure.execute(entity.getX(), entity.getY(), entity.getZ(), entity);
+		BuildersWandRightclickedProcedure.execute(entity);
 		return ar;
 	}
 

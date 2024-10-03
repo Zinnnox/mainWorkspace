@@ -1430,19 +1430,6 @@
       "path": "~/MedievalFantasy"
     },
     {
-      "name": "MagicExampleDisplay",
-      "type": "overlay",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "magic_example_display",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/cristiansmaster/client/screens/MagicExampleDisplayOverlay.java"
-        ]
-      },
-      "path": "~/MedievalFantasy"
-    },
-    {
       "name": "SpawnSillyGooseCheck",
       "type": "procedure",
       "compiles": true,
@@ -2660,8 +2647,7 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/cristiansmaster/client/gui/SelectBlockScreen.java",
-          "src/main/java/net/mcreator/cristiansmaster/world/inventory/SelectBlockMenu.java",
-          "src/main/java/net/mcreator/cristiansmaster/network/SelectBlockButtonMessage.java"
+          "src/main/java/net/mcreator/cristiansmaster/world/inventory/SelectBlockMenu.java"
         ]
       },
       "path": "~/BuildersWand"
@@ -2832,22 +2818,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -3192,13 +3162,14 @@
       "effect.cristian_s_master.randomize_mob_height_effect": "Randomize Mob Height Effect",
       "key.cristian_s_master.ironcladspawned": "Shoot Iceshard",
       "entity.cristian_s_master.hello": "Hello",
+      "gui.cristian_s_master.select_block.stoneCheck": "Stone?",
       "key.cristian_s_master.shoot_iceshard": "Shoot Iceshard",
       "subtitles.vanished": "",
       "subtitles.ironcladambient": "",
       "entity.cristian_s_master.maryann_the_slime": "Maryann The Slime",
-      "gui.cristian_s_master.magic_example_display.label_ok": "ok",
       "subtitles.reappear": "",
       "subtitles.evil_laugh": "",
+      "gui.cristian_s_master.select_block.dirtCheck": "Dirt?",
       "key.cristian_s_master.key_pressed_space": "Is Space Pressed",
       "subtitles.phoenixcry": "",
       "entity.cristian_s_master.ironclad": "Ironclad",

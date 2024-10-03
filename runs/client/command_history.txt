@@ -30,3 +30,7 @@
 /gamemode survival
 /attribute Dev neoforge:creative_flight base set 1
 /attribute Dev neoforge:creative_flight base set 0
+/gamemode survival
+/weather clear
+/gamemode crea
+/gamemode creative

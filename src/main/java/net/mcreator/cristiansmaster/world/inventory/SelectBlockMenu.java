@@ -16,6 +16,7 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.cristiansmaster.procedures.SelectBlockProcedureProcedure;
 import net.mcreator.cristiansmaster.init.CristianSMasterModMenus;
 
 import java.util.function.Supplier;
@@ -66,6 +67,12 @@ public class SelectBlockMenu extends AbstractContainerMenu implements Supplier<M
 	@Override
 	public ItemStack quickMoveStack(Player playerIn, int index) {
 		return ItemStack.EMPTY;
+	}
+
+	@Override
+	public void removed(Player playerIn) {
+		super.removed(playerIn);
+		SelectBlockProcedureProcedure.execute(entity, guistate);
 	}
 
 	public Map<Integer, Slot> get() {

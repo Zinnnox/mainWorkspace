@@ -35,7 +35,7 @@ public class ManaDisplayOverlay {
 		if (true) {
 			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
 
-					DisplayManaOverlayProcedure.execute(world), 16, h - 38, -16737793, false);
+					DisplayManaOverlayProcedure.execute(world), -2, h - 254, -16737793, false);
 		}
 	}
 }

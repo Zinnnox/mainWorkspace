@@ -54,6 +54,10 @@ public record FillWithBuildersWandMessage(int eventType, int pressedms) implemen
 
 			FillWithBuildersWandOnKeyPressedProcedure.execute(world, x, y, z, entity);
 		}
+		if (type == 1) {
+
+			FillWithBuildersWandOnKeyPressedProcedure.execute(world, x, y, z, entity);
+		}
 	}
 
 	@SubscribeEvent

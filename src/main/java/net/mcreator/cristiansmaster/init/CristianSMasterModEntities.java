@@ -16,6 +16,7 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.core.registries.Registries;
 
+import net.mcreator.cristiansmaster.entity.TwocolorEntity;
 import net.mcreator.cristiansmaster.entity.TornadoEntity;
 import net.mcreator.cristiansmaster.entity.TheBOMBEntity;
 import net.mcreator.cristiansmaster.entity.ShootToSpawnPortalEntity;
@@ -87,6 +88,8 @@ public class CristianSMasterModEntities {
 			EntityType.Builder.<OutlineEntity>of(OutlineEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
 					.sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<TwocolorEntity>> TWOCOLOR = register("twocolor",
+			EntityType.Builder.<TwocolorEntity>of(TwocolorEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().sized(0.6f, 1.8f));
 
 	private static <T extends Entity> DeferredHolder<EntityType<?>, EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -102,6 +105,7 @@ public class CristianSMasterModEntities {
 		PopEntity.init(event);
 		BigGuyEntity.init(event);
 		OutlineEntity.init(event);
+		TwocolorEntity.init(event);
 	}
 
 	@SubscribeEvent
@@ -114,5 +118,6 @@ public class CristianSMasterModEntities {
 		event.put(POP.get(), PopEntity.createAttributes().build());
 		event.put(BIG_GUY.get(), BigGuyEntity.createAttributes().build());
 		event.put(OUTLINE.get(), OutlineEntity.createAttributes().build());
+		event.put(TWOCOLOR.get(), TwocolorEntity.createAttributes().build());
 	}
 }
