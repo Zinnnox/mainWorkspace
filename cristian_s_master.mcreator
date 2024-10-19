@@ -1237,28 +1237,7 @@
         "files": [
           "src/main/java/net/mcreator/cristiansmaster/procedures/FairyDustCheckProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/MedievalFantasy"
     },
@@ -3140,8 +3119,8 @@
       "item.cristian_s_master.wyrm_potion": "Wyrm Potion",
       "item.cristian_s_master.burnt_pheonix_feathter": "Burnt Pheonix Feather",
       "key.cristian_s_master.open_gui_builders_wand": "Open Gui Builders Wand",
-      "item.minecraft.tipped_arrow.effect.xray_potion": "Arrow of XRay",
       "key.cristian_s_master.shoot_fireball": "Shoot Fireball",
+      "item.minecraft.tipped_arrow.effect.xray_potion": "Arrow of XRay",
       "item.cristian_s_master.scrap_metal": "Scrap Metal",
       "item.cristian_s_master.ant_man_watch": "Ant Man Watch",
       "item.cristian_s_master.magic_armor_helmet": "Magic Armor Helmet",
@@ -3159,8 +3138,8 @@
       "item.cristian_s_master.maryann_the_slime_spawn_egg": "Maryann The Slime Spawn Egg",
       "item.cristian_s_master.twocolor_spawn_egg": "two-color Spawn Egg",
       "gui.cristian_s_master.select_block.button_dirt": "Dirt",
-      "item.cristian_s_master.dragon_spawn_egg": "Dragon Spawn Egg",
       "gui.cristian_s_master.guiforreplicatro.button_diamond": "diamond",
+      "item.cristian_s_master.dragon_spawn_egg": "Dragon Spawn Egg",
       "item.minecraft.splash_potion.effect.randomizer_potion": "Splash Randomizer Potion",
       "subtitles.magicmirrorvanish": "",
       "entity.cristian_s_master.big_guy": "Big Guy",

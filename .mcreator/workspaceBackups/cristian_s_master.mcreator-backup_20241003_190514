@@ -2590,18 +2590,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
           }
         ]
       },
@@ -2769,6 +2757,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -2806,6 +2810,22 @@
         ]
       },
       "path": "~/Alexa"
+    },
+    {
+      "name": "Twocolor",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "twocolor",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cristian_s_master/neoforge/biome_modifier/twocolor_biome_modifier.json",
+          "src/main/java/net/mcreator/cristiansmaster/client/renderer/TwocolorRenderer.java",
+          "src/main/resources/assets/cristian_s_master/models/item/twocolor_spawn_egg.json",
+          "src/main/java/net/mcreator/cristiansmaster/entity/TwocolorEntity.java"
+        ]
+      },
+      "path": "~/two-color"
     }
   ],
   "variable_elements": [
@@ -3120,8 +3140,8 @@
       "item.cristian_s_master.wyrm_potion": "Wyrm Potion",
       "item.cristian_s_master.burnt_pheonix_feathter": "Burnt Pheonix Feather",
       "key.cristian_s_master.open_gui_builders_wand": "Open Gui Builders Wand",
-      "key.cristian_s_master.shoot_fireball": "Shoot Fireball",
       "item.minecraft.tipped_arrow.effect.xray_potion": "Arrow of XRay",
+      "key.cristian_s_master.shoot_fireball": "Shoot Fireball",
       "item.cristian_s_master.scrap_metal": "Scrap Metal",
       "item.cristian_s_master.ant_man_watch": "Ant Man Watch",
       "item.cristian_s_master.magic_armor_helmet": "Magic Armor Helmet",
@@ -3137,9 +3157,10 @@
       "item.cristian_s_master.flying_carpet": "Flying Carpet",
       "item.cristian_s_master.phoenix_feather": "Phoenix Feather",
       "item.cristian_s_master.maryann_the_slime_spawn_egg": "Maryann The Slime Spawn Egg",
+      "item.cristian_s_master.twocolor_spawn_egg": "two-color Spawn Egg",
       "gui.cristian_s_master.select_block.button_dirt": "Dirt",
-      "gui.cristian_s_master.guiforreplicatro.button_diamond": "diamond",
       "item.cristian_s_master.dragon_spawn_egg": "Dragon Spawn Egg",
+      "gui.cristian_s_master.guiforreplicatro.button_diamond": "diamond",
       "item.minecraft.splash_potion.effect.randomizer_potion": "Splash Randomizer Potion",
       "subtitles.magicmirrorvanish": "",
       "entity.cristian_s_master.big_guy": "Big Guy",
@@ -3200,6 +3221,7 @@
       "item.cristian_s_master.magic_mirror": "Magic Mirror",
       "entity.cristian_s_master.outline": "Outline",
       "item.cristian_s_master.new_portal_gun": "New Portal Gun",
+      "entity.cristian_s_master.twocolor": "two-color",
       "item.cristian_s_master.cloaking_device": "Cloaking Device",
       "item.cristian_s_master.magic_armor_leggings": "Magic Armor Leggings",
       "key.cristian_s_master.spawn_sillygoose": "Spawn SILLYGOOSE"
@@ -3259,6 +3281,10 @@
       },
       {
         "name": "Alexa",
+        "children": []
+      },
+      {
+        "name": "two-color",
         "children": []
       }
     ]
