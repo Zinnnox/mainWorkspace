@@ -19,13 +19,11 @@ import net.minecraft.core.registries.Registries;
 import net.mcreator.cristiansmaster.entity.TwocolorEntity;
 import net.mcreator.cristiansmaster.entity.TornadoEntity;
 import net.mcreator.cristiansmaster.entity.TheBOMBEntity;
-import net.mcreator.cristiansmaster.entity.ShootToSpawnPortalEntity;
-import net.mcreator.cristiansmaster.entity.PortalprojectileEntity;
+import net.mcreator.cristiansmaster.entity.PortalShootToPlaceEntity;
 import net.mcreator.cristiansmaster.entity.PopEntity;
 import net.mcreator.cristiansmaster.entity.OutlineEntity;
 import net.mcreator.cristiansmaster.entity.MaryannTheSlimeEntity;
 import net.mcreator.cristiansmaster.entity.MagicalDartEntity;
-import net.mcreator.cristiansmaster.entity.LightsaberProjectileEntity;
 import net.mcreator.cristiansmaster.entity.IroncladEntity;
 import net.mcreator.cristiansmaster.entity.IceshardEntity;
 import net.mcreator.cristiansmaster.entity.HelloEntity;
@@ -45,12 +43,6 @@ public class CristianSMasterModEntities {
 					.sized(0.6f, 1.8f));
 	public static final DeferredHolder<EntityType<?>, EntityType<EntityFromSwordProjectileEntity>> ENTITY_FROM_SWORD_PROJECTILE = register("entity_from_sword_projectile",
 			EntityType.Builder.<EntityFromSwordProjectileEntity>of(EntityFromSwordProjectileEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final DeferredHolder<EntityType<?>, EntityType<ShootToSpawnPortalEntity>> SHOOT_TO_SPAWN_PORTAL = register("shoot_to_spawn_portal",
-			EntityType.Builder.<ShootToSpawnPortalEntity>of(ShootToSpawnPortalEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final DeferredHolder<EntityType<?>, EntityType<LightsaberProjectileEntity>> LIGHTSABER_PROJECTILE = register("lightsaber_projectile",
-			EntityType.Builder.<LightsaberProjectileEntity>of(LightsaberProjectileEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final DeferredHolder<EntityType<?>, EntityType<PortalprojectileEntity>> PORTALPROJECTILE = register("portalprojectile",
-			EntityType.Builder.<PortalprojectileEntity>of(PortalprojectileEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final DeferredHolder<EntityType<?>, EntityType<MaryannTheSlimeEntity>> MARYANN_THE_SLIME = register("maryann_the_slime",
 			EntityType.Builder.<MaryannTheSlimeEntity>of(MaryannTheSlimeEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
@@ -90,6 +82,8 @@ public class CristianSMasterModEntities {
 					.sized(0.6f, 1.8f));
 	public static final DeferredHolder<EntityType<?>, EntityType<TwocolorEntity>> TWOCOLOR = register("twocolor",
 			EntityType.Builder.<TwocolorEntity>of(TwocolorEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<PortalShootToPlaceEntity>> PORTAL_SHOOT_TO_PLACE = register("portal_shoot_to_place",
+			EntityType.Builder.<PortalShootToPlaceEntity>of(PortalShootToPlaceEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> DeferredHolder<EntityType<?>, EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));

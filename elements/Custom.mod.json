@@ -1,0 +1,11 @@
+{
+  "_fv": 66,
+  "_type": "tab",
+  "definition": {
+    "name": "Custom",
+    "icon": {
+      "value": "CUSTOM:ShootTheExplodingProjectileItem"
+    },
+    "showSearch": true
+  }
+}

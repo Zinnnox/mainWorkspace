@@ -2612,7 +2612,7 @@
     {
       "name": "PortalShootToPlace",
       "type": "projectile",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "portal_shoot_to_place",
       "metadata": {
@@ -2631,20 +2631,6 @@
       "metadata": {
         "files": []
       }
-    },
-    {
-      "name": "PortalShooter",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "portal_shooter",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/cristian_s_master/models/item/portal_shooter.json",
-          "src/main/java/net/mcreator/cristiansmaster/item/PortalShooterItem.java"
-        ]
-      },
-      "path": "~/PortalGunFromPortal"
     }
   ],
   "variable_elements": [
@@ -2951,7 +2937,6 @@
       "item.cristian_s_master.nerf_gun": "Nerf Gun",
       "item.cristian_s_master.fairy_dust": "Fairy Dust",
       "item.cristian_s_master.teleporter_button": "Teleporter Button",
-      "item.cristian_s_master.portal_shooter": "Portal Shooter",
       "entity.cristian_s_master.pop": "Pop",
       "subtitles.iceshard": "",
       "item.minecraft.lingering_potion.effect.randomizer_potion": "Lingering Randomizer Potion",

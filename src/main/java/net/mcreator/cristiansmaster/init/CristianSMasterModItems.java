@@ -30,18 +30,16 @@ import net.mcreator.cristiansmaster.item.SpawnerAnvilItem;
 import net.mcreator.cristiansmaster.item.ShootTheExplodingProjectileItemItem;
 import net.mcreator.cristiansmaster.item.ScrapMetalItem;
 import net.mcreator.cristiansmaster.item.RocketLauncherItem;
+import net.mcreator.cristiansmaster.item.PortalShooterItem;
 import net.mcreator.cristiansmaster.item.PhoenixFeatherItem;
 import net.mcreator.cristiansmaster.item.OPAxeItem;
 import net.mcreator.cristiansmaster.item.NukerAxeItem;
-import net.mcreator.cristiansmaster.item.NewPortalGunItem;
 import net.mcreator.cristiansmaster.item.NewDimensionItem;
 import net.mcreator.cristiansmaster.item.NerfGunItem;
 import net.mcreator.cristiansmaster.item.NerfGun2Item;
-import net.mcreator.cristiansmaster.item.MoonDimensionPortalGunItem;
 import net.mcreator.cristiansmaster.item.MiningLaserItem;
 import net.mcreator.cristiansmaster.item.MagicMirrorItem;
 import net.mcreator.cristiansmaster.item.MagicArmorItem;
-import net.mcreator.cristiansmaster.item.LightsaberItem;
 import net.mcreator.cristiansmaster.item.IdontknowItem;
 import net.mcreator.cristiansmaster.item.HeloItem;
 import net.mcreator.cristiansmaster.item.GrimoireItem;
@@ -65,10 +63,7 @@ public class CristianSMasterModItems {
 	public static final DeferredHolder<Item, Item> MINING_LASER = REGISTRY.register("mining_laser", MiningLaserItem::new);
 	public static final DeferredHolder<Item, Item> TELEPORTER = REGISTRY.register("teleporter", TeleporterItem::new);
 	public static final DeferredHolder<Item, Item> CLOAKING_DEVICE = REGISTRY.register("cloaking_device", CloakingDeviceItem::new);
-	public static final DeferredHolder<Item, Item> MOON_DIMENSION_PORTAL_GUN = REGISTRY.register("moon_dimension_portal_gun", MoonDimensionPortalGunItem::new);
-	public static final DeferredHolder<Item, Item> LIGHTSABER = REGISTRY.register("lightsaber", LightsaberItem::new);
 	public static final DeferredHolder<Item, Item> NEW_DIMENSION = REGISTRY.register("new_dimension", NewDimensionItem::new);
-	public static final DeferredHolder<Item, Item> NEW_PORTAL_GUN = REGISTRY.register("new_portal_gun", NewPortalGunItem::new);
 	public static final DeferredHolder<Item, Item> MARYANN_THE_SLIME_SPAWN_EGG = REGISTRY.register("maryann_the_slime_spawn_egg",
 			() -> new DeferredSpawnEggItem(CristianSMasterModEntities.MARYANN_THE_SLIME, -10027162, -13434829, new Item.Properties()));
 	public static final DeferredHolder<Item, Item> HELLO_SPAWN_EGG = REGISTRY.register("hello_spawn_egg", () -> new DeferredSpawnEggItem(CristianSMasterModEntities.HELLO, -1, -1, new Item.Properties()));
@@ -107,6 +102,9 @@ public class CristianSMasterModItems {
 	public static final DeferredHolder<Item, Item> BUILDERS_WAND = REGISTRY.register("builders_wand", BuildersWandItem::new);
 	public static final DeferredHolder<Item, Item> FLYING_CARPET = REGISTRY.register("flying_carpet", FlyingCarpetItem::new);
 	public static final DeferredHolder<Item, Item> TWOCOLOR_SPAWN_EGG = REGISTRY.register("twocolor_spawn_egg", () -> new DeferredSpawnEggItem(CristianSMasterModEntities.TWOCOLOR, -1, -1, new Item.Properties()));
+	public static final DeferredHolder<Item, Item> PORTAL_ORANGE = block(CristianSMasterModBlocks.PORTAL_ORANGE);
+	public static final DeferredHolder<Item, Item> PORTAL_BLUE = block(CristianSMasterModBlocks.PORTAL_BLUE);
+	public static final DeferredHolder<Item, Item> PORTAL_SHOOTER = REGISTRY.register("portal_shooter", PortalShooterItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items

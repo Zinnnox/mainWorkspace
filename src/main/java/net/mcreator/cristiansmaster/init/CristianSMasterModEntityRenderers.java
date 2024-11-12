@@ -31,9 +31,6 @@ public class CristianSMasterModEntityRenderers {
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
 		event.registerEntityRenderer(CristianSMasterModEntities.DRAGON.get(), DragonRenderer::new);
 		event.registerEntityRenderer(CristianSMasterModEntities.ENTITY_FROM_SWORD_PROJECTILE.get(), EntityFromSwordProjectileRenderer::new);
-		event.registerEntityRenderer(CristianSMasterModEntities.SHOOT_TO_SPAWN_PORTAL.get(), ThrownItemRenderer::new);
-		event.registerEntityRenderer(CristianSMasterModEntities.LIGHTSABER_PROJECTILE.get(), ThrownItemRenderer::new);
-		event.registerEntityRenderer(CristianSMasterModEntities.PORTALPROJECTILE.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(CristianSMasterModEntities.MARYANN_THE_SLIME.get(), MaryannTheSlimeRenderer::new);
 		event.registerEntityRenderer(CristianSMasterModEntities.HELLO.get(), HelloRenderer::new);
 		event.registerEntityRenderer(CristianSMasterModEntities.ICESHARD.get(), IceshardRenderer::new);
@@ -47,5 +44,6 @@ public class CristianSMasterModEntityRenderers {
 		event.registerEntityRenderer(CristianSMasterModEntities.BIG_GUY.get(), BigGuyRenderer::new);
 		event.registerEntityRenderer(CristianSMasterModEntities.OUTLINE.get(), OutlineRenderer::new);
 		event.registerEntityRenderer(CristianSMasterModEntities.TWOCOLOR.get(), TwocolorRenderer::new);
+		event.registerEntityRenderer(CristianSMasterModEntities.PORTAL_SHOOT_TO_PLACE.get(), ThrownItemRenderer::new);
 	}
 }

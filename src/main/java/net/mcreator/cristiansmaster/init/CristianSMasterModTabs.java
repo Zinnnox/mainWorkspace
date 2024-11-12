@@ -5,12 +5,15 @@
 package net.mcreator.cristiansmaster.init;
 
 import net.neoforged.neoforge.registries.DeferredRegister;
+import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.Registries;
 
 import net.mcreator.cristiansmaster.CristianSMasterMod;
@@ -18,6 +21,10 @@ import net.mcreator.cristiansmaster.CristianSMasterMod;
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public class CristianSMasterModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, CristianSMasterMod.MODID);
+	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> CUSTOM = REGISTRY.register("custom",
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.cristian_s_master.custom")).icon(() -> new ItemStack(CristianSMasterModItems.SHOOT_THE_EXPLODING_PROJECTILE_ITEM.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(CristianSMasterModItems.PORTAL_SHOOTER.get());
+			}).withSearchBar().build());
 
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
@@ -26,7 +33,6 @@ public class CristianSMasterModTabs {
 		} else if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
 			tabData.accept(CristianSMasterModItems.SWORD_THAT_SHOOTS.get());
 			tabData.accept(CristianSMasterModItems.ANT_MAN_WATCH.get());
-			tabData.accept(CristianSMasterModItems.LIGHTSABER.get());
 			tabData.accept(CristianSMasterModItems.GRIMOIRE.get());
 			tabData.accept(CristianSMasterModItems.MAGIC_MIRROR.get());
 			tabData.accept(CristianSMasterModItems.MAGIC_ARMOR_HELMET.get());
@@ -55,9 +61,7 @@ public class CristianSMasterModTabs {
 			tabData.accept(CristianSMasterModItems.MINING_LASER.get());
 			tabData.accept(CristianSMasterModItems.TELEPORTER.get());
 			tabData.accept(CristianSMasterModItems.CLOAKING_DEVICE.get());
-			tabData.accept(CristianSMasterModItems.MOON_DIMENSION_PORTAL_GUN.get());
 			tabData.accept(CristianSMasterModItems.NEW_DIMENSION.get());
-			tabData.accept(CristianSMasterModItems.NEW_PORTAL_GUN.get());
 			tabData.accept(CristianSMasterModItems.HELO.get());
 			tabData.accept(CristianSMasterModItems.BIO_SCANNER.get());
 			tabData.accept(CristianSMasterModItems.WIND_STAFF.get());

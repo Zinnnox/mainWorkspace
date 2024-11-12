@@ -403,6 +403,140 @@
       }
     },
     {
+      "name": "MoonDimension",
+      "type": "dimension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "moon_dimension",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cristian_s_master/dimension/moon_dimension.json",
+          "src/main/java/net/mcreator/cristiansmaster/world/teleporter/MoonDimensionPortalShape.java",
+          "src/main/resources/data/cristian_s_master/dimension_type/moon_dimension.json",
+          "src/main/java/net/mcreator/cristiansmaster/world/dimension/MoonDimensionDimension.java",
+          "src/main/resources/assets/cristian_s_master/models/block/moon_dimension_portal_ew.json",
+          "src/main/java/net/mcreator/cristiansmaster/block/MoonDimensionPortalBlock.java",
+          "src/main/resources/assets/cristian_s_master/models/block/moon_dimension_portal_ns.json",
+          "src/main/resources/assets/cristian_s_master/blockstates/moon_dimension_portal.json",
+          "src/main/java/net/mcreator/cristiansmaster/world/teleporter/MoonDimensionTeleporter.java"
+        ]
+      }
+    },
+    {
+      "name": "MoonDimensionPortalGun",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "moon_dimension_portal_gun",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/item/MoonDimensionPortalGunItem.java",
+          "src/main/resources/assets/cristian_s_master/models/item/moon_dimension_portal_gun.json"
+        ]
+      }
+    },
+    {
+      "name": "MoonDimensionPortalGunRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "moon_dimension_portal_gun_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/MoonDimensionPortalGunRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ShootToSpawnPortalProjectileHitsBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shoot_to_spawn_portal_projectile_hits_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/ShootToSpawnPortalProjectileHitsBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ShootToSpawnPortal",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shoot_to_spawn_portal",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/entity/ShootToSpawnPortalEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "LightsaberProjectile",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lightsaber_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/entity/LightsaberProjectileEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "Lightsaber",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lightsaber",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cristian_s_master/models/item/lightsaber.json",
+          "src/main/java/net/mcreator/cristiansmaster/item/LightsaberItem.java"
+        ]
+      }
+    },
+    {
       "name": "NewDimension",
       "type": "dimension",
       "compiles": true,
@@ -421,6 +555,61 @@
           "src/main/java/net/mcreator/cristiansmaster/block/NewDimensionPortalBlock.java",
           "src/main/java/net/mcreator/cristiansmaster/item/NewDimensionItem.java",
           "src/main/resources/data/cristian_s_master/dimension/new_dimension.json"
+        ]
+      }
+    },
+    {
+      "name": "NewPortalGun",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "new_portal_gun",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/item/NewPortalGunItem.java",
+          "src/main/resources/assets/cristian_s_master/models/item/new_portal_gun.json"
+        ]
+      }
+    },
+    {
+      "name": "PortalprojectileProjectileHitsBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "portalprojectile_projectile_hits_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/PortalprojectileProjectileHitsBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Portalprojectile",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "portalprojectile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/entity/PortalprojectileEntity.java"
         ]
       }
     },
@@ -481,6 +670,36 @@
           "src/main/resources/assets/cristian_s_master/models/item/hello_spawn_egg.json",
           "src/main/java/net/mcreator/cristiansmaster/client/renderer/HelloRenderer.java",
           "src/main/resources/data/cristian_s_master/neoforge/biome_modifier/hello_biome_modifier.json"
+        ]
+      }
+    },
+    {
+      "name": "Test",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/TestProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
         ]
       }
     },
@@ -1489,6 +1708,18 @@
         ]
       },
       "path": "~/MedievalFantasy"
+    },
+    {
+      "name": "TestForElyasin",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_for_elyasin",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cristian_s_master/loot_tables/chests/test_for_elyasin.json"
+        ]
+      }
     },
     {
       "name": "ExplodingProjectileProjectileHitsBlock",
@@ -2574,77 +2805,6 @@
         ]
       },
       "path": "~/two-color"
-    },
-    {
-      "name": "PortalOrange",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "portal_orange",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/cristiansmaster/block/PortalOrangeBlock.java",
-          "src/main/resources/assets/cristian_s_master/models/item/portal_orange.json",
-          "src/main/resources/assets/cristian_s_master/models/block/portal_orange.json",
-          "src/main/resources/data/cristian_s_master/loot_tables/blocks/portal_orange.json",
-          "src/main/resources/assets/cristian_s_master/blockstates/portal_orange.json"
-        ]
-      },
-      "path": "~/PortalGunFromPortal"
-    },
-    {
-      "name": "PortalBlue",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "portal_blue",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/cristian_s_master/loot_tables/blocks/portal_blue.json",
-          "src/main/resources/assets/cristian_s_master/models/item/portal_blue.json",
-          "src/main/java/net/mcreator/cristiansmaster/block/PortalBlueBlock.java",
-          "src/main/resources/assets/cristian_s_master/blockstates/portal_blue.json",
-          "src/main/resources/assets/cristian_s_master/models/block/portal_blue.json"
-        ]
-      },
-      "path": "~/PortalGunFromPortal"
-    },
-    {
-      "name": "PortalShootToPlace",
-      "type": "projectile",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "portal_shoot_to_place",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/cristiansmaster/entity/PortalShootToPlaceEntity.java"
-        ]
-      },
-      "path": "~/PortalGunFromPortal"
-    },
-    {
-      "name": "Custom",
-      "type": "tab",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "custom",
-      "metadata": {
-        "files": []
-      }
-    },
-    {
-      "name": "PortalShooter",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "portal_shooter",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/cristian_s_master/models/item/portal_shooter.json",
-          "src/main/java/net/mcreator/cristiansmaster/item/PortalShooterItem.java"
-        ]
-      },
-      "path": "~/PortalGunFromPortal"
     }
   ],
   "variable_elements": [
@@ -2929,7 +3089,8 @@
     ],
     "BLOCKS:minecraft:overworld_carver_replaceables": [
       "~Blocks.TNT",
-      "~Blocks.REINFORCED_DEEPSLATE"
+      "~Blocks.REINFORCED_DEEPSLATE",
+      "~Blocks.END_STONE"
     ],
     "ITEMS:minecraft:head_armor": [
       "~CUSTOM:MagicArmor.helmet"
@@ -2951,7 +3112,6 @@
       "item.cristian_s_master.nerf_gun": "Nerf Gun",
       "item.cristian_s_master.fairy_dust": "Fairy Dust",
       "item.cristian_s_master.teleporter_button": "Teleporter Button",
-      "item.cristian_s_master.portal_shooter": "Portal Shooter",
       "entity.cristian_s_master.pop": "Pop",
       "subtitles.iceshard": "",
       "item.minecraft.lingering_potion.effect.randomizer_potion": "Lingering Randomizer Potion",
@@ -2959,8 +3119,8 @@
       "item.cristian_s_master.wyrm_potion": "Wyrm Potion",
       "item.cristian_s_master.burnt_pheonix_feathter": "Burnt Pheonix Feather",
       "key.cristian_s_master.open_gui_builders_wand": "Open Gui Builders Wand",
-      "key.cristian_s_master.shoot_fireball": "Shoot Fireball",
       "item.minecraft.tipped_arrow.effect.xray_potion": "Arrow of XRay",
+      "key.cristian_s_master.shoot_fireball": "Shoot Fireball",
       "item.cristian_s_master.scrap_metal": "Scrap Metal",
       "item.cristian_s_master.ant_man_watch": "Ant Man Watch",
       "item.cristian_s_master.magic_armor_helmet": "Magic Armor Helmet",
@@ -2978,8 +3138,8 @@
       "item.cristian_s_master.maryann_the_slime_spawn_egg": "Maryann The Slime Spawn Egg",
       "item.cristian_s_master.twocolor_spawn_egg": "two-color Spawn Egg",
       "gui.cristian_s_master.select_block.button_dirt": "Dirt",
-      "gui.cristian_s_master.guiforreplicatro.button_diamond": "diamond",
       "item.cristian_s_master.dragon_spawn_egg": "Dragon Spawn Egg",
+      "gui.cristian_s_master.guiforreplicatro.button_diamond": "diamond",
       "item.minecraft.splash_potion.effect.randomizer_potion": "Splash Randomizer Potion",
       "subtitles.magicmirrorvanish": "",
       "entity.cristian_s_master.big_guy": "Big Guy",
@@ -2998,7 +3158,6 @@
       "subtitles.phoenixcry": "",
       "entity.cristian_s_master.ironclad": "Ironclad",
       "item.cristian_s_master.nerf_gun_2": "Nerf Gun 2",
-      "item_group.cristian_s_master.custom": "Custom",
       "item.cristian_s_master.grimoire": "Grimoire",
       "item.cristian_s_master.wall_of_ice_cast": "Wall Of Ice Cast",
       "item.cristian_s_master.hello_spawn_egg": "Hello Spawn Egg",
@@ -3010,9 +3169,7 @@
       "item.cristian_s_master.shoot_the_exploding_projectile_item": "Shoot The Exploding Projectile Item",
       "gui.cristian_s_master.mana_display.label_mana": "ManaCount",
       "entity.cristian_s_master.tornado": "Tornado",
-      "block.cristian_s_master.portal_orange": "Portal Orange",
       "item.cristian_s_master.mining_laser": "Mining Laser",
-      "block.cristian_s_master.portal_blue": "Portal Blue",
       "item.cristian_s_master.bio_scanner": "Bio Scanner",
       "key.cristian_s_master.open_backpack": "Open Backpack",
       "item.cristian_s_master.wind_staff": "Wind Staff",
@@ -3026,9 +3183,11 @@
       "item.cristian_s_master.magic_armor_chestplate": "Magic Armor Chestplate",
       "subtitles.ironcladspawn": "",
       "item.cristian_s_master.backpack": "Backpack",
+      "item.cristian_s_master.moon_dimension_portal_gun": "Moon Dimension Portal Gun",
       "subtitles.fireball": "",
       "item.cristian_s_master.new_dimension": "New Dimension Portal Igniter",
       "item.cristian_s_master.idontknow": "Idontknow",
+      "item.cristian_s_master.lightsaber": "Lightsaber",
       "item.minecraft.lingering_potion.effect.xray_potion": "Lingering Potion of XRay",
       "item.cristian_s_master.teleporter": "Teleporter",
       "entity.cristian_s_master.dragon": "Dragon",
@@ -3040,6 +3199,7 @@
       "item.minecraft.potion.effect.xray_potion": "Potion of XRay",
       "item.cristian_s_master.magic_mirror": "Magic Mirror",
       "entity.cristian_s_master.outline": "Outline",
+      "item.cristian_s_master.new_portal_gun": "New Portal Gun",
       "entity.cristian_s_master.twocolor": "two-color",
       "item.cristian_s_master.cloaking_device": "Cloaking Device",
       "item.cristian_s_master.magic_armor_leggings": "Magic Armor Leggings",
