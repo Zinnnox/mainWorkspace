@@ -19,9 +19,7 @@ import net.mcreator.cristiansmaster.client.renderer.MaryannTheSlimeRenderer;
 import net.mcreator.cristiansmaster.client.renderer.MagicalDartRenderer;
 import net.mcreator.cristiansmaster.client.renderer.IroncladRenderer;
 import net.mcreator.cristiansmaster.client.renderer.IceshardRenderer;
-import net.mcreator.cristiansmaster.client.renderer.HelloRenderer;
 import net.mcreator.cristiansmaster.client.renderer.FireballRenderer;
-import net.mcreator.cristiansmaster.client.renderer.EntityFromSwordProjectileRenderer;
 import net.mcreator.cristiansmaster.client.renderer.DragonRenderer;
 import net.mcreator.cristiansmaster.client.renderer.BigGuyRenderer;
 
@@ -30,9 +28,7 @@ public class CristianSMasterModEntityRenderers {
 	@SubscribeEvent
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
 		event.registerEntityRenderer(CristianSMasterModEntities.DRAGON.get(), DragonRenderer::new);
-		event.registerEntityRenderer(CristianSMasterModEntities.ENTITY_FROM_SWORD_PROJECTILE.get(), EntityFromSwordProjectileRenderer::new);
 		event.registerEntityRenderer(CristianSMasterModEntities.MARYANN_THE_SLIME.get(), MaryannTheSlimeRenderer::new);
-		event.registerEntityRenderer(CristianSMasterModEntities.HELLO.get(), HelloRenderer::new);
 		event.registerEntityRenderer(CristianSMasterModEntities.ICESHARD.get(), IceshardRenderer::new);
 		event.registerEntityRenderer(CristianSMasterModEntities.FIREBALL.get(), FireballRenderer::new);
 		event.registerEntityRenderer(CristianSMasterModEntities.IRONCLAD.get(), IroncladRenderer::new);

@@ -13,13 +13,11 @@ import net.mcreator.cristiansmaster.block.TNTDimensionPortalBlock;
 import net.mcreator.cristiansmaster.block.PortalOrangeBlock;
 import net.mcreator.cristiansmaster.block.PortalBlueBlock;
 import net.mcreator.cristiansmaster.block.NewDimensionPortalBlock;
-import net.mcreator.cristiansmaster.block.JorBlock;
 import net.mcreator.cristiansmaster.CristianSMasterMod;
 
 public class CristianSMasterModBlocks {
 	public static final DeferredRegister.Blocks REGISTRY = DeferredRegister.createBlocks(CristianSMasterMod.MODID);
 	public static final DeferredHolder<Block, Block> NEW_DIMENSION_PORTAL = REGISTRY.register("new_dimension_portal", NewDimensionPortalBlock::new);
-	public static final DeferredHolder<Block, Block> REPLICATOR = REGISTRY.register("replicator", JorBlock::new);
 	public static final DeferredHolder<Block, Block> TNT_DIMENSION_PORTAL = REGISTRY.register("tnt_dimension_portal", TNTDimensionPortalBlock::new);
 	public static final DeferredHolder<Block, Block> PORTAL_ORANGE = REGISTRY.register("portal_orange", PortalOrangeBlock::new);
 	public static final DeferredHolder<Block, Block> PORTAL_BLUE = REGISTRY.register("portal_blue", PortalBlueBlock::new);

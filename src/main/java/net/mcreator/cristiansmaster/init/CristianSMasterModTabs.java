@@ -28,12 +28,8 @@ public class CristianSMasterModTabs {
 
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
-		if (tabData.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
-			tabData.accept(CristianSMasterModBlocks.REPLICATOR.get().asItem());
-		} else if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
-			tabData.accept(CristianSMasterModItems.SWORD_THAT_SHOOTS.get());
+		if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
 			tabData.accept(CristianSMasterModItems.ANT_MAN_WATCH.get());
-			tabData.accept(CristianSMasterModItems.GRIMOIRE.get());
 			tabData.accept(CristianSMasterModItems.MAGIC_MIRROR.get());
 			tabData.accept(CristianSMasterModItems.MAGIC_ARMOR_HELMET.get());
 			tabData.accept(CristianSMasterModItems.MAGIC_ARMOR_CHESTPLATE.get());
@@ -48,21 +44,17 @@ public class CristianSMasterModTabs {
 		} else if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
 			tabData.accept(CristianSMasterModItems.DRAGON_SPAWN_EGG.get());
 			tabData.accept(CristianSMasterModItems.MARYANN_THE_SLIME_SPAWN_EGG.get());
-			tabData.accept(CristianSMasterModItems.HELLO_SPAWN_EGG.get());
 			tabData.accept(CristianSMasterModItems.IRONCLAD_SPAWN_EGG.get());
 			tabData.accept(CristianSMasterModItems.TORNADO_SPAWN_EGG.get());
 			tabData.accept(CristianSMasterModItems.POP_SPAWN_EGG.get());
 			tabData.accept(CristianSMasterModItems.BIG_GUY_SPAWN_EGG.get());
 			tabData.accept(CristianSMasterModItems.OUTLINE_SPAWN_EGG.get());
 			tabData.accept(CristianSMasterModItems.TWOCOLOR_SPAWN_EGG.get());
-		} else if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-			tabData.accept(CristianSMasterModItems.SCRAP_METAL.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(CristianSMasterModItems.MINING_LASER.get());
 			tabData.accept(CristianSMasterModItems.TELEPORTER.get());
 			tabData.accept(CristianSMasterModItems.CLOAKING_DEVICE.get());
 			tabData.accept(CristianSMasterModItems.NEW_DIMENSION.get());
-			tabData.accept(CristianSMasterModItems.HELO.get());
 			tabData.accept(CristianSMasterModItems.BIO_SCANNER.get());
 			tabData.accept(CristianSMasterModItems.WIND_STAFF.get());
 			tabData.accept(CristianSMasterModItems.TNT_DIMENSION.get());

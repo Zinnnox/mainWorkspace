@@ -16,7 +16,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/RideableDragon"
     },
     {
       "name": "KeyPressedSpace",
@@ -28,7 +29,8 @@
         "files": [
           "src/main/java/net/mcreator/cristiansmaster/network/KeyPressedSpaceMessage.java"
         ]
-      }
+      },
+      "path": "~/RideableDragon"
     },
     {
       "name": "DragonOnEntityTickUpdate",
@@ -50,7 +52,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/RideableDragon"
     },
     {
       "name": "Dragon",
@@ -65,7 +68,8 @@
           "src/main/java/net/mcreator/cristiansmaster/client/renderer/DragonRenderer.java",
           "src/main/resources/data/cristian_s_master/neoforge/biome_modifier/dragon_biome_modifier.json"
         ]
-      }
+      },
+      "path": "~/RideableDragon"
     },
     {
       "name": "KeyPressedSpaceOnKeyReleased",
@@ -83,94 +87,8 @@
             "type": "world"
           }
         ]
-      }
-    },
-    {
-      "name": "SwordThatShootsEntitySwingsItem",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sword_that_shoots_entity_swings_item",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/cristiansmaster/procedures/SwordThatShootsEntitySwingsItemProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
-    },
-    {
-      "name": "SwordThatShoots",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sword_that_shoots",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/cristiansmaster/item/SwordThatShootsItem.java",
-          "src/main/resources/assets/cristian_s_master/models/item/sword_that_shoots.json"
-        ]
-      }
-    },
-    {
-      "name": "EntityFromSwordProjectile",
-      "type": "projectile",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "entity_from_sword_projectile",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/cristiansmaster/entity/EntityFromSwordProjectileEntity.java",
-          "src/main/java/net/mcreator/cristiansmaster/client/renderer/EntityFromSwordProjectileRenderer.java"
-        ]
-      }
-    },
-    {
-      "name": "NukerAxeEntitySwingsItem",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "nuker_axe_entity_swings_item",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/cristiansmaster/procedures/NukerAxeEntitySwingsItemProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "NukerAxe",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "nuker_axe",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/cristian_s_master/models/item/nuker_axe.json",
-          "src/main/java/net/mcreator/cristiansmaster/item/NukerAxeItem.java"
-        ]
-      }
+      },
+      "path": "~/RideableDragon"
     },
     {
       "name": "RandomizeHeightOfMob",
@@ -183,7 +101,8 @@
           "src/main/java/net/mcreator/cristiansmaster/procedures/RandomizeHeightOfMobProcedure.java"
         ],
         "dependencies": []
-      }
+      },
+      "path": "~/PehkuiStuff"
     },
     {
       "name": "RandomizeMobHeightEffect",
@@ -195,7 +114,8 @@
         "files": [
           "src/main/java/net/mcreator/cristiansmaster/potion/RandomizeMobHeightEffectMobEffect.java"
         ]
-      }
+      },
+      "path": "~/PehkuiStuff"
     },
     {
       "name": "RandomizerPotion",
@@ -205,7 +125,8 @@
       "registry_name": "randomizer_potion",
       "metadata": {
         "files": []
-      }
+      },
+      "path": "~/PehkuiStuff"
     },
     {
       "name": "AntManSizePotion",
@@ -223,7 +144,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/PehkuiStuff"
     },
     {
       "name": "AntManWatch",
@@ -236,7 +158,8 @@
           "src/main/resources/assets/cristian_s_master/models/item/ant_man_watch.json",
           "src/main/java/net/mcreator/cristiansmaster/item/AntManWatchItem.java"
         ]
-      }
+      },
+      "path": "~/PehkuiStuff"
     },
     {
       "name": "MiningLaserEntitySwingsItem",
@@ -470,112 +393,6 @@
       }
     },
     {
-      "name": "Hello",
-      "type": "livingentity",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "hello",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/cristiansmaster/entity/HelloEntity.java",
-          "src/main/resources/assets/cristian_s_master/models/item/hello_spawn_egg.json",
-          "src/main/java/net/mcreator/cristiansmaster/client/renderer/HelloRenderer.java",
-          "src/main/resources/data/cristian_s_master/neoforge/biome_modifier/hello_biome_modifier.json"
-        ]
-      }
-    },
-    {
-      "name": "Jor",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "replicator",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/cristian_s_master/models/item/replicator.json",
-          "src/main/resources/data/cristian_s_master/loot_tables/blocks/replicator.json",
-          "src/main/resources/assets/cristian_s_master/blockstates/replicator.json",
-          "src/main/java/net/mcreator/cristiansmaster/block/JorBlock.java",
-          "src/main/resources/assets/cristian_s_master/models/block/replicator.json"
-        ]
-      }
-    },
-    {
-      "name": "Gooo",
-      "type": "gui",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "guiforreplicatro",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/cristiansmaster/world/inventory/GoooMenu.java",
-          "src/main/java/net/mcreator/cristiansmaster/client/gui/GoooScreen.java"
-        ]
-      }
-    },
-    {
-      "name": "Foodoutput",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "foodoutput",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/cristiansmaster/procedures/FoodoutputProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
-    },
-    {
-      "name": "Diamondoutput",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "diamondoutput",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/cristiansmaster/procedures/DiamondoutputProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
-    },
-    {
-      "name": "ScrapMetal",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "scrap_metal",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/cristian_s_master/models/item/scrap_metal.json",
-          "src/main/java/net/mcreator/cristiansmaster/item/ScrapMetalItem.java"
-        ]
-      }
-    },
-    {
-      "name": "Helo",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "helo",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/cristiansmaster/item/HeloItem.java",
-          "src/main/resources/assets/cristian_s_master/models/item/helo.json"
-        ]
-      }
-    },
-    {
       "name": "WyrmPotionRightclicked",
       "type": "procedure",
       "compiles": true,
@@ -671,7 +488,7 @@
           "src/main/resources/assets/cristian_s_master/models/item/grimoire.json"
         ]
       },
-      "path": "~/MedievalFantasy"
+      "path": "~/MedievalFantasy/Grimoire"
     },
     {
       "name": "Iceshard",
@@ -685,7 +502,7 @@
           "src/main/java/net/mcreator/cristiansmaster/entity/IceshardEntity.java"
         ]
       },
-      "path": "~/MedievalFantasy"
+      "path": "~/MedievalFantasy/Grimoire"
     },
     {
       "name": "RegenerateMana",
@@ -704,7 +521,7 @@
           }
         ]
       },
-      "path": "~/MedievalFantasy"
+      "path": "~/MedievalFantasy/ManaSetup"
     },
     {
       "name": "ManaDisplay",
@@ -717,7 +534,7 @@
           "src/main/java/net/mcreator/cristiansmaster/client/screens/ManaDisplayOverlay.java"
         ]
       },
-      "path": "~/MedievalFantasy"
+      "path": "~/MedievalFantasy/ManaSetup"
     },
     {
       "name": "DisplayManaOverlay",
@@ -737,7 +554,7 @@
           }
         ]
       },
-      "path": "~/MedievalFantasy"
+      "path": "~/MedievalFantasy/ManaSetup"
     },
     {
       "name": "ShootFireball",
@@ -750,7 +567,7 @@
           "src/main/java/net/mcreator/cristiansmaster/network/ShootFireballMessage.java"
         ]
       },
-      "path": "~/MedievalFantasy"
+      "path": "~/MedievalFantasy/Grimoire"
     },
     {
       "name": "ShootIceshard",
@@ -763,7 +580,7 @@
           "src/main/java/net/mcreator/cristiansmaster/network/ShootIceshardMessage.java"
         ]
       },
-      "path": "~/MedievalFantasy"
+      "path": "~/MedievalFantasy/Grimoire"
     },
     {
       "name": "Fireball",
@@ -777,7 +594,7 @@
           "src/main/java/net/mcreator/cristiansmaster/client/renderer/FireballRenderer.java"
         ]
       },
-      "path": "~/MedievalFantasy"
+      "path": "~/MedievalFantasy/Grimoire"
     },
     {
       "name": "ShootFireballCheck",
@@ -812,7 +629,7 @@
           }
         ]
       },
-      "path": "~/MedievalFantasy"
+      "path": "~/MedievalFantasy/Grimoire"
     },
     {
       "name": "ShootIceshardCheck",
@@ -847,7 +664,7 @@
           }
         ]
       },
-      "path": "~/MedievalFantasy"
+      "path": "~/MedievalFantasy/Grimoire"
     },
     {
       "name": "SetManaWhenJoin",
@@ -866,7 +683,7 @@
           }
         ]
       },
-      "path": "~/MedievalFantasy"
+      "path": "~/MedievalFantasy/ManaSetup"
     },
     {
       "name": "GrimoireItemInHandTick",
@@ -893,7 +710,7 @@
           }
         ]
       },
-      "path": "~/MedievalFantasy"
+      "path": "~/MedievalFantasy/Grimoire"
     },
     {
       "name": "MagicMirrorTrigger",
@@ -1280,7 +1097,7 @@
           }
         ]
       },
-      "path": "~/MedievalFantasy/ExamplesInClass"
+      "path": "~/MedievalFantasy"
     },
     {
       "name": "MagicArmor",
@@ -2959,9 +2776,8 @@
       "item.cristian_s_master.wyrm_potion": "Wyrm Potion",
       "item.cristian_s_master.burnt_pheonix_feathter": "Burnt Pheonix Feather",
       "key.cristian_s_master.open_gui_builders_wand": "Open Gui Builders Wand",
-      "key.cristian_s_master.shoot_fireball": "Shoot Fireball",
       "item.minecraft.tipped_arrow.effect.xray_potion": "Arrow of XRay",
-      "item.cristian_s_master.scrap_metal": "Scrap Metal",
+      "key.cristian_s_master.shoot_fireball": "Shoot Fireball",
       "item.cristian_s_master.ant_man_watch": "Ant Man Watch",
       "item.cristian_s_master.magic_armor_helmet": "Magic Armor Helmet",
       "item.minecraft.potion.effect.randomizer_potion": "Randomizer Potion",
@@ -2971,21 +2787,18 @@
       "subtitles.wyrmspawn": "",
       "item.cristian_s_master.builders_wand": "Builders Wand",
       "gui.cristian_s_master.select_block.button_diamond_block": "Save",
-      "block.cristian_s_master.replicator": "Replicator",
       "item.cristian_s_master.outline_spawn_egg": "Outline Spawn Egg",
       "item.cristian_s_master.flying_carpet": "Flying Carpet",
       "item.cristian_s_master.phoenix_feather": "Phoenix Feather",
       "item.cristian_s_master.maryann_the_slime_spawn_egg": "Maryann The Slime Spawn Egg",
       "item.cristian_s_master.twocolor_spawn_egg": "two-color Spawn Egg",
       "gui.cristian_s_master.select_block.button_dirt": "Dirt",
-      "gui.cristian_s_master.guiforreplicatro.button_diamond": "diamond",
       "item.cristian_s_master.dragon_spawn_egg": "Dragon Spawn Egg",
       "item.minecraft.splash_potion.effect.randomizer_potion": "Splash Randomizer Potion",
       "subtitles.magicmirrorvanish": "",
       "entity.cristian_s_master.big_guy": "Big Guy",
       "effect.cristian_s_master.randomize_mob_height_effect": "Randomize Mob Height Effect",
       "key.cristian_s_master.ironcladspawned": "Shoot Iceshard",
-      "entity.cristian_s_master.hello": "Hello",
       "gui.cristian_s_master.select_block.stoneCheck": "Stone?",
       "key.cristian_s_master.shoot_iceshard": "Shoot Iceshard",
       "subtitles.vanished": "",
@@ -3001,10 +2814,7 @@
       "item_group.cristian_s_master.custom": "Custom",
       "item.cristian_s_master.grimoire": "Grimoire",
       "item.cristian_s_master.wall_of_ice_cast": "Wall Of Ice Cast",
-      "item.cristian_s_master.hello_spawn_egg": "Hello Spawn Egg",
-      "item.cristian_s_master.nuker_axe": "Nuker Axe",
       "gui.cristian_s_master.select_block.InputNameOfBlock": "Input Block Name",
-      "item.cristian_s_master.helo": "Helo",
       "item.cristian_s_master.spawner_anvil": "Spawner Anvil",
       "gui.cristian_s_master.select_block.label_select_a_block": "Select a Block",
       "item.cristian_s_master.shoot_the_exploding_projectile_item": "Shoot The Exploding Projectile Item",
@@ -3018,10 +2828,8 @@
       "item.cristian_s_master.wind_staff": "Wind Staff",
       "item.cristian_s_master.rocket_launcher": "Rocket Launcher",
       "gui.cristian_s_master.teleporter_button_gui.button_save_current_position": "Save Current Position",
-      "gui.cristian_s_master.guiforreplicatro.button_food": "food",
       "item.cristian_s_master.tornado_spawn_egg": "Tornado Spawn Egg",
       "gui.cristian_s_master.select_block.button_stone": "Stone",
-      "item.cristian_s_master.sword_that_shoots": "Sword That Shoots",
       "item.cristian_s_master.tnt_dimension": "TNT Dimension Portal Igniter",
       "item.cristian_s_master.magic_armor_chestplate": "Magic Armor Chestplate",
       "subtitles.ironcladspawn": "",
@@ -3053,7 +2861,11 @@
         "name": "MedievalFantasy",
         "children": [
           {
-            "name": "ExamplesInClass",
+            "name": "Grimoire",
+            "children": []
+          },
+          {
+            "name": "ManaSetup",
             "children": []
           }
         ]
@@ -3116,6 +2928,14 @@
       },
       {
         "name": "PortalGunFromPortal",
+        "children": []
+      },
+      {
+        "name": "RideableDragon",
+        "children": []
+      },
+      {
+        "name": "PehkuiStuff",
         "children": []
       }
     ]

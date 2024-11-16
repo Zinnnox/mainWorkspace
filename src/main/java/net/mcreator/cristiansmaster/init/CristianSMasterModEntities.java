@@ -26,10 +26,8 @@ import net.mcreator.cristiansmaster.entity.MaryannTheSlimeEntity;
 import net.mcreator.cristiansmaster.entity.MagicalDartEntity;
 import net.mcreator.cristiansmaster.entity.IroncladEntity;
 import net.mcreator.cristiansmaster.entity.IceshardEntity;
-import net.mcreator.cristiansmaster.entity.HelloEntity;
 import net.mcreator.cristiansmaster.entity.FireballEntity;
 import net.mcreator.cristiansmaster.entity.ExplodingProjectileEntity;
-import net.mcreator.cristiansmaster.entity.EntityFromSwordProjectileEntity;
 import net.mcreator.cristiansmaster.entity.DragonEntity;
 import net.mcreator.cristiansmaster.entity.BigGuyEntity;
 import net.mcreator.cristiansmaster.CristianSMasterMod;
@@ -41,14 +39,8 @@ public class CristianSMasterModEntities {
 			EntityType.Builder.<DragonEntity>of(DragonEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
 					.sized(0.6f, 1.8f));
-	public static final DeferredHolder<EntityType<?>, EntityType<EntityFromSwordProjectileEntity>> ENTITY_FROM_SWORD_PROJECTILE = register("entity_from_sword_projectile",
-			EntityType.Builder.<EntityFromSwordProjectileEntity>of(EntityFromSwordProjectileEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final DeferredHolder<EntityType<?>, EntityType<MaryannTheSlimeEntity>> MARYANN_THE_SLIME = register("maryann_the_slime",
 			EntityType.Builder.<MaryannTheSlimeEntity>of(MaryannTheSlimeEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
-
-					.sized(0.6f, 1.8f));
-	public static final DeferredHolder<EntityType<?>, EntityType<HelloEntity>> HELLO = register("hello",
-			EntityType.Builder.<HelloEntity>of(HelloEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
 					.sized(0.6f, 1.8f));
 	public static final DeferredHolder<EntityType<?>, EntityType<IceshardEntity>> ICESHARD = register("iceshard",
@@ -93,7 +85,6 @@ public class CristianSMasterModEntities {
 	public static void init(SpawnPlacementRegisterEvent event) {
 		DragonEntity.init(event);
 		MaryannTheSlimeEntity.init(event);
-		HelloEntity.init(event);
 		IroncladEntity.init(event);
 		TornadoEntity.init(event);
 		PopEntity.init(event);
@@ -106,7 +97,6 @@ public class CristianSMasterModEntities {
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
 		event.put(DRAGON.get(), DragonEntity.createAttributes().build());
 		event.put(MARYANN_THE_SLIME.get(), MaryannTheSlimeEntity.createAttributes().build());
-		event.put(HELLO.get(), HelloEntity.createAttributes().build());
 		event.put(IRONCLAD.get(), IroncladEntity.createAttributes().build());
 		event.put(TORNADO.get(), TornadoEntity.createAttributes().build());
 		event.put(POP.get(), PopEntity.createAttributes().build());
