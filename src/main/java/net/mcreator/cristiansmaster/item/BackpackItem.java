@@ -1,8 +1,6 @@
 
 package net.mcreator.cristiansmaster.item;
 
-import top.theillusivec4.curios.api.type.capability.ICurioItem;
-
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;

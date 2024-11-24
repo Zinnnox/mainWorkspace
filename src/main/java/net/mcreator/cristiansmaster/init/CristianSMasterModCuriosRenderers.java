@@ -1,7 +1,5 @@
 package net.mcreator.cristiansmaster.init;
 
-import top.theillusivec4.curios.api.client.CuriosRendererRegistry;
-
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.fml.common.EventBusSubscriber;

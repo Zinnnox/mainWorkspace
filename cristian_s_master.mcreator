@@ -1903,7 +1903,7 @@
     {
       "name": "Backpack",
       "type": "curiosbauble",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "backpack",
       "metadata": {
@@ -1946,7 +1946,7 @@
     {
       "name": "OpenBackpackOnKeyPressed",
       "type": "procedure",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "open_backpack_on_key_pressed",
       "metadata": {
@@ -2976,7 +2976,6 @@
     "mcreatorDependencies": [
       "kleidersplayerrenderer",
       "pehkui",
-      "curios_api",
       "geckolib"
     ],
     "currentGenerator": "neoforge-1.20.6",

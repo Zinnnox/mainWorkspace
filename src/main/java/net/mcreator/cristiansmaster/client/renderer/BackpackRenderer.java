@@ -1,8 +1,5 @@
 package net.mcreator.cristiansmaster.client.renderer;
 
-import top.theillusivec4.curios.api.client.ICurioRenderer;
-import top.theillusivec4.curios.api.SlotContext;
-
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.resources.ResourceLocation;

@@ -41,12 +41,6 @@ authors="User, MCreator"
     ordering="NONE"
     side="BOTH"
 [[dependencies.cristian_s_master]]
-    modId="curios_api"
-    type="optional"
-    versionRange="[0,)"
-    ordering="NONE"
-    side="BOTH"
-[[dependencies.cristian_s_master]]
     modId="geckolib"
     type="optional"
     versionRange="[0,)"

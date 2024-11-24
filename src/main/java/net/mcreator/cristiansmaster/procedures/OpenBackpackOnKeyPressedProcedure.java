@@ -1,7 +1,5 @@
 package net.mcreator.cristiansmaster.procedures;
 
-import top.theillusivec4.curios.api.CuriosApi;
-
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.entity.player.Player;
