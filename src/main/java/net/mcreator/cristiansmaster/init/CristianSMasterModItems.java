@@ -91,10 +91,10 @@ public class CristianSMasterModItems {
 	public static final DeferredHolder<Item, Item> SPAWNER_ANVIL = REGISTRY.register("spawner_anvil", SpawnerAnvilItem::new);
 	public static final DeferredHolder<Item, Item> BUILDERS_WAND = REGISTRY.register("builders_wand", BuildersWandItem::new);
 	public static final DeferredHolder<Item, Item> FLYING_CARPET = REGISTRY.register("flying_carpet", FlyingCarpetItem::new);
-	public static final DeferredHolder<Item, Item> TWOCOLOR_SPAWN_EGG = REGISTRY.register("twocolor_spawn_egg", () -> new DeferredSpawnEggItem(CristianSMasterModEntities.TWOCOLOR, -1, -1, new Item.Properties()));
 	public static final DeferredHolder<Item, Item> PORTAL_ORANGE = block(CristianSMasterModBlocks.PORTAL_ORANGE);
 	public static final DeferredHolder<Item, Item> PORTAL_BLUE = block(CristianSMasterModBlocks.PORTAL_BLUE);
 	public static final DeferredHolder<Item, Item> PORTAL_SHOOTER = REGISTRY.register("portal_shooter", PortalShooterItem::new);
+	public static final DeferredHolder<Item, Item> BONNIE_SPAWN_EGG = REGISTRY.register("bonnie_spawn_egg", () -> new DeferredSpawnEggItem(CristianSMasterModEntities.BONNIE, -1, -1, new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items

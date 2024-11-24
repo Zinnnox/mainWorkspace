@@ -11,7 +11,6 @@ import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 
-import net.mcreator.cristiansmaster.client.renderer.TwocolorRenderer;
 import net.mcreator.cristiansmaster.client.renderer.TornadoRenderer;
 import net.mcreator.cristiansmaster.client.renderer.PopRenderer;
 import net.mcreator.cristiansmaster.client.renderer.OutlineRenderer;
@@ -21,6 +20,7 @@ import net.mcreator.cristiansmaster.client.renderer.IroncladRenderer;
 import net.mcreator.cristiansmaster.client.renderer.IceshardRenderer;
 import net.mcreator.cristiansmaster.client.renderer.FireballRenderer;
 import net.mcreator.cristiansmaster.client.renderer.DragonRenderer;
+import net.mcreator.cristiansmaster.client.renderer.BonnieRenderer;
 import net.mcreator.cristiansmaster.client.renderer.BigGuyRenderer;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
@@ -39,7 +39,7 @@ public class CristianSMasterModEntityRenderers {
 		event.registerEntityRenderer(CristianSMasterModEntities.POP.get(), PopRenderer::new);
 		event.registerEntityRenderer(CristianSMasterModEntities.BIG_GUY.get(), BigGuyRenderer::new);
 		event.registerEntityRenderer(CristianSMasterModEntities.OUTLINE.get(), OutlineRenderer::new);
-		event.registerEntityRenderer(CristianSMasterModEntities.TWOCOLOR.get(), TwocolorRenderer::new);
 		event.registerEntityRenderer(CristianSMasterModEntities.PORTAL_SHOOT_TO_PLACE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(CristianSMasterModEntities.BONNIE.get(), BonnieRenderer::new);
 	}
 }

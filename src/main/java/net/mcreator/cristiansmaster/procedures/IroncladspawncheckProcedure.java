@@ -39,7 +39,6 @@ public class IroncladspawncheckProcedure {
 						entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
 					}
 				}
-				entity.setInvulnerable(true);
 			});
 		} else {
 			if (entity instanceof Player _player && !_player.level().isClientSide())

@@ -16,7 +16,6 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.core.registries.Registries;
 
-import net.mcreator.cristiansmaster.entity.TwocolorEntity;
 import net.mcreator.cristiansmaster.entity.TornadoEntity;
 import net.mcreator.cristiansmaster.entity.TheBOMBEntity;
 import net.mcreator.cristiansmaster.entity.PortalShootToPlaceEntity;
@@ -29,6 +28,7 @@ import net.mcreator.cristiansmaster.entity.IceshardEntity;
 import net.mcreator.cristiansmaster.entity.FireballEntity;
 import net.mcreator.cristiansmaster.entity.ExplodingProjectileEntity;
 import net.mcreator.cristiansmaster.entity.DragonEntity;
+import net.mcreator.cristiansmaster.entity.BonnieEntity;
 import net.mcreator.cristiansmaster.entity.BigGuyEntity;
 import net.mcreator.cristiansmaster.CristianSMasterMod;
 
@@ -72,10 +72,12 @@ public class CristianSMasterModEntities {
 			EntityType.Builder.<OutlineEntity>of(OutlineEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
 					.sized(0.6f, 1.8f));
-	public static final DeferredHolder<EntityType<?>, EntityType<TwocolorEntity>> TWOCOLOR = register("twocolor",
-			EntityType.Builder.<TwocolorEntity>of(TwocolorEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().sized(0.6f, 1.8f));
 	public static final DeferredHolder<EntityType<?>, EntityType<PortalShootToPlaceEntity>> PORTAL_SHOOT_TO_PLACE = register("portal_shoot_to_place",
 			EntityType.Builder.<PortalShootToPlaceEntity>of(PortalShootToPlaceEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final DeferredHolder<EntityType<?>, EntityType<BonnieEntity>> BONNIE = register("bonnie",
+			EntityType.Builder.<BonnieEntity>of(BonnieEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> DeferredHolder<EntityType<?>, EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -90,7 +92,7 @@ public class CristianSMasterModEntities {
 		PopEntity.init(event);
 		BigGuyEntity.init(event);
 		OutlineEntity.init(event);
-		TwocolorEntity.init(event);
+		BonnieEntity.init(event);
 	}
 
 	@SubscribeEvent
@@ -102,6 +104,6 @@ public class CristianSMasterModEntities {
 		event.put(POP.get(), PopEntity.createAttributes().build());
 		event.put(BIG_GUY.get(), BigGuyEntity.createAttributes().build());
 		event.put(OUTLINE.get(), OutlineEntity.createAttributes().build());
-		event.put(TWOCOLOR.get(), TwocolorEntity.createAttributes().build());
+		event.put(BONNIE.get(), BonnieEntity.createAttributes().build());
 	}
 }

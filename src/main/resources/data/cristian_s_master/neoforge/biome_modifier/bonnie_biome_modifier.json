@@ -4,7 +4,7 @@
     "type": "neoforge:any"
   },
   "spawners": {
-    "type": "cristian_s_master:twocolor",
+    "type": "cristian_s_master:bonnie",
     "weight": 20,
     "minCount": 4,
     "maxCount": 4

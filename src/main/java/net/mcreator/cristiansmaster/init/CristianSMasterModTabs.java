@@ -30,6 +30,7 @@ public class CristianSMasterModTabs {
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 		if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
 			tabData.accept(CristianSMasterModItems.ANT_MAN_WATCH.get());
+			tabData.accept(CristianSMasterModItems.GRIMOIRE.get());
 			tabData.accept(CristianSMasterModItems.MAGIC_MIRROR.get());
 			tabData.accept(CristianSMasterModItems.MAGIC_ARMOR_HELMET.get());
 			tabData.accept(CristianSMasterModItems.MAGIC_ARMOR_CHESTPLATE.get());
@@ -49,7 +50,6 @@ public class CristianSMasterModTabs {
 			tabData.accept(CristianSMasterModItems.POP_SPAWN_EGG.get());
 			tabData.accept(CristianSMasterModItems.BIG_GUY_SPAWN_EGG.get());
 			tabData.accept(CristianSMasterModItems.OUTLINE_SPAWN_EGG.get());
-			tabData.accept(CristianSMasterModItems.TWOCOLOR_SPAWN_EGG.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(CristianSMasterModItems.MINING_LASER.get());
 			tabData.accept(CristianSMasterModItems.TELEPORTER.get());
