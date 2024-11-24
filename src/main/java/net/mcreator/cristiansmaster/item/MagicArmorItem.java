@@ -32,8 +32,8 @@ public abstract class MagicArmorItem extends ArmorItem {
 				map.put(ArmorItem.Type.CHESTPLATE, 206);
 				map.put(ArmorItem.Type.HELMET, 200);
 				map.put(ArmorItem.Type.BODY, 206);
-			}), 9, BuiltInRegistries.SOUND_EVENT.wrapAsHolder(SoundEvents.EMPTY), () -> Ingredient.of(), List.of(new ArmorMaterial.Layer(new ResourceLocation("cristian_s_master:magicarmortexture"))), 0f, 0f);
-			registerHelper.register(new ResourceLocation("cristian_s_master:magic_armor"), armorMaterial);
+			}), 9, BuiltInRegistries.SOUND_EVENT.wrapAsHolder(SoundEvents.EMPTY), () -> Ingredient.of(), List.of(new ArmorMaterial.Layer(ResourceLocation.parse("cristian_s_master:magicarmortexture"))), 0f, 0f);
+			registerHelper.register(ResourceLocation.parse("cristian_s_master:magic_armor"), armorMaterial);
 			ARMOR_MATERIAL = BuiltInRegistries.ARMOR_MATERIAL.wrapAsHolder(armorMaterial);
 		});
 	}

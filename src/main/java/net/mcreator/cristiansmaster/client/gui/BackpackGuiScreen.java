@@ -31,7 +31,7 @@ public class BackpackGuiScreen extends AbstractContainerScreen<BackpackGuiMenu> 
 		this.imageHeight = 166;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("cristian_s_master:textures/screens/backpack_gui.png");
+	private static final ResourceLocation texture = ResourceLocation.parse("cristian_s_master:textures/screens/backpack_gui.png");
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {

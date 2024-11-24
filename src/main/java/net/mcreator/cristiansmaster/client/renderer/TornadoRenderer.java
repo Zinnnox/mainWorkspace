@@ -15,6 +15,6 @@ public class TornadoRenderer extends MobRenderer<TornadoEntity, ModeltornadoWhoo
 
 	@Override
 	public ResourceLocation getTextureLocation(TornadoEntity entity) {
-		return new ResourceLocation("cristian_s_master:textures/entities/tornadowhoosh.png");
+		return ResourceLocation.parse("cristian_s_master:textures/entities/tornadowhoosh.png");
 	}
 }

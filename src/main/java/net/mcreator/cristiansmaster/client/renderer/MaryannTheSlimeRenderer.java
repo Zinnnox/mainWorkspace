@@ -15,6 +15,6 @@ public class MaryannTheSlimeRenderer extends MobRenderer<MaryannTheSlimeEntity, 
 
 	@Override
 	public ResourceLocation getTextureLocation(MaryannTheSlimeEntity entity) {
-		return new ResourceLocation("cristian_s_master:textures/entities/slime.png");
+		return ResourceLocation.parse("cristian_s_master:textures/entities/slime.png");
 	}
 }

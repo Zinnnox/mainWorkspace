@@ -8,6 +8,7 @@ import software.bernie.geckolib.animation.AnimationState;
 import software.bernie.geckolib.animation.AnimationController;
 import software.bernie.geckolib.animation.AnimatableManager;
 import software.bernie.geckolib.animatable.instance.AnimatableInstanceCache;
+import software.bernie.geckolib.animatable.client.GeoRenderProvider;
 import software.bernie.geckolib.animatable.GeoItem;
 
 import net.neoforged.neoforge.client.extensions.common.IClientItemExtensions;
@@ -15,7 +16,6 @@ import net.neoforged.neoforge.client.extensions.common.IClientItemExtensions;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.ItemDisplayContext;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.HumanoidArm;
 import net.minecraft.world.entity.Entity;
@@ -32,23 +32,34 @@ import com.mojang.blaze3d.vertex.PoseStack;
 public class GrimoireItem extends Item implements GeoItem {
 	private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
 	public String animationprocedure = "empty";
-	public static ItemDisplayContext transformType;
 
 	public GrimoireItem() {
 		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON));
 	}
 
 	@Override
+	public boolean shouldCauseReequipAnimation(ItemStack oldStack, ItemStack newStack, boolean slotChanged) {
+		return false;
+	}
+
+	@Override
+	public void createGeoRenderer(Consumer<GeoRenderProvider> consumer) {
+		consumer.accept(new GeoRenderProvider() {
+			private GrimoireItemRenderer renderer;
+
+			@Override
+			public BlockEntityWithoutLevelRenderer getGeoItemRenderer() {
+				if (this.renderer == null)
+					this.renderer = new GrimoireItemRenderer();
+				return this.renderer;
+			}
+		});
+	}
+
+	@Override
 	public void initializeClient(Consumer<IClientItemExtensions> consumer) {
 		super.initializeClient(consumer);
 		consumer.accept(new IClientItemExtensions() {
-			private final BlockEntityWithoutLevelRenderer renderer = new GrimoireItemRenderer();
-
-			@Override
-			public BlockEntityWithoutLevelRenderer getCustomRenderer() {
-				return renderer;
-			}
-
 			public boolean applyForgeHandTransform(PoseStack poseStack, LocalPlayer player, HumanoidArm arm, ItemStack itemInHand, float partialTick, float equipProcess, float swingProcess) {
 				int i = arm == HumanoidArm.RIGHT ? 1 : -1;
 				poseStack.translate(i * 0.56F, -0.52F, -0.72F);
@@ -60,16 +71,10 @@ public class GrimoireItem extends Item implements GeoItem {
 		});
 	}
 
-	public void getTransformType(ItemDisplayContext type) {
-		this.transformType = type;
-	}
-
 	private PlayState idlePredicate(AnimationState event) {
-		if (this.transformType != null ? true : false) {
-			if (this.animationprocedure.equals("empty")) {
-				event.getController().setAnimation(RawAnimation.begin().thenLoop("grimoire.idle"));
-				return PlayState.CONTINUE;
-			}
+		if (this.animationprocedure.equals("empty")) {
+			event.getController().setAnimation(RawAnimation.begin().thenLoop("grimoire.idle"));
+			return PlayState.CONTINUE;
 		}
 		return PlayState.STOP;
 	}
@@ -77,19 +82,17 @@ public class GrimoireItem extends Item implements GeoItem {
 	String prevAnim = "empty";
 
 	private PlayState procedurePredicate(AnimationState event) {
-		if (this.transformType != null ? true : false) {
-			if (!this.animationprocedure.equals("empty") && event.getController().getAnimationState() == AnimationController.State.STOPPED || (!this.animationprocedure.equals(prevAnim) && !this.animationprocedure.equals("empty"))) {
-				if (!this.animationprocedure.equals(prevAnim))
-					event.getController().forceAnimationReset();
-				event.getController().setAnimation(RawAnimation.begin().thenPlay(this.animationprocedure));
-				if (event.getController().getAnimationState() == AnimationController.State.STOPPED) {
-					this.animationprocedure = "empty";
-					event.getController().forceAnimationReset();
-				}
-			} else if (this.animationprocedure.equals("empty")) {
-				prevAnim = "empty";
-				return PlayState.STOP;
+		if (!this.animationprocedure.equals("empty") && event.getController().getAnimationState() == AnimationController.State.STOPPED || (!this.animationprocedure.equals(prevAnim) && !this.animationprocedure.equals("empty"))) {
+			if (!this.animationprocedure.equals(prevAnim))
+				event.getController().forceAnimationReset();
+			event.getController().setAnimation(RawAnimation.begin().thenPlay(this.animationprocedure));
+			if (event.getController().getAnimationState() == AnimationController.State.STOPPED) {
+				this.animationprocedure = "empty";
+				event.getController().forceAnimationReset();
 			}
+		} else if (this.animationprocedure.equals("empty")) {
+			prevAnim = "empty";
+			return PlayState.STOP;
 		}
 		prevAnim = this.animationprocedure;
 		return PlayState.CONTINUE;

@@ -21,7 +21,7 @@ import com.mojang.blaze3d.vertex.PoseStack;
 public class ModelmaryannF<T extends Entity> extends EntityModel<T> {
 	// This layer location should be baked with EntityRendererProvider.Context in
 	// the entity renderer and passed into this model's constructor
-	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(new ResourceLocation("cristian_s_master", "modelmaryann_f"), "main");
+	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(ResourceLocation.fromNamespaceAndPath("cristian_s_master", "modelmaryann_f"), "main");
 	public final ModelPart inner;
 	public final ModelPart outer;
 
@@ -49,8 +49,8 @@ public class ModelmaryannF<T extends Entity> extends EntityModel<T> {
 	}
 
 	@Override
-	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha) {
-		inner.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
-		outer.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
+	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, int rgb) {
+		inner.render(poseStack, vertexConsumer, packedLight, packedOverlay, rgb);
+		outer.render(poseStack, vertexConsumer, packedLight, packedOverlay, rgb);
 	}
 }

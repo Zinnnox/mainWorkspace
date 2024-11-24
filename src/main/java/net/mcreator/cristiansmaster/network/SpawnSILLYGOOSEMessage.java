@@ -20,7 +20,7 @@ import net.mcreator.cristiansmaster.CristianSMasterMod;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public record SpawnSILLYGOOSEMessage(int eventType, int pressedms) implements CustomPacketPayload {
-	public static final Type<SpawnSILLYGOOSEMessage> TYPE = new Type<>(new ResourceLocation(CristianSMasterMod.MODID, "key_spawn_sillygoose"));
+	public static final Type<SpawnSILLYGOOSEMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(CristianSMasterMod.MODID, "key_spawn_sillygoose"));
 	public static final StreamCodec<RegistryFriendlyByteBuf, SpawnSILLYGOOSEMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, SpawnSILLYGOOSEMessage message) -> {
 		buffer.writeInt(message.eventType);
 		buffer.writeInt(message.pressedms);

@@ -20,7 +20,7 @@ import net.mcreator.cristiansmaster.CristianSMasterMod;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public record IroncladspawnedMessage(int eventType, int pressedms) implements CustomPacketPayload {
-	public static final Type<IroncladspawnedMessage> TYPE = new Type<>(new ResourceLocation(CristianSMasterMod.MODID, "key_ironcladspawned"));
+	public static final Type<IroncladspawnedMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(CristianSMasterMod.MODID, "key_ironcladspawned"));
 	public static final StreamCodec<RegistryFriendlyByteBuf, IroncladspawnedMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, IroncladspawnedMessage message) -> {
 		buffer.writeInt(message.eventType);
 		buffer.writeInt(message.pressedms);

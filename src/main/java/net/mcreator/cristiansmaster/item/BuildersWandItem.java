@@ -28,8 +28,8 @@ public class BuildersWandItem extends Item {
 	}
 
 	@Override
-	public boolean onEntitySwing(ItemStack itemstack, LivingEntity entity) {
-		boolean retval = super.onEntitySwing(itemstack, entity);
+	public boolean onEntitySwing(ItemStack itemstack, LivingEntity entity, InteractionHand hand) {
+		boolean retval = super.onEntitySwing(itemstack, entity, hand);
 		BuildersWandEntitySwingsItemProcedure.execute(entity.getX(), entity.getY(), entity.getZ(), entity);
 		return retval;
 	}

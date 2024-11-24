@@ -15,6 +15,6 @@ public class OutlineRenderer extends MobRenderer<OutlineEntity, ModelxrayOutline
 
 	@Override
 	public ResourceLocation getTextureLocation(OutlineEntity entity) {
-		return new ResourceLocation("cristian_s_master:textures/entities/xrayoutlinetexture.png");
+		return ResourceLocation.parse("cristian_s_master:textures/entities/xrayoutlinetexture.png");
 	}
 }

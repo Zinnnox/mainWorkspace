@@ -26,7 +26,7 @@ import java.util.HashMap;
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public record TeleporterButtonGuiButtonMessage(int buttonID, int x, int y, int z) implements CustomPacketPayload {
 
-	public static final Type<TeleporterButtonGuiButtonMessage> TYPE = new Type<>(new ResourceLocation(CristianSMasterMod.MODID, "teleporter_button_gui_buttons"));
+	public static final Type<TeleporterButtonGuiButtonMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(CristianSMasterMod.MODID, "teleporter_button_gui_buttons"));
 	public static final StreamCodec<RegistryFriendlyByteBuf, TeleporterButtonGuiButtonMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, TeleporterButtonGuiButtonMessage message) -> {
 		buffer.writeInt(message.buttonID);
 		buffer.writeInt(message.x);

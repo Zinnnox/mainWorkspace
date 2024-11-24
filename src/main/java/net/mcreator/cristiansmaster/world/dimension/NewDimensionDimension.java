@@ -26,7 +26,7 @@ public class NewDimensionDimension {
 					return false;
 				}
 			};
-			event.register(new ResourceLocation("cristian_s_master:new_dimension"), customEffect);
+			event.register(ResourceLocation.parse("cristian_s_master:new_dimension"), customEffect);
 		}
 	}
 }

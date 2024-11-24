@@ -34,7 +34,7 @@ public class SelectBlockScreen extends AbstractContainerScreen<SelectBlockMenu> 
 		this.imageHeight = 166;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("cristian_s_master:textures/screens/select_block.png");
+	private static final ResourceLocation texture = ResourceLocation.parse("cristian_s_master:textures/screens/select_block.png");
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {

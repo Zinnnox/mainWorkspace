@@ -21,7 +21,7 @@ import com.mojang.blaze3d.vertex.PoseStack;
 public class ModelCustomModel<T extends Entity> extends EntityModel<T> {
 	// This layer location should be baked with EntityRendererProvider.Context in
 	// the entity renderer and passed into this model's constructor
-	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(new ResourceLocation("cristian_s_master", "model_custom_model"), "main");
+	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(ResourceLocation.fromNamespaceAndPath("cristian_s_master", "model_custom_model"), "main");
 	public final ModelPart neck;
 	public final ModelPart body;
 	public final ModelPart wing;
@@ -151,15 +151,15 @@ public class ModelCustomModel<T extends Entity> extends EntityModel<T> {
 	}
 
 	@Override
-	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha) {
-		neck.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
-		body.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
-		wing.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
-		wing1.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
-		rearleg.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
-		rearleg1.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
-		frontleg.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
-		frontleg1.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
-		tail.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
+	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, int rgb) {
+		neck.render(poseStack, vertexConsumer, packedLight, packedOverlay, rgb);
+		body.render(poseStack, vertexConsumer, packedLight, packedOverlay, rgb);
+		wing.render(poseStack, vertexConsumer, packedLight, packedOverlay, rgb);
+		wing1.render(poseStack, vertexConsumer, packedLight, packedOverlay, rgb);
+		rearleg.render(poseStack, vertexConsumer, packedLight, packedOverlay, rgb);
+		rearleg1.render(poseStack, vertexConsumer, packedLight, packedOverlay, rgb);
+		frontleg.render(poseStack, vertexConsumer, packedLight, packedOverlay, rgb);
+		frontleg1.render(poseStack, vertexConsumer, packedLight, packedOverlay, rgb);
+		tail.render(poseStack, vertexConsumer, packedLight, packedOverlay, rgb);
 	}
 }

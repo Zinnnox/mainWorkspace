@@ -45,7 +45,7 @@ public class WyrmPotionRightclickedProcedure {
 		PlayerRenderer _pr = null;
 		PoseStack poseStack = _evt.getPoseStack();
 		if (_evt.getRenderer() instanceof PlayerRenderer && !(_evt.getRenderer() instanceof com.kleiders.kleidersplayerrenderer.KleidersIgnoreCancel)) {
-			ResourceLocation _texture = new ResourceLocation("kleiders_custom_renderer:textures/entities/empty.png");
+			ResourceLocation _texture = ResourceLocation.parse("kleiders_custom_renderer:textures/entities/empty.png");
 			com.kleiders.kleidersplayerrenderer.KleidersSkinRenderer emptyRenderer = new com.kleiders.kleidersplayerrenderer.KleidersSkinRenderer(context,
 					(_evtEntity instanceof AbstractClientPlayer ? ((AbstractClientPlayer) _evtEntity).getSkin().model() == PlayerSkin.Model.SLIM : false), _texture);
 			_pr = emptyRenderer;
@@ -57,7 +57,7 @@ public class WyrmPotionRightclickedProcedure {
 				if (_evt instanceof RenderLivingEvent.Pre _pre) {
 					_pre.setCanceled(true);
 				}
-				new com.kleiders.kleidersplayerrenderer.KleidersPlayerRenderer(context, new ResourceLocation("cristian_s_master:textures/entities/wyrm.png"), new Modelwyrm(context.bakeLayer(Modelwyrm.LAYER_LOCATION)))
+				new com.kleiders.kleidersplayerrenderer.KleidersPlayerRenderer(context, ResourceLocation.parse("cristian_s_master:textures/entities/wyrm.png"), new Modelwyrm(context.bakeLayer(Modelwyrm.LAYER_LOCATION)))
 						.render((AbstractClientPlayer) _evt.getEntity(), _evt.getEntity().getYRot(), _evt.getPartialTick(), _evt.getPoseStack(), _evt.getMultiBufferSource(), _evt.getPackedLight());
 			}
 		}

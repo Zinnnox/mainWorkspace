@@ -19,7 +19,8 @@ public class OPAxeBlockDestroyedWithToolProcedure {
 		double posX = 0;
 		double posY = 0;
 		double posZ = 0;
-		if (itemstack.getItem() == (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() && (world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(new ResourceLocation("minecraft:logs")))) {
+		if (itemstack.getItem() == (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem()
+				&& (world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(ResourceLocation.parse("minecraft:logs")))) {
 			if (entity instanceof LivingEntity _entity)
 				_entity.swing(InteractionHand.MAIN_HAND, true);
 			posX = x - 1;
@@ -29,7 +30,7 @@ public class OPAxeBlockDestroyedWithToolProcedure {
 				for (int index1 = 0; index1 < 3; index1++) {
 					for (int index2 = 0; index2 < 3; index2++) {
 						if (itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("stopMining") == false) {
-							if ((world.getBlockState(BlockPos.containing(posX, posY, posZ))).is(BlockTags.create(new ResourceLocation("minecraft:logs")))) {
+							if ((world.getBlockState(BlockPos.containing(posX, posY, posZ))).is(BlockTags.create(ResourceLocation.parse("minecraft:logs")))) {
 								{
 									BlockPos _pos = BlockPos.containing(posX, posY, posZ);
 									Block.dropResources(world.getBlockState(_pos), world, BlockPos.containing(posX, posY, posZ), null);

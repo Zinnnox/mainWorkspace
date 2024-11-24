@@ -40,18 +40,16 @@ public class GrimoireItemRenderer extends GeoItemRenderer<GrimoireItem> {
 	@Override
 	public void renderByItem(ItemStack stack, ItemDisplayContext transformType, PoseStack matrixStack, MultiBufferSource bufferIn, int combinedLightIn, int p_239207_6_) {
 		this.transformType = transformType;
-		if (this.animatable != null)
-			this.animatable.getTransformType(transformType);
 		super.renderByItem(stack, transformType, matrixStack, bufferIn, combinedLightIn, p_239207_6_);
 	}
 
 	@Override
 	public void actuallyRender(PoseStack matrixStackIn, GrimoireItem animatable, BakedGeoModel model, RenderType type, MultiBufferSource renderTypeBuffer, VertexConsumer vertexBuilder, boolean isRenderer, float partialTicks, int packedLightIn,
-			int packedOverlayIn, float red, float green, float blue, float alpha) {
+			int packedOverlayIn, int color) {
 		this.currentBuffer = renderTypeBuffer;
 		this.renderType = type;
 		this.animatable = animatable;
-		super.actuallyRender(matrixStackIn, animatable, model, type, renderTypeBuffer, vertexBuilder, isRenderer, partialTicks, packedLightIn, packedOverlayIn, red, green, blue, alpha);
+		super.actuallyRender(matrixStackIn, animatable, model, type, renderTypeBuffer, vertexBuilder, isRenderer, partialTicks, packedLightIn, packedOverlayIn, color);
 		if (this.renderArms) {
 			this.renderArms = false;
 		}

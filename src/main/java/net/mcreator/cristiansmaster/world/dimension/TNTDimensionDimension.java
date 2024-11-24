@@ -26,7 +26,7 @@ public class TNTDimensionDimension {
 					return false;
 				}
 			};
-			event.register(new ResourceLocation("cristian_s_master:tnt_dimension"), customEffect);
+			event.register(ResourceLocation.parse("cristian_s_master:tnt_dimension"), customEffect);
 		}
 	}
 }

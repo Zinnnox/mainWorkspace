@@ -55,7 +55,6 @@ public class CristianSMasterMod {
 
 		CristianSMasterModPotions.REGISTRY.register(modEventBus);
 		CristianSMasterModMobEffects.REGISTRY.register(modEventBus);
-
 		CristianSMasterModMenus.REGISTRY.register(modEventBus);
 
 		// Start of user code block mod init

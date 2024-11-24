@@ -63,10 +63,10 @@
       "registry_name": "dragon",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/cristiansmaster/entity/DragonEntity.java",
           "src/main/java/net/mcreator/cristiansmaster/client/renderer/DragonRenderer.java",
-          "src/main/resources/assets/cristian_s_master/models/item/dragon_spawn_egg.json",
           "src/main/resources/data/cristian_s_master/neoforge/biome_modifier/dragon_biome_modifier.json",
-          "src/main/java/net/mcreator/cristiansmaster/entity/DragonEntity.java"
+          "src/main/resources/assets/cristian_s_master/models/item/dragon_spawn_egg.json"
         ]
       },
       "path": "~/RideableDragon"
@@ -155,8 +155,8 @@
       "registry_name": "ant_man_watch",
       "metadata": {
         "files": [
-          "src/main/resources/assets/cristian_s_master/models/item/ant_man_watch.json",
-          "src/main/java/net/mcreator/cristiansmaster/item/AntManWatchItem.java"
+          "src/main/java/net/mcreator/cristiansmaster/item/AntManWatchItem.java",
+          "src/main/resources/assets/cristian_s_master/models/item/ant_man_watch.json"
         ]
       },
       "path": "~/PehkuiStuff"
@@ -260,8 +260,8 @@
       "registry_name": "teleporter",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cristiansmaster/item/TeleporterItem.java",
-          "src/main/resources/assets/cristian_s_master/models/item/teleporter.json"
+          "src/main/resources/assets/cristian_s_master/models/item/teleporter.json",
+          "src/main/java/net/mcreator/cristiansmaster/item/TeleporterItem.java"
         ]
       }
     },
@@ -333,17 +333,17 @@
       "registry_name": "new_dimension",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cristiansmaster/world/teleporter/NewDimensionTeleporter.java",
-          "src/main/resources/data/cristian_s_master/dimension_type/new_dimension.json",
           "src/main/resources/assets/cristian_s_master/models/block/new_dimension_portal_ns.json",
-          "src/main/java/net/mcreator/cristiansmaster/world/dimension/NewDimensionDimension.java",
-          "src/main/java/net/mcreator/cristiansmaster/item/NewDimensionItem.java",
-          "src/main/resources/assets/cristian_s_master/models/block/new_dimension_portal_ew.json",
-          "src/main/java/net/mcreator/cristiansmaster/block/NewDimensionPortalBlock.java",
-          "src/main/java/net/mcreator/cristiansmaster/world/teleporter/NewDimensionPortalShape.java",
-          "src/main/resources/data/cristian_s_master/dimension/new_dimension.json",
           "src/main/resources/assets/cristian_s_master/models/item/new_dimension.json",
-          "src/main/resources/assets/cristian_s_master/blockstates/new_dimension_portal.json"
+          "src/main/resources/assets/cristian_s_master/models/block/new_dimension_portal_ew.json",
+          "src/main/java/net/mcreator/cristiansmaster/world/dimension/NewDimensionDimension.java",
+          "src/main/java/net/mcreator/cristiansmaster/world/teleporter/NewDimensionTeleporter.java",
+          "src/main/java/net/mcreator/cristiansmaster/item/NewDimensionItem.java",
+          "src/main/resources/data/cristian_s_master/dimension/new_dimension.json",
+          "src/main/java/net/mcreator/cristiansmaster/block/NewDimensionPortalBlock.java",
+          "src/main/resources/assets/cristian_s_master/blockstates/new_dimension_portal.json",
+          "src/main/resources/data/cristian_s_master/dimension_type/new_dimension.json",
+          "src/main/java/net/mcreator/cristiansmaster/world/teleporter/NewDimensionPortalShape.java"
         ]
       }
     },
@@ -385,9 +385,9 @@
       "registry_name": "maryann_the_slime",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cristiansmaster/client/renderer/MaryannTheSlimeRenderer.java",
           "src/main/java/net/mcreator/cristiansmaster/entity/MaryannTheSlimeEntity.java",
           "src/main/resources/data/cristian_s_master/neoforge/biome_modifier/maryann_the_slime_biome_modifier.json",
+          "src/main/java/net/mcreator/cristiansmaster/client/renderer/MaryannTheSlimeRenderer.java",
           "src/main/resources/assets/cristian_s_master/models/item/maryann_the_slime_spawn_egg.json"
         ]
       }
@@ -469,8 +469,8 @@
       "registry_name": "bio_scanner",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cristiansmaster/item/BioScannerItem.java",
-          "src/main/resources/assets/cristian_s_master/models/item/bio_scanner.json"
+          "src/main/resources/assets/cristian_s_master/models/item/bio_scanner.json",
+          "src/main/java/net/mcreator/cristiansmaster/item/BioScannerItem.java"
         ]
       }
     },
@@ -484,8 +484,8 @@
         "files": [
           "src/main/java/net/mcreator/cristiansmaster/item/renderer/GrimoireItemRenderer.java",
           "src/main/java/net/mcreator/cristiansmaster/item/model/GrimoireItemModel.java",
-          "src/main/java/net/mcreator/cristiansmaster/item/GrimoireItem.java",
-          "src/main/resources/assets/cristian_s_master/models/item/grimoire.json"
+          "src/main/resources/assets/cristian_s_master/models/item/grimoire.json",
+          "src/main/java/net/mcreator/cristiansmaster/item/GrimoireItem.java"
         ]
       },
       "path": "~/MedievalFantasy/Grimoire"
@@ -498,8 +498,8 @@
       "registry_name": "iceshard",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cristiansmaster/entity/IceshardEntity.java",
-          "src/main/java/net/mcreator/cristiansmaster/client/renderer/IceshardRenderer.java"
+          "src/main/java/net/mcreator/cristiansmaster/client/renderer/IceshardRenderer.java",
+          "src/main/java/net/mcreator/cristiansmaster/entity/IceshardEntity.java"
         ]
       },
       "path": "~/MedievalFantasy/Grimoire"
@@ -590,8 +590,8 @@
       "registry_name": "fireball",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cristiansmaster/client/renderer/FireballRenderer.java",
-          "src/main/java/net/mcreator/cristiansmaster/entity/FireballEntity.java"
+          "src/main/java/net/mcreator/cristiansmaster/entity/FireballEntity.java",
+          "src/main/java/net/mcreator/cristiansmaster/client/renderer/FireballRenderer.java"
         ]
       },
       "path": "~/MedievalFantasy/Grimoire"
@@ -769,10 +769,10 @@
       "registry_name": "ironclad",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cristiansmaster/entity/model/IroncladModel.java",
+          "src/main/resources/assets/cristian_s_master/models/item/ironclad_spawn_egg.json",
           "src/main/java/net/mcreator/cristiansmaster/entity/IroncladEntity.java",
-          "src/main/java/net/mcreator/cristiansmaster/client/renderer/IroncladRenderer.java",
-          "src/main/resources/assets/cristian_s_master/models/item/ironclad_spawn_egg.json"
+          "src/main/java/net/mcreator/cristiansmaster/entity/model/IroncladModel.java",
+          "src/main/java/net/mcreator/cristiansmaster/client/renderer/IroncladRenderer.java"
         ]
       },
       "path": "~/MedievalFantasy"
@@ -917,8 +917,8 @@
       "registry_name": "phoenix_feather",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cristiansmaster/item/PhoenixFeatherItem.java",
-          "src/main/resources/assets/cristian_s_master/models/item/phoenix_feather.json"
+          "src/main/resources/assets/cristian_s_master/models/item/phoenix_feather.json",
+          "src/main/java/net/mcreator/cristiansmaster/item/PhoenixFeatherItem.java"
         ]
       },
       "path": "~/MedievalFantasy"
@@ -1128,11 +1128,11 @@
       "registry_name": "magic_armor",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cristiansmaster/item/MagicArmorItem.java",
-          "src/main/resources/assets/cristian_s_master/models/item/magic_armor_leggings.json",
           "src/main/resources/assets/cristian_s_master/models/item/magic_armor_boots.json",
+          "src/main/java/net/mcreator/cristiansmaster/item/MagicArmorItem.java",
           "src/main/resources/assets/cristian_s_master/models/item/magic_armor_helmet.json",
-          "src/main/resources/assets/cristian_s_master/models/item/magic_armor_chestplate.json"
+          "src/main/resources/assets/cristian_s_master/models/item/magic_armor_chestplate.json",
+          "src/main/resources/assets/cristian_s_master/models/item/magic_armor_leggings.json"
         ]
       },
       "path": "~/MedievalFantasy"
@@ -1199,8 +1199,8 @@
       "registry_name": "magical_dart",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cristiansmaster/client/renderer/MagicalDartRenderer.java",
-          "src/main/java/net/mcreator/cristiansmaster/entity/MagicalDartEntity.java"
+          "src/main/java/net/mcreator/cristiansmaster/entity/MagicalDartEntity.java",
+          "src/main/java/net/mcreator/cristiansmaster/client/renderer/MagicalDartRenderer.java"
         ]
       },
       "path": "~/MedievalFantasy"
@@ -1213,8 +1213,8 @@
       "registry_name": "nerf_gun",
       "metadata": {
         "files": [
-          "src/main/resources/assets/cristian_s_master/models/item/nerf_gun.json",
-          "src/main/java/net/mcreator/cristiansmaster/item/NerfGunItem.java"
+          "src/main/java/net/mcreator/cristiansmaster/item/NerfGunItem.java",
+          "src/main/resources/assets/cristian_s_master/models/item/nerf_gun.json"
         ]
       },
       "path": "~/MedievalFantasy"
@@ -1227,8 +1227,8 @@
       "registry_name": "nerf_gun_2",
       "metadata": {
         "files": [
-          "src/main/resources/assets/cristian_s_master/models/item/nerf_gun_2.json",
-          "src/main/java/net/mcreator/cristiansmaster/item/NerfGun2Item.java"
+          "src/main/java/net/mcreator/cristiansmaster/item/NerfGun2Item.java",
+          "src/main/resources/assets/cristian_s_master/models/item/nerf_gun_2.json"
         ]
       },
       "path": "~/MedievalFantasy"
@@ -1380,8 +1380,8 @@
       "registry_name": "shoot_the_exploding_projectile_item",
       "metadata": {
         "files": [
-          "src/main/resources/assets/cristian_s_master/models/item/shoot_the_exploding_projectile_item.json",
-          "src/main/java/net/mcreator/cristiansmaster/item/ShootTheExplodingProjectileItemItem.java"
+          "src/main/java/net/mcreator/cristiansmaster/item/ShootTheExplodingProjectileItemItem.java",
+          "src/main/resources/assets/cristian_s_master/models/item/shoot_the_exploding_projectile_item.json"
         ]
       },
       "path": "~/TrialStuff"
@@ -1438,8 +1438,8 @@
       "registry_name": "rocket_launcher",
       "metadata": {
         "files": [
-          "src/main/resources/assets/cristian_s_master/models/item/rocket_launcher.json",
-          "src/main/java/net/mcreator/cristiansmaster/item/RocketLauncherItem.java"
+          "src/main/java/net/mcreator/cristiansmaster/item/RocketLauncherItem.java",
+          "src/main/resources/assets/cristian_s_master/models/item/rocket_launcher.json"
         ]
       },
       "path": "~/MedievalFantasy"
@@ -1469,9 +1469,9 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/cristiansmaster/entity/BigGuyEntity.java",
-          "src/main/resources/data/cristian_s_master/neoforge/biome_modifier/big_guy_biome_modifier.json",
           "src/main/java/net/mcreator/cristiansmaster/client/renderer/BigGuyRenderer.java",
-          "src/main/resources/assets/cristian_s_master/models/item/big_guy_spawn_egg.json"
+          "src/main/resources/assets/cristian_s_master/models/item/big_guy_spawn_egg.json",
+          "src/main/resources/data/cristian_s_master/neoforge/biome_modifier/big_guy_biome_modifier.json"
         ]
       },
       "path": "~/TrialStuff"
@@ -1484,17 +1484,17 @@
       "registry_name": "tnt_dimension",
       "metadata": {
         "files": [
-          "src/main/resources/assets/cristian_s_master/blockstates/tnt_dimension_portal.json",
+          "src/main/java/net/mcreator/cristiansmaster/block/TNTDimensionPortalBlock.java",
           "src/main/resources/data/cristian_s_master/dimension/tnt_dimension.json",
           "src/main/resources/assets/cristian_s_master/models/item/tnt_dimension.json",
-          "src/main/resources/data/cristian_s_master/dimension_type/tnt_dimension.json",
-          "src/main/java/net/mcreator/cristiansmaster/block/TNTDimensionPortalBlock.java",
-          "src/main/java/net/mcreator/cristiansmaster/world/dimension/TNTDimensionDimension.java",
           "src/main/java/net/mcreator/cristiansmaster/world/teleporter/TNTDimensionPortalShape.java",
-          "src/main/java/net/mcreator/cristiansmaster/item/TNTDimensionItem.java",
-          "src/main/java/net/mcreator/cristiansmaster/world/teleporter/TNTDimensionTeleporter.java",
+          "src/main/resources/assets/cristian_s_master/models/block/tnt_dimension_portal_ns.json",
+          "src/main/resources/data/cristian_s_master/dimension_type/tnt_dimension.json",
           "src/main/resources/assets/cristian_s_master/models/block/tnt_dimension_portal_ew.json",
-          "src/main/resources/assets/cristian_s_master/models/block/tnt_dimension_portal_ns.json"
+          "src/main/java/net/mcreator/cristiansmaster/item/TNTDimensionItem.java",
+          "src/main/java/net/mcreator/cristiansmaster/world/dimension/TNTDimensionDimension.java",
+          "src/main/resources/assets/cristian_s_master/blockstates/tnt_dimension_portal.json",
+          "src/main/java/net/mcreator/cristiansmaster/world/teleporter/TNTDimensionTeleporter.java"
         ]
       },
       "path": "~/TrialStuff"
@@ -1587,8 +1587,8 @@
       "registry_name": "op_axe",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cristiansmaster/item/OPAxeItem.java",
-          "src/main/resources/assets/cristian_s_master/models/item/op_axe.json"
+          "src/main/resources/assets/cristian_s_master/models/item/op_axe.json",
+          "src/main/java/net/mcreator/cristiansmaster/item/OPAxeItem.java"
         ]
       },
       "path": "~/TreeCapitator"
@@ -1679,8 +1679,8 @@
       "registry_name": "wall_of_ice_cast",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cristiansmaster/item/WallOfIceCastItem.java",
-          "src/main/resources/assets/cristian_s_master/models/item/wall_of_ice_cast.json"
+          "src/main/resources/assets/cristian_s_master/models/item/wall_of_ice_cast.json",
+          "src/main/java/net/mcreator/cristiansmaster/item/WallOfIceCastItem.java"
         ]
       },
       "path": "~/TreeCapitator"
@@ -1921,8 +1921,8 @@
       "registry_name": "backpack_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cristiansmaster/client/gui/BackpackGuiScreen.java",
-          "src/main/java/net/mcreator/cristiansmaster/world/inventory/BackpackGuiMenu.java"
+          "src/main/java/net/mcreator/cristiansmaster/world/inventory/BackpackGuiMenu.java",
+          "src/main/java/net/mcreator/cristiansmaster/client/gui/BackpackGuiScreen.java"
         ]
       },
       "path": "~/Backpack"
@@ -1992,9 +1992,9 @@
       "registry_name": "teleporter_button",
       "metadata": {
         "files": [
+          "src/main/resources/assets/cristian_s_master/models/item/teleporter_button.json",
           "src/main/java/net/mcreator/cristiansmaster/item/TeleporterButtonItem.java",
-          "src/main/java/net/mcreator/cristiansmaster/item/inventory/TeleporterButtonInventoryCapability.java",
-          "src/main/resources/assets/cristian_s_master/models/item/teleporter_button.json"
+          "src/main/java/net/mcreator/cristiansmaster/item/inventory/TeleporterButtonInventoryCapability.java"
         ]
       },
       "path": "~/TeleportationButton"
@@ -2091,8 +2091,8 @@
       "registry_name": "spawner_anvil",
       "metadata": {
         "files": [
-          "src/main/resources/assets/cristian_s_master/models/item/spawner_anvil.json",
-          "src/main/java/net/mcreator/cristiansmaster/item/SpawnerAnvilItem.java"
+          "src/main/java/net/mcreator/cristiansmaster/item/SpawnerAnvilItem.java",
+          "src/main/resources/assets/cristian_s_master/models/item/spawner_anvil.json"
         ]
       },
       "path": "~/SpawnAnvilWhereLooking"
@@ -2169,8 +2169,8 @@
       "registry_name": "select_block",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cristiansmaster/client/gui/SelectBlockScreen.java",
-          "src/main/java/net/mcreator/cristiansmaster/world/inventory/SelectBlockMenu.java"
+          "src/main/java/net/mcreator/cristiansmaster/world/inventory/SelectBlockMenu.java",
+          "src/main/java/net/mcreator/cristiansmaster/client/gui/SelectBlockScreen.java"
         ]
       },
       "path": "~/BuildersWand"
@@ -2354,11 +2354,11 @@
       "registry_name": "portal_orange",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cristiansmaster/block/PortalOrangeBlock.java",
-          "src/main/resources/assets/cristian_s_master/models/item/portal_orange.json",
           "src/main/resources/assets/cristian_s_master/models/block/portal_orange.json",
-          "src/main/resources/data/cristian_s_master/loot_tables/blocks/portal_orange.json",
-          "src/main/resources/assets/cristian_s_master/blockstates/portal_orange.json"
+          "src/main/resources/assets/cristian_s_master/blockstates/portal_orange.json",
+          "src/main/resources/data/cristian_s_master/loot_table/blocks/portal_orange.json",
+          "src/main/java/net/mcreator/cristiansmaster/block/PortalOrangeBlock.java",
+          "src/main/resources/assets/cristian_s_master/models/item/portal_orange.json"
         ]
       },
       "path": "~/PortalGunFromPortal"
@@ -2371,10 +2371,10 @@
       "registry_name": "portal_blue",
       "metadata": {
         "files": [
-          "src/main/resources/data/cristian_s_master/loot_tables/blocks/portal_blue.json",
-          "src/main/resources/assets/cristian_s_master/models/item/portal_blue.json",
-          "src/main/java/net/mcreator/cristiansmaster/block/PortalBlueBlock.java",
           "src/main/resources/assets/cristian_s_master/blockstates/portal_blue.json",
+          "src/main/java/net/mcreator/cristiansmaster/block/PortalBlueBlock.java",
+          "src/main/resources/assets/cristian_s_master/models/item/portal_blue.json",
+          "src/main/resources/data/cristian_s_master/loot_table/blocks/portal_blue.json",
           "src/main/resources/assets/cristian_s_master/models/block/portal_blue.json"
         ]
       },
@@ -2411,8 +2411,8 @@
       "registry_name": "portal_shooter",
       "metadata": {
         "files": [
-          "src/main/resources/assets/cristian_s_master/models/item/portal_shooter.json",
-          "src/main/java/net/mcreator/cristiansmaster/item/PortalShooterItem.java"
+          "src/main/java/net/mcreator/cristiansmaster/item/PortalShooterItem.java",
+          "src/main/resources/assets/cristian_s_master/models/item/portal_shooter.json"
         ]
       },
       "path": "~/PortalGunFromPortal"
@@ -2427,9 +2427,9 @@
         "files": [
           "src/main/java/net/mcreator/cristiansmaster/client/renderer/BonnieRenderer.java",
           "src/main/resources/assets/cristian_s_master/models/item/bonnie_spawn_egg.json",
+          "src/main/java/net/mcreator/cristiansmaster/entity/model/BonnieModel.java",
           "src/main/java/net/mcreator/cristiansmaster/entity/BonnieEntity.java",
-          "src/main/resources/data/cristian_s_master/neoforge/biome_modifier/bonnie_biome_modifier.json",
-          "src/main/java/net/mcreator/cristiansmaster/entity/model/BonnieModel.java"
+          "src/main/resources/data/cristian_s_master/neoforge/biome_modifier/bonnie_biome_modifier.json"
         ]
       },
       "path": "~/FNAF"
@@ -2926,9 +2926,9 @@
       "pehkui",
       "geckolib"
     ],
-    "currentGenerator": "neoforge-1.20.6",
+    "currentGenerator": "neoforge-1.21.1",
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.cristiansmaster"
   },
-  "mcreatorVersion": 202400232117
+  "mcreatorVersion": 202400342716
 }

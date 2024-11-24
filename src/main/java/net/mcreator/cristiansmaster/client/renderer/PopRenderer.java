@@ -15,6 +15,6 @@ public class PopRenderer extends MobRenderer<PopEntity, Modelpop<PopEntity>> {
 
 	@Override
 	public ResourceLocation getTextureLocation(PopEntity entity) {
-		return new ResourceLocation("cristian_s_master:textures/entities/poptexture.png");
+		return ResourceLocation.parse("cristian_s_master:textures/entities/poptexture.png");
 	}
 }

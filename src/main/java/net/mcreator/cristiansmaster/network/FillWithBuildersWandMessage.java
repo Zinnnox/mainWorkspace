@@ -20,7 +20,7 @@ import net.mcreator.cristiansmaster.CristianSMasterMod;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public record FillWithBuildersWandMessage(int eventType, int pressedms) implements CustomPacketPayload {
-	public static final Type<FillWithBuildersWandMessage> TYPE = new Type<>(new ResourceLocation(CristianSMasterMod.MODID, "key_fill_with_builders_wand"));
+	public static final Type<FillWithBuildersWandMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(CristianSMasterMod.MODID, "key_fill_with_builders_wand"));
 	public static final StreamCodec<RegistryFriendlyByteBuf, FillWithBuildersWandMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, FillWithBuildersWandMessage message) -> {
 		buffer.writeInt(message.eventType);
 		buffer.writeInt(message.pressedms);

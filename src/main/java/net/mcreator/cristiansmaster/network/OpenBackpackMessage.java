@@ -17,7 +17,7 @@ import net.mcreator.cristiansmaster.CristianSMasterMod;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public record OpenBackpackMessage(int eventType, int pressedms) implements CustomPacketPayload {
-	public static final Type<OpenBackpackMessage> TYPE = new Type<>(new ResourceLocation(CristianSMasterMod.MODID, "key_open_backpack"));
+	public static final Type<OpenBackpackMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(CristianSMasterMod.MODID, "key_open_backpack"));
 	public static final StreamCodec<RegistryFriendlyByteBuf, OpenBackpackMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, OpenBackpackMessage message) -> {
 		buffer.writeInt(message.eventType);
 		buffer.writeInt(message.pressedms);

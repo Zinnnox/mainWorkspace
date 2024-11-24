@@ -20,7 +20,7 @@ import net.mcreator.cristiansmaster.CristianSMasterMod;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public record ShootFireballMessage(int eventType, int pressedms) implements CustomPacketPayload {
-	public static final Type<ShootFireballMessage> TYPE = new Type<>(new ResourceLocation(CristianSMasterMod.MODID, "key_shoot_fireball"));
+	public static final Type<ShootFireballMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(CristianSMasterMod.MODID, "key_shoot_fireball"));
 	public static final StreamCodec<RegistryFriendlyByteBuf, ShootFireballMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, ShootFireballMessage message) -> {
 		buffer.writeInt(message.eventType);
 		buffer.writeInt(message.pressedms);

@@ -15,6 +15,6 @@ public class BigGuyRenderer extends MobRenderer<BigGuyEntity, Modelbig_guy<BigGu
 
 	@Override
 	public ResourceLocation getTextureLocation(BigGuyEntity entity) {
-		return new ResourceLocation("cristian_s_master:textures/entities/bigguytexture.png");
+		return ResourceLocation.parse("cristian_s_master:textures/entities/bigguytexture.png");
 	}
 }

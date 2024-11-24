@@ -9,7 +9,6 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.core.registries.Registries;
 import net.minecraft.core.BlockPos;
 
 import java.util.List;
@@ -29,7 +28,7 @@ public class IdontknowRightclickedProcedure {
 						entityToSpawn.moveTo(Vec3.atBottomCenterOf(BlockPos.containing(entity.getX(), entity.getY(), entity.getZ())));;
 						_level.addFreshEntity(entityToSpawn);
 					}
-					entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.GENERIC)), 3);
+					entity.hurt(new DamageSource(world.holderOrThrow(DamageTypes.GENERIC)), 3);
 				}
 			}
 		}

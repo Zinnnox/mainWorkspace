@@ -29,6 +29,7 @@ public class CristianSMasterModTabs {
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 		if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
+
 			tabData.accept(CristianSMasterModItems.ANT_MAN_WATCH.get());
 			tabData.accept(CristianSMasterModItems.GRIMOIRE.get());
 			tabData.accept(CristianSMasterModItems.MAGIC_MIRROR.get());
@@ -42,7 +43,9 @@ public class CristianSMasterModTabs {
 			tabData.accept(CristianSMasterModItems.ROCKET_LAUNCHER.get());
 			tabData.accept(CristianSMasterModItems.IDONTKNOW.get());
 			tabData.accept(CristianSMasterModItems.BUILDERS_WAND.get());
+
 		} else if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
+
 			tabData.accept(CristianSMasterModItems.DRAGON_SPAWN_EGG.get());
 			tabData.accept(CristianSMasterModItems.MARYANN_THE_SLIME_SPAWN_EGG.get());
 			tabData.accept(CristianSMasterModItems.IRONCLAD_SPAWN_EGG.get());
@@ -50,7 +53,9 @@ public class CristianSMasterModTabs {
 			tabData.accept(CristianSMasterModItems.POP_SPAWN_EGG.get());
 			tabData.accept(CristianSMasterModItems.BIG_GUY_SPAWN_EGG.get());
 			tabData.accept(CristianSMasterModItems.OUTLINE_SPAWN_EGG.get());
+
 		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+
 			tabData.accept(CristianSMasterModItems.MINING_LASER.get());
 			tabData.accept(CristianSMasterModItems.TELEPORTER.get());
 			tabData.accept(CristianSMasterModItems.CLOAKING_DEVICE.get());
@@ -62,11 +67,14 @@ public class CristianSMasterModTabs {
 			tabData.accept(CristianSMasterModItems.WALL_OF_ICE_CAST.get());
 			tabData.accept(CristianSMasterModItems.X_RAY_AMULET.get());
 			tabData.accept(CristianSMasterModItems.TELEPORTER_BUTTON.get());
+
 		} else if (tabData.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
+
 			tabData.accept(CristianSMasterModItems.WYRM_POTION.get());
 			tabData.accept(CristianSMasterModItems.FAIRY_DUST.get());
 			tabData.accept(CristianSMasterModItems.PHOENIX_FEATHER.get());
 			tabData.accept(CristianSMasterModItems.BURNT_PHEONIX_FEATHTER.get());
+
 		}
 	}
 }

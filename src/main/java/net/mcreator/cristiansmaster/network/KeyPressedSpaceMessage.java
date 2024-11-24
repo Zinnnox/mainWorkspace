@@ -21,7 +21,7 @@ import net.mcreator.cristiansmaster.CristianSMasterMod;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public record KeyPressedSpaceMessage(int eventType, int pressedms) implements CustomPacketPayload {
-	public static final Type<KeyPressedSpaceMessage> TYPE = new Type<>(new ResourceLocation(CristianSMasterMod.MODID, "key_key_pressed_space"));
+	public static final Type<KeyPressedSpaceMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(CristianSMasterMod.MODID, "key_key_pressed_space"));
 	public static final StreamCodec<RegistryFriendlyByteBuf, KeyPressedSpaceMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, KeyPressedSpaceMessage message) -> {
 		buffer.writeInt(message.eventType);
 		buffer.writeInt(message.pressedms);

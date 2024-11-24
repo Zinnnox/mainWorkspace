@@ -15,6 +15,6 @@ public class DragonRenderer extends MobRenderer<DragonEntity, ModelCustomModel<D
 
 	@Override
 	public ResourceLocation getTextureLocation(DragonEntity entity) {
-		return new ResourceLocation("cristian_s_master:textures/entities/enderdragonuntextrd.png");
+		return ResourceLocation.parse("cristian_s_master:textures/entities/enderdragonuntextrd.png");
 	}
 }

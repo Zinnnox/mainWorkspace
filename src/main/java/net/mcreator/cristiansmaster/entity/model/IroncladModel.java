@@ -14,17 +14,17 @@ import net.mcreator.cristiansmaster.entity.IroncladEntity;
 public class IroncladModel extends GeoModel<IroncladEntity> {
 	@Override
 	public ResourceLocation getAnimationResource(IroncladEntity entity) {
-		return new ResourceLocation("cristian_s_master", "animations/ironclad.animation.json");
+		return ResourceLocation.parse("cristian_s_master:animations/ironclad.animation.json");
 	}
 
 	@Override
 	public ResourceLocation getModelResource(IroncladEntity entity) {
-		return new ResourceLocation("cristian_s_master", "geo/ironclad.geo.json");
+		return ResourceLocation.parse("cristian_s_master:geo/ironclad.geo.json");
 	}
 
 	@Override
 	public ResourceLocation getTextureResource(IroncladEntity entity) {
-		return new ResourceLocation("cristian_s_master", "textures/entities/" + entity.getTexture() + ".png");
+		return ResourceLocation.parse("cristian_s_master:textures/entities/" + entity.getTexture() + ".png");
 	}
 
 	@Override

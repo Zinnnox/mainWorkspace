@@ -20,7 +20,7 @@ import net.mcreator.cristiansmaster.CristianSMasterMod;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public record OpenGuiBuildersWandMessage(int eventType, int pressedms) implements CustomPacketPayload {
-	public static final Type<OpenGuiBuildersWandMessage> TYPE = new Type<>(new ResourceLocation(CristianSMasterMod.MODID, "key_open_gui_builders_wand"));
+	public static final Type<OpenGuiBuildersWandMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(CristianSMasterMod.MODID, "key_open_gui_builders_wand"));
 	public static final StreamCodec<RegistryFriendlyByteBuf, OpenGuiBuildersWandMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, OpenGuiBuildersWandMessage message) -> {
 		buffer.writeInt(message.eventType);
 		buffer.writeInt(message.pressedms);
