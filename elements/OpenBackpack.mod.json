@@ -4,9 +4,6 @@
   "definition": {
     "triggerKey": "L",
     "keyBindingName": "Open Backpack",
-    "keyBindingCategoryKey": "misc",
-    "onKeyPressed": {
-      "name": "OpenBackpackOnKeyPressed"
-    }
+    "keyBindingCategoryKey": "misc"
   }
 }

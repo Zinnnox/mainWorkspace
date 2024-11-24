@@ -61,7 +61,6 @@ public class CristianSMasterModTabs {
 			tabData.accept(CristianSMasterModItems.OP_AXE.get());
 			tabData.accept(CristianSMasterModItems.WALL_OF_ICE_CAST.get());
 			tabData.accept(CristianSMasterModItems.X_RAY_AMULET.get());
-			tabData.accept(CristianSMasterModItems.BACKPACK.get());
 			tabData.accept(CristianSMasterModItems.TELEPORTER_BUTTON.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
 			tabData.accept(CristianSMasterModItems.WYRM_POTION.get());

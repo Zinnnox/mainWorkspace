@@ -20,7 +20,6 @@ import net.mcreator.cristiansmaster.network.SpawnSILLYGOOSEMessage;
 import net.mcreator.cristiansmaster.network.ShootIceshardMessage;
 import net.mcreator.cristiansmaster.network.ShootFireballMessage;
 import net.mcreator.cristiansmaster.network.OpenGuiBuildersWandMessage;
-import net.mcreator.cristiansmaster.network.OpenBackpackMessage;
 import net.mcreator.cristiansmaster.network.KeyPressedSpaceMessage;
 import net.mcreator.cristiansmaster.network.IroncladspawnedMessage;
 import net.mcreator.cristiansmaster.network.FillWithBuildersWandMessage;
@@ -97,19 +96,7 @@ public class CristianSMasterModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
-	public static final KeyMapping OPEN_BACKPACK = new KeyMapping("key.cristian_s_master.open_backpack", GLFW.GLFW_KEY_L, "key.categories.misc") {
-		private boolean isDownOld = false;
-
-		@Override
-		public void setDown(boolean isDown) {
-			super.setDown(isDown);
-			if (isDownOld != isDown && isDown) {
-				PacketDistributor.sendToServer(new OpenBackpackMessage(0, 0));
-				OpenBackpackMessage.pressAction(Minecraft.getInstance().player, 0, 0);
-			}
-			isDownOld = isDown;
-		}
-	};
+	public static final KeyMapping OPEN_BACKPACK = new KeyMapping("key.cristian_s_master.open_backpack", GLFW.GLFW_KEY_L, "key.categories.misc");
 	public static final KeyMapping OPEN_GUI_BUILDERS_WAND = new KeyMapping("key.cristian_s_master.open_gui_builders_wand", GLFW.GLFW_KEY_K, "key.categories.misc") {
 		private boolean isDownOld = false;
 
@@ -166,7 +153,6 @@ public class CristianSMasterModKeyMappings {
 				SHOOT_ICESHARD.consumeClick();
 				IRONCLADSPAWNED.consumeClick();
 				SPAWN_SILLYGOOSE.consumeClick();
-				OPEN_BACKPACK.consumeClick();
 				OPEN_GUI_BUILDERS_WAND.consumeClick();
 				FILL_WITH_BUILDERS_WAND.consumeClick();
 			}

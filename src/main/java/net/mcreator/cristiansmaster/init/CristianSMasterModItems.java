@@ -45,7 +45,6 @@ import net.mcreator.cristiansmaster.item.CloakingDeviceItem;
 import net.mcreator.cristiansmaster.item.BurntPheonixFeathterItem;
 import net.mcreator.cristiansmaster.item.BuildersWandItem;
 import net.mcreator.cristiansmaster.item.BioScannerItem;
-import net.mcreator.cristiansmaster.item.BackpackItem;
 import net.mcreator.cristiansmaster.item.AntManWatchItem;
 import net.mcreator.cristiansmaster.CristianSMasterMod;
 
@@ -86,7 +85,6 @@ public class CristianSMasterModItems {
 	public static final DeferredHolder<Item, Item> WALL_OF_ICE_CAST = REGISTRY.register("wall_of_ice_cast", WallOfIceCastItem::new);
 	public static final DeferredHolder<Item, Item> OUTLINE_SPAWN_EGG = REGISTRY.register("outline_spawn_egg", () -> new DeferredSpawnEggItem(CristianSMasterModEntities.OUTLINE, -1, -1, new Item.Properties()));
 	public static final DeferredHolder<Item, Item> X_RAY_AMULET = REGISTRY.register("x_ray_amulet", XRayAmuletItem::new);
-	public static final DeferredHolder<Item, Item> BACKPACK = REGISTRY.register("backpack", BackpackItem::new);
 	public static final DeferredHolder<Item, Item> TELEPORTER_BUTTON = REGISTRY.register("teleporter_button", TeleporterButtonItem::new);
 	public static final DeferredHolder<Item, Item> SPAWNER_ANVIL = REGISTRY.register("spawner_anvil", SpawnerAnvilItem::new);
 	public static final DeferredHolder<Item, Item> BUILDERS_WAND = REGISTRY.register("builders_wand", BuildersWandItem::new);
