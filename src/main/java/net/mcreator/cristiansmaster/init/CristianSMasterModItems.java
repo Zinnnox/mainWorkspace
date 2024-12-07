@@ -37,6 +37,7 @@ import net.mcreator.cristiansmaster.item.NerfGun2Item;
 import net.mcreator.cristiansmaster.item.MiningLaserItem;
 import net.mcreator.cristiansmaster.item.MagicMirrorItem;
 import net.mcreator.cristiansmaster.item.MagicArmorItem;
+import net.mcreator.cristiansmaster.item.KillAuraItem;
 import net.mcreator.cristiansmaster.item.IdontknowItem;
 import net.mcreator.cristiansmaster.item.GrimoireItem;
 import net.mcreator.cristiansmaster.item.FlyingCarpetItem;
@@ -92,6 +93,7 @@ public class CristianSMasterModItems {
 	public static final DeferredItem<Item> PORTAL_BLUE = block(CristianSMasterModBlocks.PORTAL_BLUE);
 	public static final DeferredItem<Item> PORTAL_SHOOTER = REGISTRY.register("portal_shooter", PortalShooterItem::new);
 	public static final DeferredItem<Item> BONNIE_SPAWN_EGG = REGISTRY.register("bonnie_spawn_egg", () -> new DeferredSpawnEggItem(CristianSMasterModEntities.BONNIE, -1, -1, new Item.Properties()));
+	public static final DeferredItem<Item> KILL_AURA = REGISTRY.register("kill_aura", KillAuraItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items

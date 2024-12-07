@@ -1928,25 +1928,6 @@
       "path": "~/Backpack"
     },
     {
-      "name": "OpenBackpackOnKeyPressed",
-      "type": "procedure",
-      "compiles": false,
-      "locked_code": false,
-      "registry_name": "open_backpack_on_key_pressed",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/cristiansmaster/procedures/OpenBackpackOnKeyPressedProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Backpack"
-    },
-    {
       "name": "Fetch",
       "type": "procedure",
       "compiles": true,
@@ -2376,8 +2357,8 @@
           "src/main/java/net/mcreator/cristiansmaster/block/PortalOrangeBlock.java",
           "src/main/resources/assets/cristian_s_master/models/item/portal_orange.json",
           "src/main/resources/assets/cristian_s_master/models/block/portal_orange.json",
-          "src/main/resources/data/cristian_s_master/loot_tables/blocks/portal_orange.json",
-          "src/main/resources/assets/cristian_s_master/blockstates/portal_orange.json"
+          "src/main/resources/assets/cristian_s_master/blockstates/portal_orange.json",
+          "src/main/resources/data/cristian_s_master/loot_table/blocks/portal_orange.json"
         ]
       },
       "path": "~/PortalGunFromPortal"
@@ -2390,7 +2371,7 @@
       "registry_name": "portal_blue",
       "metadata": {
         "files": [
-          "src/main/resources/data/cristian_s_master/loot_tables/blocks/portal_blue.json",
+          "src/main/resources/data/cristian_s_master/loot_table/blocks/portal_blue.json",
           "src/main/resources/assets/cristian_s_master/models/item/portal_blue.json",
           "src/main/java/net/mcreator/cristiansmaster/block/PortalBlueBlock.java",
           "src/main/resources/assets/cristian_s_master/blockstates/portal_blue.json",
@@ -2945,9 +2926,9 @@
       "pehkui",
       "geckolib"
     ],
-    "currentGenerator": "neoforge-1.20.6",
+    "currentGenerator": "neoforge-1.21.1",
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.cristiansmaster"
   },
-  "mcreatorVersion": 202400232117
+  "mcreatorVersion": 202400342716
 }

@@ -2433,6 +2433,55 @@
         ]
       },
       "path": "~/FNAF"
+    },
+    {
+      "name": "KillAuraItemInHandTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kill_aura_item_in_hand_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/KillAuraItemInHandTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Alexa"
+    },
+    {
+      "name": "KillAura",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kill_aura",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cristian_s_master/models/item/kill_aura.json",
+          "src/main/java/net/mcreator/cristiansmaster/item/KillAuraItem.java"
+        ]
+      },
+      "path": "~/Alexa"
     }
   ],
   "variable_elements": [
@@ -2706,6 +2755,7 @@
       "~CUSTOM:MagicArmor.body"
     ],
     "ITEMS:minecraft:enchantable/durability": [
+      "~CUSTOM:KillAura",
       "~CUSTOM:FairyDust"
     ],
     "ITEMS:minecraft:pickaxes": [
@@ -2809,6 +2859,7 @@
       "item.minecraft.splash_potion.effect.randomizer_potion": "Splash Randomizer Potion",
       "subtitles.magicmirrorvanish": "",
       "item.minecraft.potion.effect.xray_potion": "Potion of XRay",
+      "item.cristian_s_master.kill_aura": "Kill Aura",
       "entity.cristian_s_master.big_guy": "Big Guy",
       "item.cristian_s_master.magic_mirror": "Magic Mirror",
       "effect.cristian_s_master.randomize_mob_height_effect": "Randomize Mob Height Effect",
