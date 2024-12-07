@@ -24,6 +24,7 @@ public class CristianSMasterModTabs {
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> CUSTOM = REGISTRY.register("custom",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.cristian_s_master.custom")).icon(() -> new ItemStack(CristianSMasterModItems.SHOOT_THE_EXPLODING_PROJECTILE_ITEM.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(CristianSMasterModItems.PORTAL_SHOOTER.get());
+				tabData.accept(CristianSMasterModItems.BONNIE_SPAWN_EGG.get());
 			}).withSearchBar().build());
 
 	@SubscribeEvent

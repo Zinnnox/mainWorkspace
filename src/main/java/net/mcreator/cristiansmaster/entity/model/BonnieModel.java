@@ -9,12 +9,12 @@ import net.mcreator.cristiansmaster.entity.BonnieEntity;
 public class BonnieModel extends GeoModel<BonnieEntity> {
 	@Override
 	public ResourceLocation getAnimationResource(BonnieEntity entity) {
-		return ResourceLocation.parse("cristian_s_master:animations/bonniecarter.animation.json");
+		return ResourceLocation.parse("cristian_s_master:animations/bonnieunknown.animation.json");
 	}
 
 	@Override
 	public ResourceLocation getModelResource(BonnieEntity entity) {
-		return ResourceLocation.parse("cristian_s_master:geo/bonniecarter.geo.json");
+		return ResourceLocation.parse("cristian_s_master:geo/bonnieunknown.geo.json");
 	}
 
 	@Override
