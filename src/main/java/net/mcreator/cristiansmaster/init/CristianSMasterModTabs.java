@@ -27,6 +27,9 @@ public class CristianSMasterModTabs {
 				tabData.accept(CristianSMasterModItems.BONNIE_SPAWN_EGG.get());
 				tabData.accept(CristianSMasterModItems.KILL_AURA.get());
 				tabData.accept(CristianSMasterModItems.FIREWORK_STICK.get());
+				tabData.accept(CristianSMasterModBlocks.DRILL_CART.get().asItem());
+				tabData.accept(CristianSMasterModBlocks.CARGO_CART.get().asItem());
+				tabData.accept(CristianSMasterModBlocks.FUEL_CART.get().asItem());
 			}).withSearchBar().build());
 
 	@SubscribeEvent

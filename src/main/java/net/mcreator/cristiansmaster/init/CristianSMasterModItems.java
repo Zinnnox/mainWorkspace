@@ -96,6 +96,9 @@ public class CristianSMasterModItems {
 	public static final DeferredItem<Item> BONNIE_SPAWN_EGG = REGISTRY.register("bonnie_spawn_egg", () -> new DeferredSpawnEggItem(CristianSMasterModEntities.BONNIE, -1, -1, new Item.Properties()));
 	public static final DeferredItem<Item> KILL_AURA = REGISTRY.register("kill_aura", KillAuraItem::new);
 	public static final DeferredItem<Item> FIREWORK_STICK = REGISTRY.register("firework_stick", FireworkStickItem::new);
+	public static final DeferredItem<Item> DRILL_CART = block(CristianSMasterModBlocks.DRILL_CART);
+	public static final DeferredItem<Item> CARGO_CART = block(CristianSMasterModBlocks.CARGO_CART);
+	public static final DeferredItem<Item> FUEL_CART = block(CristianSMasterModBlocks.FUEL_CART);
 
 	// Start of user code block custom items
 	// End of user code block custom items

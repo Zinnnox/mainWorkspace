@@ -28,6 +28,7 @@ import net.mcreator.cristiansmaster.init.CristianSMasterModMenus;
 import net.mcreator.cristiansmaster.init.CristianSMasterModItems;
 import net.mcreator.cristiansmaster.init.CristianSMasterModEntities;
 import net.mcreator.cristiansmaster.init.CristianSMasterModBlocks;
+import net.mcreator.cristiansmaster.init.CristianSMasterModBlockEntities;
 
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.Map;
@@ -48,7 +49,7 @@ public class CristianSMasterMod {
 		modEventBus.addListener(this::registerNetworking);
 		CristianSMasterModSounds.REGISTRY.register(modEventBus);
 		CristianSMasterModBlocks.REGISTRY.register(modEventBus);
-
+		CristianSMasterModBlockEntities.REGISTRY.register(modEventBus);
 		CristianSMasterModItems.REGISTRY.register(modEventBus);
 		CristianSMasterModEntities.REGISTRY.register(modEventBus);
 		CristianSMasterModTabs.REGISTRY.register(modEventBus);

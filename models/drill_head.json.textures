@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "drill_head": "cargo_cart"
+      },
+      "name": "default"
+    }
+  }
+}
