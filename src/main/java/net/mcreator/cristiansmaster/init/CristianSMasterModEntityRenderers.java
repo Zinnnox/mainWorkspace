@@ -41,5 +41,6 @@ public class CristianSMasterModEntityRenderers {
 		event.registerEntityRenderer(CristianSMasterModEntities.OUTLINE.get(), OutlineRenderer::new);
 		event.registerEntityRenderer(CristianSMasterModEntities.PORTAL_SHOOT_TO_PLACE.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(CristianSMasterModEntities.BONNIE.get(), BonnieRenderer::new);
+		event.registerEntityRenderer(CristianSMasterModEntities.FIREWORK_PROJECTILE.get(), ThrownItemRenderer::new);
 	}
 }

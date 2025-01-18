@@ -22,6 +22,7 @@ import net.mcreator.cristiansmaster.network.CristianSMasterModVariables;
 import net.mcreator.cristiansmaster.init.CristianSMasterModTabs;
 import net.mcreator.cristiansmaster.init.CristianSMasterModSounds;
 import net.mcreator.cristiansmaster.init.CristianSMasterModPotions;
+import net.mcreator.cristiansmaster.init.CristianSMasterModParticleTypes;
 import net.mcreator.cristiansmaster.init.CristianSMasterModMobEffects;
 import net.mcreator.cristiansmaster.init.CristianSMasterModMenus;
 import net.mcreator.cristiansmaster.init.CristianSMasterModItems;
@@ -56,6 +57,7 @@ public class CristianSMasterMod {
 		CristianSMasterModPotions.REGISTRY.register(modEventBus);
 		CristianSMasterModMobEffects.REGISTRY.register(modEventBus);
 		CristianSMasterModMenus.REGISTRY.register(modEventBus);
+		CristianSMasterModParticleTypes.REGISTRY.register(modEventBus);
 
 		// Start of user code block mod init
 		// End of user code block mod init

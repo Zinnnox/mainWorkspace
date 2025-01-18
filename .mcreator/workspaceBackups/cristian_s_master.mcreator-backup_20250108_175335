@@ -189,7 +189,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Etc"
     },
     {
       "name": "MiningLaser",
@@ -202,7 +203,8 @@
           "src/main/resources/assets/cristian_s_master/models/item/mining_laser.json",
           "src/main/java/net/mcreator/cristiansmaster/item/MiningLaserItem.java"
         ]
-      }
+      },
+      "path": "~/Etc"
     },
     {
       "name": "Deletethreebythree",
@@ -232,7 +234,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Etc"
     },
     {
       "name": "TeleporterRightclicked",
@@ -250,7 +253,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Etc"
     },
     {
       "name": "Teleporter",
@@ -263,7 +267,8 @@
           "src/main/java/net/mcreator/cristiansmaster/item/TeleporterItem.java",
           "src/main/resources/assets/cristian_s_master/models/item/teleporter.json"
         ]
-      }
+      },
+      "path": "~/Etc"
     },
     {
       "name": "CloakingDeviceRightclicked",
@@ -297,7 +302,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Etc"
     },
     {
       "name": "CloakingDeviceItemInInventoryTick",
@@ -310,7 +316,8 @@
           "src/main/java/net/mcreator/cristiansmaster/procedures/CloakingDeviceItemInInventoryTickProcedure.java"
         ],
         "dependencies": []
-      }
+      },
+      "path": "~/Etc"
     },
     {
       "name": "CloakingDevice",
@@ -323,7 +330,8 @@
           "src/main/resources/assets/cristian_s_master/models/item/cloaking_device.json",
           "src/main/java/net/mcreator/cristiansmaster/item/CloakingDeviceItem.java"
         ]
-      }
+      },
+      "path": "~/Etc"
     },
     {
       "name": "NewDimension",
@@ -345,7 +353,8 @@
           "src/main/resources/assets/cristian_s_master/models/item/new_dimension.json",
           "src/main/resources/assets/cristian_s_master/blockstates/new_dimension_portal.json"
         ]
-      }
+      },
+      "path": "~/Etc"
     },
     {
       "name": "NewPortalGunRightclickedOnBlock",
@@ -375,7 +384,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Etc"
     },
     {
       "name": "MaryannTheSlime",
@@ -390,7 +400,8 @@
           "src/main/resources/data/cristian_s_master/neoforge/biome_modifier/maryann_the_slime_biome_modifier.json",
           "src/main/resources/assets/cristian_s_master/models/item/maryann_the_slime_spawn_egg.json"
         ]
-      }
+      },
+      "path": "~/Etc"
     },
     {
       "name": "WyrmPotionRightclicked",
@@ -408,7 +419,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Etc"
     },
     {
       "name": "WyrmPotion",
@@ -421,7 +433,8 @@
           "src/main/resources/assets/cristian_s_master/models/item/wyrm_potion.json",
           "src/main/java/net/mcreator/cristiansmaster/item/WyrmPotionItem.java"
         ]
-      }
+      },
+      "path": "~/Etc"
     },
     {
       "name": "BioScannerRightclicked",
@@ -459,7 +472,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Etc"
     },
     {
       "name": "BioScanner",
@@ -472,7 +486,8 @@
           "src/main/java/net/mcreator/cristiansmaster/item/BioScannerItem.java",
           "src/main/resources/assets/cristian_s_master/models/item/bio_scanner.json"
         ]
-      }
+      },
+      "path": "~/Etc"
     },
     {
       "name": "Grimoire",
@@ -2482,6 +2497,109 @@
         ]
       },
       "path": "~/Alexa"
+    },
+    {
+      "name": "CustomFirework",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "custom_firework",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/client/particle/CustomFireworkParticle.java",
+          "src/main/resources/assets/cristian_s_master/particles/custom_firework.json"
+        ]
+      },
+      "path": "~/NewYears"
+    },
+    {
+      "name": "FireworkProjectile",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "firework_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/entity/FireworkProjectileEntity.java"
+        ]
+      },
+      "path": "~/NewYears"
+    },
+    {
+      "name": "FireworkProjectileProjectileHitsBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "firework_projectile_projectile_hits_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/FireworkProjectileProjectileHitsBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/NewYears"
+    },
+    {
+      "name": "FireworkStick",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "firework_stick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/item/FireworkStickItem.java",
+          "src/main/resources/assets/cristian_s_master/models/item/firework_stick.json"
+        ]
+      },
+      "path": "~/NewYears"
+    },
+    {
+      "name": "FireworkProjectileWhileProjectileFlyingTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "firework_projectile_while_projectile_flying_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/FireworkProjectileWhileProjectileFlyingTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/NewYears"
     }
   ],
   "variable_elements": [
@@ -2755,6 +2873,7 @@
       "~CUSTOM:MagicArmor.body"
     ],
     "ITEMS:minecraft:enchantable/durability": [
+      "~CUSTOM:KillAura",
       "~CUSTOM:FairyDust"
     ],
     "ITEMS:minecraft:pickaxes": [
@@ -2792,6 +2911,7 @@
       "entity.cristian_s_master.ironclad": "Ironclad",
       "item.cristian_s_master.nerf_gun_2": "Nerf Gun 2",
       "item.minecraft.splash_potion.effect.xray_potion": "Splash Potion of XRay",
+      "item.cristian_s_master.firework_stick": "Firework Stick",
       "item.cristian_s_master.op_axe": "OP Axe",
       "item.cristian_s_master.nerf_gun": "Nerf Gun",
       "item_group.cristian_s_master.custom": "Custom",
@@ -2891,10 +3011,6 @@
         ]
       },
       {
-        "name": "Superheroes",
-        "children": []
-      },
-      {
         "name": "TrialStuff",
         "children": []
       },
@@ -2904,10 +3020,6 @@
       },
       {
         "name": "XRayEffect",
-        "children": []
-      },
-      {
-        "name": "LaserVision",
         "children": []
       },
       {
@@ -2939,10 +3051,6 @@
         "children": []
       },
       {
-        "name": "BossBattle",
-        "children": []
-      },
-      {
         "name": "PortalGunFromPortal",
         "children": []
       },
@@ -2956,6 +3064,14 @@
       },
       {
         "name": "FNAF",
+        "children": []
+      },
+      {
+        "name": "Etc",
+        "children": []
+      },
+      {
+        "name": "NewYears",
         "children": []
       }
     ]

@@ -25,6 +25,7 @@ import net.mcreator.cristiansmaster.entity.MaryannTheSlimeEntity;
 import net.mcreator.cristiansmaster.entity.MagicalDartEntity;
 import net.mcreator.cristiansmaster.entity.IroncladEntity;
 import net.mcreator.cristiansmaster.entity.IceshardEntity;
+import net.mcreator.cristiansmaster.entity.FireworkProjectileEntity;
 import net.mcreator.cristiansmaster.entity.FireballEntity;
 import net.mcreator.cristiansmaster.entity.ExplodingProjectileEntity;
 import net.mcreator.cristiansmaster.entity.DragonEntity;
@@ -78,6 +79,8 @@ public class CristianSMasterModEntities {
 			EntityType.Builder.<BonnieEntity>of(BonnieEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
 					.sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<FireworkProjectileEntity>> FIREWORK_PROJECTILE = register("firework_projectile",
+			EntityType.Builder.<FireworkProjectileEntity>of(FireworkProjectileEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
