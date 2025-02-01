@@ -1,0 +1,7 @@
+{
+  "_fv": 69,
+  "_type": "procedure",
+  "definition": {
+    "procedurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"event_trigger\" deletable=\"false\" x=\"40\" y=\"40\"><field name=\"trigger\">no_ext_trigger</field><next><block type=\"strike_lightning\" inline=\"false\"><field name=\"effectOnly\">FALSE</field><value name=\"x\"><block type=\"entity_lookpos_x\"><field name=\"fluid_mode\">NONE</field><field name=\"block_mode\">OUTLINE</field><value name=\"entity\"><block type=\"entity_from_deps\"></block></value><value name=\"maxdistance\"><block type=\"math_number\"><field name=\"NUM\">5</field></block></value></block></value><value name=\"y\"><block type=\"entity_lookpos_y\"><field name=\"fluid_mode\">NONE</field><field name=\"block_mode\">OUTLINE</field><value name=\"entity\"><block type=\"entity_from_deps\"></block></value><value name=\"maxdistance\"><block type=\"math_number\"><field name=\"NUM\">5</field></block></value></block></value><value name=\"z\"><block type=\"entity_lookpos_z\"><field name=\"fluid_mode\">NONE</field><field name=\"block_mode\">OUTLINE</field><value name=\"entity\"><block type=\"entity_from_deps\"></block></value><value name=\"maxdistance\"><block type=\"math_number\"><field name=\"NUM\">5</field></block></value></block></value></block></next></block><block type=\"coord_x\" x=\"224\" y=\"137\"></block><block type=\"coord_y\" x=\"221\" y=\"170\"></block><block type=\"coord_z\" x=\"216\" y=\"216\"></block></xml>"
+  }
+}

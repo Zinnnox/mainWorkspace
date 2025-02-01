@@ -63,10 +63,10 @@
       "registry_name": "dragon",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cristiansmaster/entity/DragonEntity.java",
           "src/main/java/net/mcreator/cristiansmaster/client/renderer/DragonRenderer.java",
+          "src/main/resources/assets/cristian_s_master/models/item/dragon_spawn_egg.json",
           "src/main/resources/data/cristian_s_master/neoforge/biome_modifier/dragon_biome_modifier.json",
-          "src/main/resources/assets/cristian_s_master/models/item/dragon_spawn_egg.json"
+          "src/main/java/net/mcreator/cristiansmaster/entity/DragonEntity.java"
         ]
       },
       "path": "~/RideableDragon"
@@ -1602,8 +1602,8 @@
       "registry_name": "op_axe",
       "metadata": {
         "files": [
-          "src/main/resources/assets/cristian_s_master/models/item/op_axe.json",
-          "src/main/java/net/mcreator/cristiansmaster/item/OPAxeItem.java"
+          "src/main/java/net/mcreator/cristiansmaster/item/OPAxeItem.java",
+          "src/main/resources/assets/cristian_s_master/models/item/op_axe.json"
         ]
       },
       "path": "~/TreeCapitator"
@@ -2617,7 +2617,7 @@
           "src/main/resources/data/cristian_s_master/loot_table/blocks/drill_cart.json"
         ]
       },
-      "path": "~/Digging"
+      "path": "~/Digging/ComplicatedDrill"
     },
     {
       "name": "CargoCart",
@@ -2631,10 +2631,11 @@
           "src/main/resources/data/cristian_s_master/loot_table/blocks/cargo_cart.json",
           "src/main/resources/assets/cristian_s_master/models/item/cargo_cart.json",
           "src/main/resources/assets/cristian_s_master/blockstates/cargo_cart.json",
-          "src/main/java/net/mcreator/cristiansmaster/block/CargoCartBlock.java"
+          "src/main/java/net/mcreator/cristiansmaster/block/CargoCartBlock.java",
+          "src/main/java/net/mcreator/cristiansmaster/block/entity/CargoCartBlockEntity.java"
         ]
       },
-      "path": "~/Digging"
+      "path": "~/Digging/ComplicatedDrill"
     },
     {
       "name": "CargoNorth",
@@ -2648,6 +2649,10 @@
         ],
         "dependencies": [
           {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -2665,7 +2670,7 @@
           }
         ]
       },
-      "path": "~/Digging"
+      "path": "~/Digging/Scripts/AdvScripts"
     },
     {
       "name": "CargoEast",
@@ -2679,6 +2684,10 @@
         ],
         "dependencies": [
           {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -2696,7 +2705,7 @@
           }
         ]
       },
-      "path": "~/Digging"
+      "path": "~/Digging/Scripts/AdvScripts"
     },
     {
       "name": "CargoWest",
@@ -2727,7 +2736,7 @@
           }
         ]
       },
-      "path": "~/Digging"
+      "path": "~/Digging/Scripts/AdvScripts"
     },
     {
       "name": "CargoSouth",
@@ -2758,7 +2767,7 @@
           }
         ]
       },
-      "path": "~/Digging"
+      "path": "~/Digging/Scripts/AdvScripts"
     },
     {
       "name": "CargoCartOnTickUpdate",
@@ -2771,6 +2780,10 @@
           "src/main/java/net/mcreator/cristiansmaster/procedures/CargoCartOnTickUpdateProcedure.java"
         ],
         "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
           {
             "name": "x",
             "type": "number"
@@ -2789,7 +2802,7 @@
           }
         ]
       },
-      "path": "~/Digging"
+      "path": "~/Digging/Scripts"
     },
     {
       "name": "FuelCart",
@@ -2807,7 +2820,7 @@
           "src/main/resources/data/cristian_s_master/loot_table/blocks/fuel_cart.json"
         ]
       },
-      "path": "~/Digging"
+      "path": "~/Digging/ComplicatedDrill"
     },
     {
       "name": "DrillCartBlockAdded",
@@ -2838,7 +2851,7 @@
           }
         ]
       },
-      "path": "~/Digging"
+      "path": "~/Digging/Scripts"
     },
     {
       "name": "FuelCartInventory",
@@ -2852,7 +2865,7 @@
           "src/main/java/net/mcreator/cristiansmaster/world/inventory/FuelCartInventoryMenu.java"
         ]
       },
-      "path": "~/Digging"
+      "path": "~/Digging/ComplicatedDrill"
     },
     {
       "name": "CargoCatInventory",
@@ -2866,7 +2879,7 @@
           "src/main/java/net/mcreator/cristiansmaster/client/gui/CargoCatInventoryScreen.java"
         ]
       },
-      "path": "~/Digging"
+      "path": "~/Digging/ComplicatedDrill"
     },
     {
       "name": "DrillCartInventory",
@@ -2880,7 +2893,7 @@
           "src/main/java/net/mcreator/cristiansmaster/client/gui/DrillCartInventoryScreen.java"
         ]
       },
-      "path": "~/Digging"
+      "path": "~/Digging/ComplicatedDrill"
     },
     {
       "name": "DrillCartOnTickUpdate",
@@ -2892,9 +2905,560 @@
         "files": [
           "src/main/java/net/mcreator/cristiansmaster/procedures/DrillCartOnTickUpdateProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
       },
-      "path": "~/Digging"
+      "path": "~/Digging/Scripts"
+    },
+    {
+      "name": "DrillOnAndOff",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "drill_on_and_off",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/DrillOnAndOffProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Digging/Scripts"
+    },
+    {
+      "name": "DrillNorthScript",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "drill_north_script",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/DrillNorthScriptProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Digging/Scripts/AdvScripts"
+    },
+    {
+      "name": "DrillSouthScript",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "drill_south_script",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/DrillSouthScriptProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Digging/Scripts/AdvScripts"
+    },
+    {
+      "name": "DrillWestScript",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "drill_west_script",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/DrillWestScriptProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Digging/Scripts/AdvScripts"
+    },
+    {
+      "name": "DrillEastScript",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "drill_east_script",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/DrillEastScriptProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Digging/Scripts/AdvScripts"
+    },
+    {
+      "name": "SimpleDrillCart",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "simple_drill_cart",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/block/entity/SimpleDrillCartBlockEntity.java",
+          "src/main/resources/assets/cristian_s_master/models/block/simple_drill_cart.json",
+          "src/main/resources/assets/cristian_s_master/blockstates/simple_drill_cart.json",
+          "src/main/resources/data/cristian_s_master/loot_table/blocks/simple_drill_cart.json",
+          "src/main/java/net/mcreator/cristiansmaster/block/SimpleDrillCartBlock.java",
+          "src/main/resources/assets/cristian_s_master/models/item/simple_drill_cart.json"
+        ]
+      },
+      "path": "~/Digging/SimpleDrill"
+    },
+    {
+      "name": "SimpleCargoCart",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "simple_cargo_cart",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/block/SimpleCargoCartBlock.java",
+          "src/main/resources/assets/cristian_s_master/blockstates/simple_cargo_cart.json",
+          "src/main/resources/data/cristian_s_master/loot_table/blocks/simple_cargo_cart.json",
+          "src/main/resources/assets/cristian_s_master/models/item/simple_cargo_cart.json",
+          "src/main/resources/assets/cristian_s_master/models/block/simple_cargo_cart.json",
+          "src/main/java/net/mcreator/cristiansmaster/block/entity/SimpleCargoCartBlockEntity.java"
+        ]
+      },
+      "path": "~/Digging/SimpleDrill"
+    },
+    {
+      "name": "SimpleFuelCart",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "simple_fuel_cart",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cristian_s_master/models/item/simple_fuel_cart.json",
+          "src/main/java/net/mcreator/cristiansmaster/block/SimpleFuelCartBlock.java",
+          "src/main/resources/assets/cristian_s_master/models/block/simple_fuel_cart.json",
+          "src/main/java/net/mcreator/cristiansmaster/block/entity/SimpleFuelCartBlockEntity.java",
+          "src/main/resources/data/cristian_s_master/loot_table/blocks/simple_fuel_cart.json",
+          "src/main/resources/assets/cristian_s_master/blockstates/simple_fuel_cart.json"
+        ]
+      },
+      "path": "~/Digging/SimpleDrill"
+    },
+    {
+      "name": "SimpleDrillEast",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "simple_drill_east",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/SimpleDrillEastProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Digging/Scripts/SimpleScripts"
+    },
+    {
+      "name": "SimpleDrillWest",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "simple_drill_west",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/SimpleDrillWestProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Digging/Scripts/SimpleScripts"
+    },
+    {
+      "name": "SimpleDrillSouth",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "simple_drill_south",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/SimpleDrillSouthProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Digging/Scripts/SimpleScripts"
+    },
+    {
+      "name": "SimpleDrillNorth",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "simple_drill_north",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/SimpleDrillNorthProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Digging/Scripts/SimpleScripts"
+    },
+    {
+      "name": "SimpleCargoNorth",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "simple_cargo_north",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/SimpleCargoNorthProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Digging/Scripts/SimpleScripts"
+    },
+    {
+      "name": "SimpleCargoEast",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "simple_cargo_east",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/SimpleCargoEastProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Digging/Scripts/SimpleScripts"
+    },
+    {
+      "name": "SimpleCargoWest",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "simple_cargo_west",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/SimpleCargoWestProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Digging/Scripts/SimpleScripts"
+    },
+    {
+      "name": "SimpleCargoSouth",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "simple_cargo_south",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/SimpleCargoSouthProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Digging/Scripts/SimpleScripts"
+    },
+    {
+      "name": "TemplateStaff",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "template_staff",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/item/TemplateStaffItem.java",
+          "src/main/resources/assets/cristian_s_master/models/item/template_staff.json"
+        ]
+      },
+      "path": "~/Magic/Staffs"
+    },
+    {
+      "name": "MagicCreativeTab",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_creative_tab",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Magic"
     }
   ],
   "variable_elements": [
@@ -3176,6 +3740,12 @@
     "ITEMS:minecraft:chest_armor": [
       "~CUSTOM:MagicArmor.body"
     ],
+    "BLOCKS:digging_machine:dirt": [
+      "Blocks.DIRT#0",
+      "Blocks.DIRT#1",
+      "Blocks.DIRT#2",
+      "Blocks.ROOTED_DIRT"
+    ],
     "ITEMS:minecraft:enchantable/durability": [
       "~CUSTOM:KillAura",
       "~CUSTOM:FairyDust"
@@ -3183,6 +3753,10 @@
     "ITEMS:minecraft:pickaxes": [
       "~CUSTOM:XRayAmulet",
       "~CUSTOM:WallOfIceCast"
+    ],
+    "ITEMS:digging_machine:fuel/coal": [
+      "Items.COAL#0",
+      "Items.COAL#1"
     ],
     "ITEMS:minecraft:axes": [
       "~CUSTOM:OPAxe"
@@ -3216,15 +3790,15 @@
       "item.cristian_s_master.teleporter_button": "Teleporter Button",
       "item.cristian_s_master.portal_shooter": "Portal Shooter",
       "entity.cristian_s_master.pop": "Pop",
-      "subtitles.iceshard": "",
       "item.minecraft.lingering_potion.effect.randomizer_potion": "Lingering Randomizer Potion",
-      "block.cristian_s_master.fuel_cart": "Drill Cart",
+      "subtitles.iceshard": "",
+      "block.cristian_s_master.fuel_cart": "Fuel Cart",
       "gui.cristian_s_master.teleporter_button_gui.button_teleport_to_saved_position": "Teleport to Saved Position",
       "item.cristian_s_master.wyrm_potion": "Wyrm Potion",
       "item.cristian_s_master.burnt_pheonix_feathter": "Burnt Pheonix Feather",
       "key.cristian_s_master.open_gui_builders_wand": "Open Gui Builders Wand",
-      "key.cristian_s_master.shoot_fireball": "Shoot Fireball",
       "item.minecraft.tipped_arrow.effect.xray_potion": "Arrow of XRay",
+      "key.cristian_s_master.shoot_fireball": "Shoot Fireball",
       "entity.cristian_s_master.bonnie": "Bonnie",
       "item.cristian_s_master.ant_man_watch": "Ant Man Watch",
       "item.cristian_s_master.magic_armor_helmet": "Magic Armor Helmet",
@@ -3243,6 +3817,7 @@
       "item.cristian_s_master.maryann_the_slime_spawn_egg": "Maryann The Slime Spawn Egg",
       "gui.cristian_s_master.select_block.button_dirt": "Dirt",
       "item.cristian_s_master.dragon_spawn_egg": "Dragon Spawn Egg",
+      "item_group.cristian_s_master.magic_creative_tab": "Magic Creative Tab",
       "item.minecraft.splash_potion.effect.randomizer_potion": "Splash Randomizer Potion",
       "subtitles.magicmirrorvanish": "",
       "item.cristian_s_master.kill_aura": "Kill Aura",
@@ -3250,7 +3825,7 @@
       "effect.cristian_s_master.randomize_mob_height_effect": "Randomize Mob Height Effect",
       "key.cristian_s_master.ironcladspawned": "Shoot Iceshard",
       "item.cristian_s_master.bonnie_spawn_egg": "Bonnie Spawn Egg",
-      "block.cristian_s_master.cargo_cart": "Drill Cart",
+      "block.cristian_s_master.cargo_cart": "Cargo Cart",
       "gui.cristian_s_master.select_block.stoneCheck": "Stone?",
       "key.cristian_s_master.shoot_iceshard": "Shoot Iceshard",
       "subtitles.vanished": "",
@@ -3281,6 +3856,7 @@
       "key.cristian_s_master.open_backpack": "Open Backpack",
       "item.cristian_s_master.wind_staff": "Wind Staff",
       "gui.cristian_s_master.drill_cart_inventory.label_inventory": "Inventory",
+      "item.cristian_s_master.template_staff": "Template Staff",
       "item.cristian_s_master.rocket_launcher": "Rocket Launcher",
       "gui.cristian_s_master.teleporter_button_gui.button_save_current_position": "Save Current Position",
       "item.cristian_s_master.tornado_spawn_egg": "Tornado Spawn Egg",
@@ -3298,13 +3874,16 @@
       "key.cristian_s_master.fill_with_builders_wand": "Open Gui Builders Wand",
       "subtitles.alert": "",
       "item.cristian_s_master.x_ray_amulet": "X Ray Amulet",
+      "block.cristian_s_master.simple_fuel_cart": "Fuel Cart",
       "item.cristian_s_master.ironclad_spawn_egg": "Ironclad Spawn Egg",
       "item.minecraft.potion.effect.xray_potion": "Potion of XRay",
       "item.cristian_s_master.magic_mirror": "Magic Mirror",
       "entity.cristian_s_master.outline": "Outline",
+      "block.cristian_s_master.simple_cargo_cart": "Cargo Cart",
       "item.cristian_s_master.cloaking_device": "Cloaking Device",
       "item.cristian_s_master.magic_armor_leggings": "Magic Armor Leggings",
-      "key.cristian_s_master.spawn_sillygoose": "Spawn SILLYGOOSE"
+      "key.cristian_s_master.spawn_sillygoose": "Spawn SILLYGOOSE",
+      "block.cristian_s_master.simple_drill_cart": "Drill Cart"
     }
   },
   "foldersRoot": {
@@ -3360,10 +3939,6 @@
         "children": []
       },
       {
-        "name": "ChestEntity",
-        "children": []
-      },
-      {
         "name": "PortalGunFromPortal",
         "children": []
       },
@@ -3389,7 +3964,38 @@
       },
       {
         "name": "Digging",
-        "children": []
+        "children": [
+          {
+            "name": "Scripts",
+            "children": [
+              {
+                "name": "AdvScripts",
+                "children": []
+              },
+              {
+                "name": "SimpleScripts",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "ComplicatedDrill",
+            "children": []
+          },
+          {
+            "name": "SimpleDrill",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Magic",
+        "children": [
+          {
+            "name": "Staffs",
+            "children": []
+          }
+        ]
       }
     ]
   },

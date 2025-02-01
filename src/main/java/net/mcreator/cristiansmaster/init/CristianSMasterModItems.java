@@ -22,6 +22,7 @@ import net.mcreator.cristiansmaster.item.XRayAmuletItem;
 import net.mcreator.cristiansmaster.item.WyrmPotionItem;
 import net.mcreator.cristiansmaster.item.WindStaffItem;
 import net.mcreator.cristiansmaster.item.WallOfIceCastItem;
+import net.mcreator.cristiansmaster.item.TemplateStaffItem;
 import net.mcreator.cristiansmaster.item.TeleporterItem;
 import net.mcreator.cristiansmaster.item.TeleporterButtonItem;
 import net.mcreator.cristiansmaster.item.TNTDimensionItem;
@@ -37,11 +38,13 @@ import net.mcreator.cristiansmaster.item.NerfGun2Item;
 import net.mcreator.cristiansmaster.item.MiningLaserItem;
 import net.mcreator.cristiansmaster.item.MagicMirrorItem;
 import net.mcreator.cristiansmaster.item.MagicArmorItem;
+import net.mcreator.cristiansmaster.item.LightningStaffItem;
 import net.mcreator.cristiansmaster.item.KillAuraItem;
 import net.mcreator.cristiansmaster.item.IdontknowItem;
 import net.mcreator.cristiansmaster.item.GrimoireItem;
 import net.mcreator.cristiansmaster.item.FlyingCarpetItem;
 import net.mcreator.cristiansmaster.item.FireworkStickItem;
+import net.mcreator.cristiansmaster.item.FireStaffItem;
 import net.mcreator.cristiansmaster.item.FairyDustItem;
 import net.mcreator.cristiansmaster.item.CloakingDeviceItem;
 import net.mcreator.cristiansmaster.item.BurntPheonixFeathterItem;
@@ -99,6 +102,12 @@ public class CristianSMasterModItems {
 	public static final DeferredItem<Item> DRILL_CART = block(CristianSMasterModBlocks.DRILL_CART);
 	public static final DeferredItem<Item> CARGO_CART = block(CristianSMasterModBlocks.CARGO_CART);
 	public static final DeferredItem<Item> FUEL_CART = block(CristianSMasterModBlocks.FUEL_CART);
+	public static final DeferredItem<Item> SIMPLE_DRILL_CART = block(CristianSMasterModBlocks.SIMPLE_DRILL_CART);
+	public static final DeferredItem<Item> SIMPLE_CARGO_CART = block(CristianSMasterModBlocks.SIMPLE_CARGO_CART);
+	public static final DeferredItem<Item> SIMPLE_FUEL_CART = block(CristianSMasterModBlocks.SIMPLE_FUEL_CART);
+	public static final DeferredItem<Item> TEMPLATE_STAFF = REGISTRY.register("template_staff", TemplateStaffItem::new);
+	public static final DeferredItem<Item> FIRE_STAFF = REGISTRY.register("fire_staff", FireStaffItem::new);
+	public static final DeferredItem<Item> LIGHTNING_STAFF = REGISTRY.register("lightning_staff", LightningStaffItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items

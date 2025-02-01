@@ -10,6 +10,9 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 import net.minecraft.world.level.block.Block;
 
 import net.mcreator.cristiansmaster.block.TNTDimensionPortalBlock;
+import net.mcreator.cristiansmaster.block.SimpleFuelCartBlock;
+import net.mcreator.cristiansmaster.block.SimpleDrillCartBlock;
+import net.mcreator.cristiansmaster.block.SimpleCargoCartBlock;
 import net.mcreator.cristiansmaster.block.PortalOrangeBlock;
 import net.mcreator.cristiansmaster.block.PortalBlueBlock;
 import net.mcreator.cristiansmaster.block.NewDimensionPortalBlock;
@@ -27,6 +30,9 @@ public class CristianSMasterModBlocks {
 	public static final DeferredBlock<Block> DRILL_CART = REGISTRY.register("drill_cart", DrillCartBlock::new);
 	public static final DeferredBlock<Block> CARGO_CART = REGISTRY.register("cargo_cart", CargoCartBlock::new);
 	public static final DeferredBlock<Block> FUEL_CART = REGISTRY.register("fuel_cart", FuelCartBlock::new);
+	public static final DeferredBlock<Block> SIMPLE_DRILL_CART = REGISTRY.register("simple_drill_cart", SimpleDrillCartBlock::new);
+	public static final DeferredBlock<Block> SIMPLE_CARGO_CART = REGISTRY.register("simple_cargo_cart", SimpleCargoCartBlock::new);
+	public static final DeferredBlock<Block> SIMPLE_FUEL_CART = REGISTRY.register("simple_fuel_cart", SimpleFuelCartBlock::new);
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

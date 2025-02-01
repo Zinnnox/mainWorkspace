@@ -21,6 +21,12 @@ import net.mcreator.cristiansmaster.CristianSMasterMod;
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public class CristianSMasterModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, CristianSMasterMod.MODID);
+	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> MAGIC_CREATIVE_TAB = REGISTRY.register("magic_creative_tab",
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.cristian_s_master.magic_creative_tab")).icon(() -> new ItemStack(CristianSMasterModItems.IRONCLAD_SPAWN_EGG.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(CristianSMasterModItems.TEMPLATE_STAFF.get());
+				tabData.accept(CristianSMasterModItems.FIRE_STAFF.get());
+				tabData.accept(CristianSMasterModItems.LIGHTNING_STAFF.get());
+			}).withSearchBar().build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> CUSTOM = REGISTRY.register("custom",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.cristian_s_master.custom")).icon(() -> new ItemStack(CristianSMasterModItems.SHOOT_THE_EXPLODING_PROJECTILE_ITEM.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(CristianSMasterModItems.PORTAL_SHOOTER.get());
@@ -30,6 +36,9 @@ public class CristianSMasterModTabs {
 				tabData.accept(CristianSMasterModBlocks.DRILL_CART.get().asItem());
 				tabData.accept(CristianSMasterModBlocks.CARGO_CART.get().asItem());
 				tabData.accept(CristianSMasterModBlocks.FUEL_CART.get().asItem());
+				tabData.accept(CristianSMasterModBlocks.SIMPLE_DRILL_CART.get().asItem());
+				tabData.accept(CristianSMasterModBlocks.SIMPLE_CARGO_CART.get().asItem());
+				tabData.accept(CristianSMasterModBlocks.SIMPLE_FUEL_CART.get().asItem());
 			}).withSearchBar().build());
 
 	@SubscribeEvent
