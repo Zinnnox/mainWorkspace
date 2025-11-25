@@ -1,10 +1,10 @@
 <?xml version="1.0" ?>
 <launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
-    <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="2024point4transfer"></stringAttribute>
+    <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="mainWorkspace"></stringAttribute>
     <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="net.neoforged.devlaunch.Main"></stringAttribute>
-    <stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value=" @C:\\Users\\Cristian\\MCreatorWorkspaces\\2024point4transfer\\build\\moddev\\serverRunProgramArgs.txt"></stringAttribute>
-    <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value=" @C:\\Users\\Cristian\\MCreatorWorkspaces\\2024point4transfer\\build\\moddev\\serverRunVmArgs.txt -Dfml.modFolders=testproject%%C:\\Users\\Cristian\\MCreatorWorkspaces\\2024point4transfer\\bin\\main"></stringAttribute>
-    <stringAttribute key="org.eclipse.jdt.launching.WORKING_DIRECTORY" value="C:\Users\Cristian\MCreatorWorkspaces\2024point4transfer\run"></stringAttribute>
+    <stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value=" @/home/zin/Documents/mainWorkspace/build/moddev/serverRunProgramArgs.txt"></stringAttribute>
+    <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value=" @/home/zin/Documents/mainWorkspace/build/moddev/serverRunVmArgs.txt -Dfml.modFolders=testproject%%/home/zin/Documents/mainWorkspace/bin/main"></stringAttribute>
+    <stringAttribute key="org.eclipse.jdt.launching.WORKING_DIRECTORY" value="/home/zin/Documents/mainWorkspace/run"></stringAttribute>
     <booleanAttribute key="org.eclipse.jdt.launching.STOP_IN_MAIN" value="false"></booleanAttribute>
     <booleanAttribute key="org.eclipse.jdt.launching.ATTR_ATTR_USE_ARGFILE" value="false"></booleanAttribute>
 </launchConfiguration>

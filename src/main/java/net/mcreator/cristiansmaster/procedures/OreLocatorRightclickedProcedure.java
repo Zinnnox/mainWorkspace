@@ -9,6 +9,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.cristiansmaster.init.CristianSMasterModItems;
+import net.mcreator.cristiansmaster.CristianSMasterMod;
 
 public class OreLocatorRightclickedProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
@@ -18,22 +19,28 @@ public class OreLocatorRightclickedProcedure {
 		double sx = 0;
 		double sy = 0;
 		double sz = 0;
+		double bx = 0;
+		double by = 0;
+		double bz = 0;
+		double dist = 0;
 		if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(CristianSMasterModItems.REDSTONE_BATTERY.get())) : false) {
 			if (entity instanceof Player _player) {
 				ItemStack _stktoremove = new ItemStack(CristianSMasterModItems.REDSTONE_BATTERY.get());
 				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 			}
-			if (entity instanceof Player _player)
-				_player.getCooldowns().addCooldown(itemstack.getItem(), 20);
 			sx = -6;
 			found = false;
-			for (int index0 = 0; index0 < (int) (sx * (-2)); index0++) {
+			for (int index0 = 0; index0 < 12; index0++) {
 				sy = -6;
-				for (int index1 = 0; index1 < (int) (sy * (-2)); index1++) {
+				for (int index1 = 0; index1 < 12; index1++) {
 					sz = -6;
-					for (int index2 = 0; index2 < (int) (sz * (-2)); index2++) {
+					for (int index2 = 0; index2 < 12; index2++) {
 						if ((world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).getBlock() == Blocks.DIAMOND_ORE) {
 							found = true;
+							bx = x + sx;
+							by = y + sy;
+							bz = z + sz;
+							dist = Math.pow(Math.pow(x - bx, 2) + Math.pow(y - by, 2) + Math.pow(z - bz, 2), 0.5);
 						}
 						sz = sz + 1;
 					}
@@ -42,12 +49,22 @@ public class OreLocatorRightclickedProcedure {
 				sx = sx + 1;
 			}
 			if (found == true) {
-				if (!world.isClientSide() && world.getServer() != null)
-					world.getServer().getPlayerList().broadcastSystemMessage(Component.literal("Ore detected nearby!"), false);
+				for (int index3 = 0; index3 < 5; index3++) {
+					if (!world.isClientSide() && world.getServer() != null)
+						world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("Distance to ore: " + dist)), false);
+					if (entity instanceof Player _player && !_player.level().isClientSide())
+						_player.displayClientMessage(Component.literal(("Distance to ore: " + dist)), true);
+					CristianSMasterMod.queueServerWork(20, () -> {
+						if (entity instanceof Player _player && !_player.level().isClientSide())
+							_player.displayClientMessage(Component.literal("Ore detected nearby!"), true);
+					});
+				}
 			} else {
 				if (!world.isClientSide() && world.getServer() != null)
 					world.getServer().getPlayerList().broadcastSystemMessage(Component.literal("No ore detected nearby"), false);
 			}
+			if (entity instanceof Player _player)
+				_player.getCooldowns().addCooldown(itemstack.getItem(), 20);
 		} else {
 			if (!world.isClientSide() && world.getServer() != null)
 				world.getServer().getPlayerList().broadcastSystemMessage(Component.literal("The Ore Locator has no power!"), false);

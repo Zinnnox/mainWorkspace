@@ -15,3 +15,4 @@
 /tp @s -239 16 168
 /give dev cristian_s_master:redstone_battery
 /give dev cristian_s_master:redstone_battery 64
+/give Dev cristian_s_master:redstone_battery 64

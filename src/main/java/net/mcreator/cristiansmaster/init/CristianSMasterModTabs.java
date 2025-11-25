@@ -43,6 +43,7 @@ public class CristianSMasterModTabs {
 				tabData.accept(CristianSMasterModItems.HOMING_ROCKET.get());
 				tabData.accept(CristianSMasterModItems.SPRING_JUMPER.get());
 				tabData.accept(CristianSMasterModItems.TNT_FILLER.get());
+				tabData.accept(CristianSMasterModItems.REDSTONE_BATTERY.get());
 				tabData.accept(CristianSMasterModItems.ORE_LOCATOR.get());
 			}).withSearchBar().build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> MAGIC_CREATIVE_TAB = REGISTRY.register("magic_creative_tab",
@@ -71,6 +72,7 @@ public class CristianSMasterModTabs {
 			tabData.accept(CristianSMasterModItems.EVIL_GOLEM_2_SPAWN_EGG.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
 			tabData.accept(CristianSMasterModItems.ANT_MAN_WATCH.get());
+			tabData.accept(CristianSMasterModItems.GRIMOIRE.get());
 			tabData.accept(CristianSMasterModItems.MAGIC_MIRROR.get());
 			tabData.accept(CristianSMasterModItems.MAGIC_ARMOR_HELMET.get());
 			tabData.accept(CristianSMasterModItems.MAGIC_ARMOR_CHESTPLATE.get());

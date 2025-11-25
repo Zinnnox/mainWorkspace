@@ -177,6 +177,7 @@ public class CristianSMasterModVariables {
 		public double ORANGE_Portal_X = 0;
 		public double ORANGE_Portal_Y = 0;
 		public double ORANGE_Portal_Z = 0;
+		public double globaltimer = 0;
 
 		public static MapVariables load(CompoundTag tag, HolderLookup.Provider lookupProvider) {
 			MapVariables data = new MapVariables();
@@ -203,6 +204,7 @@ public class CristianSMasterModVariables {
 			ORANGE_Portal_X = nbt.getDouble("ORANGE_Portal_X");
 			ORANGE_Portal_Y = nbt.getDouble("ORANGE_Portal_Y");
 			ORANGE_Portal_Z = nbt.getDouble("ORANGE_Portal_Z");
+			globaltimer = nbt.getDouble("globaltimer");
 		}
 
 		@Override
@@ -225,6 +227,7 @@ public class CristianSMasterModVariables {
 			nbt.putDouble("ORANGE_Portal_X", ORANGE_Portal_X);
 			nbt.putDouble("ORANGE_Portal_Y", ORANGE_Portal_Y);
 			nbt.putDouble("ORANGE_Portal_Z", ORANGE_Portal_Z);
+			nbt.putDouble("globaltimer", globaltimer);
 			return nbt;
 		}
 
