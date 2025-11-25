@@ -1,0 +1,7 @@
+{
+  "_fv": 73,
+  "_type": "procedure",
+  "definition": {
+    "procedurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><variables><variable type=\"Entity\" id=\"player\">player</variable><variable type=\"Number\" id=\"health\">health</variable><variable type=\"Number\" id=\"tick\">tick</variable></variables><block type=\"event_trigger\" inline=\"false\" deletable=\"false\" x=\"40\" y=\"40\"><field name=\"trigger\">player_log_in</field><next><block type=\"controls_if\"><value name=\"IF0\"><block type=\"world_data_checkdifficulty\"><field name=\"difficulty\">HARD</field></block></value><statement name=\"DO0\"><block type=\"entity_set_attribute_base_value\"><field name=\"attribute\">MAX_HEALTH</field><value name=\"value\"><block type=\"variables_get_number\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" is_player_var=\"true\" has_entity=\"true\"></mutation><field name=\"VAR\">global:playerHealth</field><value name=\"entity\"><block type=\"entity_from_deps\"></block></value></block></value><value name=\"entity\"><block type=\"entity_from_deps\"></block></value></block></statement></block></next></block></xml>"
+  }
+}

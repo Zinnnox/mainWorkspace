@@ -18,6 +18,9 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.cristiansmaster.item.inventory.TeleporterButtonInventoryCapability;
+import net.mcreator.cristiansmaster.item.inventory.SimpleBackpaclInventoryCapability;
+import net.mcreator.cristiansmaster.item.inventory.DiamondBackpackInventoryCapability;
+import net.mcreator.cristiansmaster.item.XrayArmorItem;
 import net.mcreator.cristiansmaster.item.XRayAmuletItem;
 import net.mcreator.cristiansmaster.item.WyrmPotionItem;
 import net.mcreator.cristiansmaster.item.WindStaffItem;
@@ -25,12 +28,19 @@ import net.mcreator.cristiansmaster.item.WallOfIceCastItem;
 import net.mcreator.cristiansmaster.item.TemplateStaffItem;
 import net.mcreator.cristiansmaster.item.TeleporterItem;
 import net.mcreator.cristiansmaster.item.TeleporterButtonItem;
+import net.mcreator.cristiansmaster.item.TNTFillerItem;
 import net.mcreator.cristiansmaster.item.TNTDimensionItem;
+import net.mcreator.cristiansmaster.item.SpringJumperItem;
+import net.mcreator.cristiansmaster.item.SpringItem;
 import net.mcreator.cristiansmaster.item.SpawnerAnvilItem;
+import net.mcreator.cristiansmaster.item.SimpleBackpaclItem;
 import net.mcreator.cristiansmaster.item.ShootTheExplodingProjectileItemItem;
 import net.mcreator.cristiansmaster.item.RocketLauncherItem;
+import net.mcreator.cristiansmaster.item.RemoteItem;
+import net.mcreator.cristiansmaster.item.RedstoneBatteryItem;
 import net.mcreator.cristiansmaster.item.PortalShooterItem;
 import net.mcreator.cristiansmaster.item.PhoenixFeatherItem;
+import net.mcreator.cristiansmaster.item.OreLocatorItem;
 import net.mcreator.cristiansmaster.item.OPAxeItem;
 import net.mcreator.cristiansmaster.item.NewDimensionItem;
 import net.mcreator.cristiansmaster.item.NerfGunItem;
@@ -41,15 +51,22 @@ import net.mcreator.cristiansmaster.item.MagicArmorItem;
 import net.mcreator.cristiansmaster.item.LightningStaffItem;
 import net.mcreator.cristiansmaster.item.KillAuraItem;
 import net.mcreator.cristiansmaster.item.IdontknowItem;
+import net.mcreator.cristiansmaster.item.HomingRocketItem;
 import net.mcreator.cristiansmaster.item.GrimoireItem;
 import net.mcreator.cristiansmaster.item.FlyingCarpetItem;
 import net.mcreator.cristiansmaster.item.FireworkStickItem;
 import net.mcreator.cristiansmaster.item.FireStaffItem;
+import net.mcreator.cristiansmaster.item.FilledPokeballItem;
 import net.mcreator.cristiansmaster.item.FairyDustItem;
+import net.mcreator.cristiansmaster.item.EmptyPokeballItem;
+import net.mcreator.cristiansmaster.item.EYELASERCANNONItem;
+import net.mcreator.cristiansmaster.item.DiamondBackpackItem;
 import net.mcreator.cristiansmaster.item.CloakingDeviceItem;
 import net.mcreator.cristiansmaster.item.BurntPheonixFeathterItem;
 import net.mcreator.cristiansmaster.item.BuildersWandItem;
+import net.mcreator.cristiansmaster.item.BouncyBallItemItem;
 import net.mcreator.cristiansmaster.item.BioScannerItem;
+import net.mcreator.cristiansmaster.item.BetterAxeItem;
 import net.mcreator.cristiansmaster.item.AntManWatchItem;
 import net.mcreator.cristiansmaster.CristianSMasterMod;
 
@@ -108,12 +125,33 @@ public class CristianSMasterModItems {
 	public static final DeferredItem<Item> TEMPLATE_STAFF = REGISTRY.register("template_staff", TemplateStaffItem::new);
 	public static final DeferredItem<Item> FIRE_STAFF = REGISTRY.register("fire_staff", FireStaffItem::new);
 	public static final DeferredItem<Item> LIGHTNING_STAFF = REGISTRY.register("lightning_staff", LightningStaffItem::new);
+	public static final DeferredItem<Item> SIMPLE_BACKPACL = REGISTRY.register("simple_backpacl", SimpleBackpaclItem::new);
+	public static final DeferredItem<Item> DIAMOND_BACKPACK = REGISTRY.register("diamond_backpack", DiamondBackpackItem::new);
+	public static final DeferredItem<Item> TEST_BLOCK = block(CristianSMasterModBlocks.TEST_BLOCK);
+	public static final DeferredItem<Item> EYELASERCANNON = REGISTRY.register("eyelasercannon", EYELASERCANNONItem::new);
+	public static final DeferredItem<Item> FRIEND = block(CristianSMasterModBlocks.FRIEND);
+	public static final DeferredItem<Item> BOUNCY_BALL_ITEM = REGISTRY.register("bouncy_ball_item", BouncyBallItemItem::new);
+	public static final DeferredItem<Item> EVIL_GOLEM_1_SPAWN_EGG = REGISTRY.register("evil_golem_1_spawn_egg", () -> new DeferredSpawnEggItem(CristianSMasterModEntities.EVIL_GOLEM_1, -1, -1, new Item.Properties()));
+	public static final DeferredItem<Item> EVIL_GOLEM_2_SPAWN_EGG = REGISTRY.register("evil_golem_2_spawn_egg", () -> new DeferredSpawnEggItem(CristianSMasterModEntities.EVIL_GOLEM_2, -1, -1, new Item.Properties()));
+	public static final DeferredItem<Item> REMOTE = REGISTRY.register("remote", RemoteItem::new);
+	public static final DeferredItem<Item> XRAY_ARMOR_HELMET = REGISTRY.register("xray_armor_helmet", XrayArmorItem.Helmet::new);
+	public static final DeferredItem<Item> HOMING_ROCKET = REGISTRY.register("homing_rocket", HomingRocketItem::new);
+	public static final DeferredItem<Item> SPRING_JUMPER = REGISTRY.register("spring_jumper", SpringJumperItem::new);
+	public static final DeferredItem<Item> SPRING_BOOTS = REGISTRY.register("spring_boots", SpringItem.Boots::new);
+	public static final DeferredItem<Item> EMPTY_POKEBALL = REGISTRY.register("empty_pokeball", EmptyPokeballItem::new);
+	public static final DeferredItem<Item> FILLED_POKEBALL = REGISTRY.register("filled_pokeball", FilledPokeballItem::new);
+	public static final DeferredItem<Item> TNT_FILLER = REGISTRY.register("tnt_filler", TNTFillerItem::new);
+	public static final DeferredItem<Item> BETTER_AXE = REGISTRY.register("better_axe", BetterAxeItem::new);
+	public static final DeferredItem<Item> REDSTONE_BATTERY = REGISTRY.register("redstone_battery", RedstoneBatteryItem::new);
+	public static final DeferredItem<Item> ORE_LOCATOR = REGISTRY.register("ore_locator", OreLocatorItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items
 	@SubscribeEvent
 	public static void registerCapabilities(RegisterCapabilitiesEvent event) {
 		event.registerItem(Capabilities.ItemHandler.ITEM, (stack, context) -> new TeleporterButtonInventoryCapability(stack), TELEPORTER_BUTTON.get());
+		event.registerItem(Capabilities.ItemHandler.ITEM, (stack, context) -> new SimpleBackpaclInventoryCapability(stack), SIMPLE_BACKPACL.get());
+		event.registerItem(Capabilities.ItemHandler.ITEM, (stack, context) -> new DiamondBackpackInventoryCapability(stack), DIAMOND_BACKPACK.get());
 	}
 
 	private static DeferredItem<Item> block(DeferredHolder<Block, Block> block) {

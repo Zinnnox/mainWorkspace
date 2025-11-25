@@ -35,7 +35,6 @@ import net.minecraft.core.HolderLookup;
 import net.mcreator.cristiansmaster.CristianSMasterMod;
 
 import java.util.function.Supplier;
-import java.util.ArrayList;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public class CristianSMasterModVariables {
@@ -74,6 +73,7 @@ public class CristianSMasterModVariables {
 			PlayerVariables original = event.getOriginal().getData(PLAYER_VARIABLES);
 			PlayerVariables clone = new PlayerVariables();
 			clone.savingBackpackContent = original.savingBackpackContent;
+			clone.playerHealth = original.playerHealth;
 			if (!event.isWasDeath()) {
 				clone.slot0 = original.slot0;
 				clone.slot1 = original.slot1;
@@ -122,6 +122,7 @@ public class CristianSMasterModVariables {
 
 	public static class WorldVariables extends SavedData {
 		public static final String DATA_NAME = "cristian_s_master_worldvars";
+		public double ticks = 0;
 
 		public static WorldVariables load(CompoundTag tag, HolderLookup.Provider lookupProvider) {
 			WorldVariables data = new WorldVariables();
@@ -130,10 +131,12 @@ public class CristianSMasterModVariables {
 		}
 
 		public void read(CompoundTag nbt, HolderLookup.Provider lookupProvider) {
+			ticks = nbt.getDouble("ticks");
 		}
 
 		@Override
 		public CompoundTag save(CompoundTag nbt, HolderLookup.Provider lookupProvider) {
+			nbt.putDouble("ticks", ticks);
 			return nbt;
 		}
 
@@ -164,6 +167,16 @@ public class CristianSMasterModVariables {
 		public double tpPosX = 0;
 		public double tpPosY = 0;
 		public double tpPosZ = 0;
+		public boolean hasRightClicked = false;
+		public double RemotePosX = 0;
+		public double RemotePosY = 0;
+		public double RemotePosZ = 0;
+		public double BLUE_Portal_X = 0;
+		public double BLUE_Portal_Y = 0;
+		public double BLUE_Portal_Z = 0;
+		public double ORANGE_Portal_X = 0;
+		public double ORANGE_Portal_Y = 0;
+		public double ORANGE_Portal_Z = 0;
 
 		public static MapVariables load(CompoundTag tag, HolderLookup.Provider lookupProvider) {
 			MapVariables data = new MapVariables();
@@ -180,6 +193,16 @@ public class CristianSMasterModVariables {
 			tpPosX = nbt.getDouble("tpPosX");
 			tpPosY = nbt.getDouble("tpPosY");
 			tpPosZ = nbt.getDouble("tpPosZ");
+			hasRightClicked = nbt.getBoolean("hasRightClicked");
+			RemotePosX = nbt.getDouble("RemotePosX");
+			RemotePosY = nbt.getDouble("RemotePosY");
+			RemotePosZ = nbt.getDouble("RemotePosZ");
+			BLUE_Portal_X = nbt.getDouble("BLUE_Portal_X");
+			BLUE_Portal_Y = nbt.getDouble("BLUE_Portal_Y");
+			BLUE_Portal_Z = nbt.getDouble("BLUE_Portal_Z");
+			ORANGE_Portal_X = nbt.getDouble("ORANGE_Portal_X");
+			ORANGE_Portal_Y = nbt.getDouble("ORANGE_Portal_Y");
+			ORANGE_Portal_Z = nbt.getDouble("ORANGE_Portal_Z");
 		}
 
 		@Override
@@ -192,6 +215,16 @@ public class CristianSMasterModVariables {
 			nbt.putDouble("tpPosX", tpPosX);
 			nbt.putDouble("tpPosY", tpPosY);
 			nbt.putDouble("tpPosZ", tpPosZ);
+			nbt.putBoolean("hasRightClicked", hasRightClicked);
+			nbt.putDouble("RemotePosX", RemotePosX);
+			nbt.putDouble("RemotePosY", RemotePosY);
+			nbt.putDouble("RemotePosZ", RemotePosZ);
+			nbt.putDouble("BLUE_Portal_X", BLUE_Portal_X);
+			nbt.putDouble("BLUE_Portal_Y", BLUE_Portal_Y);
+			nbt.putDouble("BLUE_Portal_Z", BLUE_Portal_Z);
+			nbt.putDouble("ORANGE_Portal_X", ORANGE_Portal_X);
+			nbt.putDouble("ORANGE_Portal_Y", ORANGE_Portal_Y);
+			nbt.putDouble("ORANGE_Portal_Z", ORANGE_Portal_Z);
 			return nbt;
 		}
 
@@ -273,6 +306,7 @@ public class CristianSMasterModVariables {
 		public boolean bwFirstPos = false;
 		public boolean bwSecondPos = false;
 		public BlockState selectedBlock = Blocks.AIR.defaultBlockState();
+		public double playerHealth = 1.0;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -297,6 +331,7 @@ public class CristianSMasterModVariables {
 			nbt.putBoolean("bwFirstPos", bwFirstPos);
 			nbt.putBoolean("bwSecondPos", bwSecondPos);
 			nbt.put("selectedBlock", NbtUtils.writeBlockState(selectedBlock));
+			nbt.putDouble("playerHealth", playerHealth);
 			return nbt;
 		}
 
@@ -322,29 +357,23 @@ public class CristianSMasterModVariables {
 			bwFirstPos = nbt.getBoolean("bwFirstPos");
 			bwSecondPos = nbt.getBoolean("bwSecondPos");
 			selectedBlock = NbtUtils.readBlockState(lookupProvider.lookupOrThrow(BuiltInRegistries.BLOCK.key()), nbt.getCompound("selectedBlock"));
+			playerHealth = nbt.getDouble("playerHealth");
 		}
 
 		public void syncPlayerVariables(Entity entity) {
-			if (!entity.level().isClientSide()) {
-				for (Entity entityiterator : new ArrayList<>(entity.level().players())) {
-					if (entityiterator instanceof ServerPlayer serverPlayer)
-						PacketDistributor.sendToPlayer(serverPlayer, new PlayerVariablesSyncMessage(this, entity.getId()));
-				}
-			}
+			if (entity instanceof ServerPlayer serverPlayer)
+				PacketDistributor.sendToPlayer(serverPlayer, new PlayerVariablesSyncMessage(this));
 		}
 	}
 
-	public record PlayerVariablesSyncMessage(PlayerVariables data, int target) implements CustomPacketPayload {
+	public record PlayerVariablesSyncMessage(PlayerVariables data) implements CustomPacketPayload {
 		public static final Type<PlayerVariablesSyncMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(CristianSMasterMod.MODID, "player_variables_sync"));
-		public static final StreamCodec<RegistryFriendlyByteBuf, PlayerVariablesSyncMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, PlayerVariablesSyncMessage message) -> {
-			buffer.writeNbt(message.data().serializeNBT(buffer.registryAccess()));
-			buffer.writeInt(message.target()); // Write the entity ID to the buffer
-		}, (RegistryFriendlyByteBuf buffer) -> {
-			var nbt = buffer.readNbt();
-			PlayerVariablesSyncMessage message = new PlayerVariablesSyncMessage(new PlayerVariables(), buffer.readInt());
-			message.data.deserializeNBT(buffer.registryAccess(), nbt);
-			return message;
-		});
+		public static final StreamCodec<RegistryFriendlyByteBuf, PlayerVariablesSyncMessage> STREAM_CODEC = StreamCodec
+				.of((RegistryFriendlyByteBuf buffer, PlayerVariablesSyncMessage message) -> buffer.writeNbt(message.data().serializeNBT(buffer.registryAccess())), (RegistryFriendlyByteBuf buffer) -> {
+					PlayerVariablesSyncMessage message = new PlayerVariablesSyncMessage(new PlayerVariables());
+					message.data.deserializeNBT(buffer.registryAccess(), buffer.readNbt());
+					return message;
+				});
 
 		@Override
 		public Type<PlayerVariablesSyncMessage> type() {
@@ -353,11 +382,10 @@ public class CristianSMasterModVariables {
 
 		public static void handleData(final PlayerVariablesSyncMessage message, final IPayloadContext context) {
 			if (context.flow() == PacketFlow.CLIENTBOUND && message.data != null) {
-				context.enqueueWork(() -> context.player().level().getEntity(message.target()).getData(PLAYER_VARIABLES).deserializeNBT(context.player().registryAccess(), message.data.serializeNBT(context.player().registryAccess())))
-						.exceptionally(e -> {
-							context.connection().disconnect(Component.literal(e.getMessage()));
-							return null;
-						});
+				context.enqueueWork(() -> context.player().getData(PLAYER_VARIABLES).deserializeNBT(context.player().registryAccess(), message.data.serializeNBT(context.player().registryAccess()))).exceptionally(e -> {
+					context.connection().disconnect(Component.literal(e.getMessage()));
+					return null;
+				});
 			}
 		}
 	}

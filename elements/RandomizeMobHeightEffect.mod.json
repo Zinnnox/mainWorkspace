@@ -1,9 +1,9 @@
 {
-  "_fv": 69,
+  "_fv": 73,
   "_type": "potioneffect",
   "definition": {
     "effectName": "Randomize Mob Height Effect",
-    "icon": "randomizer.png",
+    "icon": "randomizer",
     "color": {
       "value": -1,
       "falpha": 0.0
@@ -15,8 +15,12 @@
     "isCuredByMilk": true,
     "isProtectedByTotem": true,
     "isCuredbyHoney": false,
+    "modifiers": [],
     "onStarted": {
-      "name": "RandomizeHeightOfMob"
+      "name": "RandomizeMobHeightEffectEffectStartedapplied"
+    },
+    "onExpired": {
+      "name": "RandomizeMobHeightEffectEffectExpires"
     }
   }
 }

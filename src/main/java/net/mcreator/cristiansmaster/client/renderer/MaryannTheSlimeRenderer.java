@@ -10,7 +10,7 @@ import net.mcreator.cristiansmaster.client.model.ModelmaryannF;
 
 public class MaryannTheSlimeRenderer extends MobRenderer<MaryannTheSlimeEntity, ModelmaryannF<MaryannTheSlimeEntity>> {
 	public MaryannTheSlimeRenderer(EntityRendererProvider.Context context) {
-		super(context, new ModelmaryannF(context.bakeLayer(ModelmaryannF.LAYER_LOCATION)), 0.5f);
+		super(context, new ModelmaryannF<MaryannTheSlimeEntity>(context.bakeLayer(ModelmaryannF.LAYER_LOCATION)), 0.5f);
 	}
 
 	@Override

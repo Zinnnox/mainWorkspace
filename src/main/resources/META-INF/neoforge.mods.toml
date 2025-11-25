@@ -14,38 +14,32 @@ authors="User, MCreator"
 # End of user code block mod configuration
 
 [[dependencies.cristian_s_master]]
-modId="neoforge"
-type="required"
-versionRange="[21.1.65,)"
-ordering="AFTER"
-side="BOTH"
+    modId="neoforge"
+    type="required"
+    versionRange="[21.1.65,)"
+    ordering="AFTER"
+    side="BOTH"
 
 [[dependencies.cristian_s_master]]
-modId="minecraft"
-type="required"
-versionRange="[1.21.1]"
-ordering="AFTER"
-side="BOTH"
+    modId="minecraft"
+    type="required"
+    versionRange="[1.21.1]"
+    ordering="AFTER"
+    side="BOTH"
 
 
 [[dependencies.cristian_s_master]]
-modId="kleidersplayerrenderer"
-type="optional"
-versionRange="[0,)"
-ordering="NONE"
-side="BOTH"
+    modId="pehkui"
+    type="optional"
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
 [[dependencies.cristian_s_master]]
-modId="pehkui"
-type="optional"
-versionRange="[0,)"
-ordering="NONE"
-side="BOTH"
-[[dependencies.cristian_s_master]]
-modId="geckolib"
-type="optional"
-versionRange="[0,)"
-ordering="NONE"
-side="BOTH"
+    modId="geckolib"
+    type="optional"
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
 
 
 # Start of user code block dependencies configuration

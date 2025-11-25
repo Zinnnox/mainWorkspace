@@ -9,7 +9,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionHand;
 
-import net.mcreator.cristiansmaster.procedures.AntManSizePotionProcedure;
+import net.mcreator.cristiansmaster.procedures.AntManWatchRightclickedProcedure;
 
 public class AntManWatchItem extends Item {
 	public AntManWatchItem() {
@@ -19,7 +19,7 @@ public class AntManWatchItem extends Item {
 	@Override
 	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
 		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
-		AntManSizePotionProcedure.execute(world);
+		AntManWatchRightclickedProcedure.execute(world, entity);
 		return ar;
 	}
 }

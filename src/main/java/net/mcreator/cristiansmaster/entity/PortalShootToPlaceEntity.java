@@ -5,6 +5,7 @@ import net.neoforged.api.distmarker.OnlyIn;
 import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.projectile.ItemSupplier;
@@ -18,14 +19,13 @@ import net.minecraft.sounds.SoundSource;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.registries.BuiltInRegistries;
 
-import net.mcreator.cristiansmaster.init.CristianSMasterModItems;
 import net.mcreator.cristiansmaster.init.CristianSMasterModEntities;
 
 import javax.annotation.Nullable;
 
 @OnlyIn(value = Dist.CLIENT, _interface = ItemSupplier.class)
 public class PortalShootToPlaceEntity extends AbstractArrow implements ItemSupplier {
-	public static final ItemStack PROJECTILE_ITEM = new ItemStack(CristianSMasterModItems.PORTAL_SHOOTER.get());
+	public static final ItemStack PROJECTILE_ITEM = new ItemStack(Blocks.AIR);
 	private int knockback = 0;
 
 	public PortalShootToPlaceEntity(EntityType<? extends PortalShootToPlaceEntity> type, Level world) {
@@ -48,7 +48,7 @@ public class PortalShootToPlaceEntity extends AbstractArrow implements ItemSuppl
 
 	@Override
 	protected ItemStack getDefaultPickupItem() {
-		return new ItemStack(CristianSMasterModItems.PORTAL_SHOOTER.get());
+		return new ItemStack(Blocks.AIR);
 	}
 
 	@Override

@@ -1,0 +1,12 @@
+{
+  "_fv": 69,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "H",
+    "keyBindingName": "Increase Player Speed",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "PlayerSpeed"
+    }
+  }
+}

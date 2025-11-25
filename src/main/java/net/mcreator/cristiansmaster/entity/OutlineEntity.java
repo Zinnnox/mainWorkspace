@@ -4,7 +4,6 @@ package net.mcreator.cristiansmaster.entity;
 import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
 
 import net.minecraft.world.level.Level;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
@@ -13,7 +12,6 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.damagesource.DamageSource;
 
-import net.mcreator.cristiansmaster.procedures.OutlinePlayerCollidesWithThisEntityProcedure;
 import net.mcreator.cristiansmaster.procedures.OutlineOnEntityTickUpdateProcedure;
 import net.mcreator.cristiansmaster.procedures.OutlineEntityIsHurtProcedure;
 
@@ -48,12 +46,6 @@ public class OutlineEntity extends Monster {
 	public void baseTick() {
 		super.baseTick();
 		OutlineOnEntityTickUpdateProcedure.execute(this);
-	}
-
-	@Override
-	public void playerTouch(Player sourceentity) {
-		super.playerTouch(sourceentity);
-		OutlinePlayerCollidesWithThisEntityProcedure.execute(this);
 	}
 
 	@Override

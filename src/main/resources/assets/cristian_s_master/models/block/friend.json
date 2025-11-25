@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "cristian_s_master:block/friendblocktexture",
+    "up": "cristian_s_master:block/friendblocktexture",
+    "north": "cristian_s_master:block/friendblocktexture",
+    "east": "cristian_s_master:block/friendblocktexture",
+    "south": "cristian_s_master:block/friendblocktexture",
+    "west": "cristian_s_master:block/friendblocktexture",
+    "particle": "cristian_s_master:block/friendblocktexture"
+  },
+  "render_type": "solid"
+}

@@ -25,10 +25,14 @@ import net.mcreator.cristiansmaster.entity.MaryannTheSlimeEntity;
 import net.mcreator.cristiansmaster.entity.MagicalDartEntity;
 import net.mcreator.cristiansmaster.entity.IroncladEntity;
 import net.mcreator.cristiansmaster.entity.IceshardEntity;
+import net.mcreator.cristiansmaster.entity.HomingProjectileEntity;
 import net.mcreator.cristiansmaster.entity.FireworkProjectileEntity;
 import net.mcreator.cristiansmaster.entity.FireballEntity;
 import net.mcreator.cristiansmaster.entity.ExplodingProjectileEntity;
+import net.mcreator.cristiansmaster.entity.EvilGolem2Entity;
+import net.mcreator.cristiansmaster.entity.EvilGolem1Entity;
 import net.mcreator.cristiansmaster.entity.DragonEntity;
+import net.mcreator.cristiansmaster.entity.BouncyBallEntity;
 import net.mcreator.cristiansmaster.entity.BonnieEntity;
 import net.mcreator.cristiansmaster.entity.BigGuyEntity;
 import net.mcreator.cristiansmaster.CristianSMasterMod;
@@ -81,6 +85,18 @@ public class CristianSMasterModEntities {
 					.sized(0.6f, 1.8f));
 	public static final DeferredHolder<EntityType<?>, EntityType<FireworkProjectileEntity>> FIREWORK_PROJECTILE = register("firework_projectile",
 			EntityType.Builder.<FireworkProjectileEntity>of(FireworkProjectileEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final DeferredHolder<EntityType<?>, EntityType<BouncyBallEntity>> BOUNCY_BALL = register("bouncy_ball",
+			EntityType.Builder.<BouncyBallEntity>of(BouncyBallEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final DeferredHolder<EntityType<?>, EntityType<EvilGolem1Entity>> EVIL_GOLEM_1 = register("evil_golem_1",
+			EntityType.Builder.<EvilGolem1Entity>of(EvilGolem1Entity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+
+					.sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<EvilGolem2Entity>> EVIL_GOLEM_2 = register("evil_golem_2",
+			EntityType.Builder.<EvilGolem2Entity>of(EvilGolem2Entity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+
+					.sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<HomingProjectileEntity>> HOMING_PROJECTILE = register("homing_projectile",
+			EntityType.Builder.<HomingProjectileEntity>of(HomingProjectileEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -98,6 +114,8 @@ public class CristianSMasterModEntities {
 		BigGuyEntity.init(event);
 		OutlineEntity.init(event);
 		BonnieEntity.init(event);
+		EvilGolem1Entity.init(event);
+		EvilGolem2Entity.init(event);
 	}
 
 	@SubscribeEvent
@@ -110,5 +128,7 @@ public class CristianSMasterModEntities {
 		event.put(BIG_GUY.get(), BigGuyEntity.createAttributes().build());
 		event.put(OUTLINE.get(), OutlineEntity.createAttributes().build());
 		event.put(BONNIE.get(), BonnieEntity.createAttributes().build());
+		event.put(EVIL_GOLEM_1.get(), EvilGolem1Entity.createAttributes().build());
+		event.put(EVIL_GOLEM_2.get(), EvilGolem2Entity.createAttributes().build());
 	}
 }

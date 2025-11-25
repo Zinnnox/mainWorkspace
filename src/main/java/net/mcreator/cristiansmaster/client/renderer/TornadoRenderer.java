@@ -10,7 +10,7 @@ import net.mcreator.cristiansmaster.client.model.ModeltornadoWhoosh;
 
 public class TornadoRenderer extends MobRenderer<TornadoEntity, ModeltornadoWhoosh<TornadoEntity>> {
 	public TornadoRenderer(EntityRendererProvider.Context context) {
-		super(context, new ModeltornadoWhoosh(context.bakeLayer(ModeltornadoWhoosh.LAYER_LOCATION)), 0.5f);
+		super(context, new ModeltornadoWhoosh<TornadoEntity>(context.bakeLayer(ModeltornadoWhoosh.LAYER_LOCATION)), 0.5f);
 	}
 
 	@Override

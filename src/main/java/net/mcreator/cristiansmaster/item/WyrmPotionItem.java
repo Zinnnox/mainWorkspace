@@ -11,8 +11,6 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionHand;
 
-import net.mcreator.cristiansmaster.procedures.WyrmPotionRightclickedProcedure;
-
 public class WyrmPotionItem extends Item {
 	public WyrmPotionItem() {
 		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON));
@@ -33,10 +31,5 @@ public class WyrmPotionItem extends Item {
 		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
 		entity.startUsingItem(hand);
 		return ar;
-	}
-
-	@Override
-	public void releaseUsing(ItemStack itemstack, Level world, LivingEntity entity, int time) {
-		WyrmPotionRightclickedProcedure.execute(entity);
 	}
 }

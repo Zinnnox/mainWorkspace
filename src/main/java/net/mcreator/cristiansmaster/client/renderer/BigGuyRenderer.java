@@ -10,7 +10,7 @@ import net.mcreator.cristiansmaster.client.model.Modelbig_guy;
 
 public class BigGuyRenderer extends MobRenderer<BigGuyEntity, Modelbig_guy<BigGuyEntity>> {
 	public BigGuyRenderer(EntityRendererProvider.Context context) {
-		super(context, new Modelbig_guy(context.bakeLayer(Modelbig_guy.LAYER_LOCATION)), 0.5f);
+		super(context, new Modelbig_guy<BigGuyEntity>(context.bakeLayer(Modelbig_guy.LAYER_LOCATION)), 0.5f);
 	}
 
 	@Override

@@ -20,6 +20,7 @@ import net.mcreator.cristiansmaster.network.SpawnSILLYGOOSEMessage;
 import net.mcreator.cristiansmaster.network.ShootIceshardMessage;
 import net.mcreator.cristiansmaster.network.ShootFireballMessage;
 import net.mcreator.cristiansmaster.network.OpenGuiBuildersWandMessage;
+import net.mcreator.cristiansmaster.network.OpenAttributeChangerMessage;
 import net.mcreator.cristiansmaster.network.KeyPressedSpaceMessage;
 import net.mcreator.cristiansmaster.network.IroncladspawnedMessage;
 import net.mcreator.cristiansmaster.network.FillWithBuildersWandMessage;
@@ -128,6 +129,19 @@ public class CristianSMasterModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
+	public static final KeyMapping OPEN_ATTRIBUTE_CHANGER = new KeyMapping("key.cristian_s_master.open_attribute_changer", GLFW.GLFW_KEY_PERIOD, "key.categories.ui") {
+		private boolean isDownOld = false;
+
+		@Override
+		public void setDown(boolean isDown) {
+			super.setDown(isDown);
+			if (isDownOld != isDown && isDown) {
+				PacketDistributor.sendToServer(new OpenAttributeChangerMessage(0, 0));
+				OpenAttributeChangerMessage.pressAction(Minecraft.getInstance().player, 0, 0);
+			}
+			isDownOld = isDown;
+		}
+	};
 	private static long KEY_PRESSED_SPACE_LASTPRESS = 0;
 	private static long FILL_WITH_BUILDERS_WAND_LASTPRESS = 0;
 
@@ -141,6 +155,7 @@ public class CristianSMasterModKeyMappings {
 		event.register(OPEN_BACKPACK);
 		event.register(OPEN_GUI_BUILDERS_WAND);
 		event.register(FILL_WITH_BUILDERS_WAND);
+		event.register(OPEN_ATTRIBUTE_CHANGER);
 	}
 
 	@EventBusSubscriber({Dist.CLIENT})
@@ -155,6 +170,7 @@ public class CristianSMasterModKeyMappings {
 				SPAWN_SILLYGOOSE.consumeClick();
 				OPEN_GUI_BUILDERS_WAND.consumeClick();
 				FILL_WITH_BUILDERS_WAND.consumeClick();
+				OPEN_ATTRIBUTE_CHANGER.consumeClick();
 			}
 		}
 	}

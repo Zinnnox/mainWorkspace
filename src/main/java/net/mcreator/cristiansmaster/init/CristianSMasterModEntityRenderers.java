@@ -19,6 +19,8 @@ import net.mcreator.cristiansmaster.client.renderer.MagicalDartRenderer;
 import net.mcreator.cristiansmaster.client.renderer.IroncladRenderer;
 import net.mcreator.cristiansmaster.client.renderer.IceshardRenderer;
 import net.mcreator.cristiansmaster.client.renderer.FireballRenderer;
+import net.mcreator.cristiansmaster.client.renderer.EvilGolem2Renderer;
+import net.mcreator.cristiansmaster.client.renderer.EvilGolem1Renderer;
 import net.mcreator.cristiansmaster.client.renderer.DragonRenderer;
 import net.mcreator.cristiansmaster.client.renderer.BonnieRenderer;
 import net.mcreator.cristiansmaster.client.renderer.BigGuyRenderer;
@@ -42,5 +44,9 @@ public class CristianSMasterModEntityRenderers {
 		event.registerEntityRenderer(CristianSMasterModEntities.PORTAL_SHOOT_TO_PLACE.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(CristianSMasterModEntities.BONNIE.get(), BonnieRenderer::new);
 		event.registerEntityRenderer(CristianSMasterModEntities.FIREWORK_PROJECTILE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(CristianSMasterModEntities.BOUNCY_BALL.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(CristianSMasterModEntities.EVIL_GOLEM_1.get(), EvilGolem1Renderer::new);
+		event.registerEntityRenderer(CristianSMasterModEntities.EVIL_GOLEM_2.get(), EvilGolem2Renderer::new);
+		event.registerEntityRenderer(CristianSMasterModEntities.HOMING_PROJECTILE.get(), ThrownItemRenderer::new);
 	}
 }

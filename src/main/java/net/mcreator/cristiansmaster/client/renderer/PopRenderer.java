@@ -10,7 +10,7 @@ import net.mcreator.cristiansmaster.client.model.Modelpop;
 
 public class PopRenderer extends MobRenderer<PopEntity, Modelpop<PopEntity>> {
 	public PopRenderer(EntityRendererProvider.Context context) {
-		super(context, new Modelpop(context.bakeLayer(Modelpop.LAYER_LOCATION)), 0.5f);
+		super(context, new Modelpop<PopEntity>(context.bakeLayer(Modelpop.LAYER_LOCATION)), 0.5f);
 	}
 
 	@Override

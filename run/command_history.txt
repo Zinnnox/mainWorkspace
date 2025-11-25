@@ -1,3 +1,17 @@
 /gamemode survival
+/gamemode crea
 /gamemode creative
-/time set day
+/gamemode survival
+/give Dev minecraft:diamond_sword
+/give Dev minecraft:sheep_spawn_egg 4
+/kill @e
+/give Dev minecraft:sheep_spawn_egg 64
+/give Dev minecraft:diamond_sword
+/gamemode survival
+/give Dev minecraft:diamond_sword
+/give Dev minecraft:sheep_spawn_egg 64
+/gamemode creative
+/locate biome minecraft:plains
+/tp @s -239 16 168
+/give dev cristian_s_master:redstone_battery
+/give dev cristian_s_master:redstone_battery 64

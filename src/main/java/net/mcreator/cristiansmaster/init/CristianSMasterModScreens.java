@@ -10,11 +10,14 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.api.distmarker.Dist;
 
 import net.mcreator.cristiansmaster.client.gui.TeleporterButtonGuiScreen;
+import net.mcreator.cristiansmaster.client.gui.SimpleBackpackGUIScreen;
 import net.mcreator.cristiansmaster.client.gui.SelectBlockScreen;
 import net.mcreator.cristiansmaster.client.gui.FuelCartInventoryScreen;
 import net.mcreator.cristiansmaster.client.gui.DrillCartInventoryScreen;
+import net.mcreator.cristiansmaster.client.gui.DiamondBackpackGUIScreen;
 import net.mcreator.cristiansmaster.client.gui.CargoCatInventoryScreen;
 import net.mcreator.cristiansmaster.client.gui.BackpackGuiScreen;
+import net.mcreator.cristiansmaster.client.gui.AttributeChangerScreen;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class CristianSMasterModScreens {
@@ -26,5 +29,8 @@ public class CristianSMasterModScreens {
 		event.register(CristianSMasterModMenus.FUEL_CART_INVENTORY.get(), FuelCartInventoryScreen::new);
 		event.register(CristianSMasterModMenus.CARGO_CAT_INVENTORY.get(), CargoCatInventoryScreen::new);
 		event.register(CristianSMasterModMenus.DRILL_CART_INVENTORY.get(), DrillCartInventoryScreen::new);
+		event.register(CristianSMasterModMenus.SIMPLE_BACKPACK_GUI.get(), SimpleBackpackGUIScreen::new);
+		event.register(CristianSMasterModMenus.DIAMOND_BACKPACK_GUI.get(), DiamondBackpackGUIScreen::new);
+		event.register(CristianSMasterModMenus.ATTRIBUTE_CHANGER.get(), AttributeChangerScreen::new);
 	}
 }

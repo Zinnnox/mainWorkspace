@@ -10,7 +10,7 @@ import net.mcreator.cristiansmaster.client.model.ModelxrayOutline;
 
 public class OutlineRenderer extends MobRenderer<OutlineEntity, ModelxrayOutline<OutlineEntity>> {
 	public OutlineRenderer(EntityRendererProvider.Context context) {
-		super(context, new ModelxrayOutline(context.bakeLayer(ModelxrayOutline.LAYER_LOCATION)), 0.5f);
+		super(context, new ModelxrayOutline<OutlineEntity>(context.bakeLayer(ModelxrayOutline.LAYER_LOCATION)), 0.5f);
 	}
 
 	@Override

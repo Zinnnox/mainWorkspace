@@ -10,7 +10,7 @@ import net.mcreator.cristiansmaster.client.model.ModelCustomModel;
 
 public class DragonRenderer extends MobRenderer<DragonEntity, ModelCustomModel<DragonEntity>> {
 	public DragonRenderer(EntityRendererProvider.Context context) {
-		super(context, new ModelCustomModel(context.bakeLayer(ModelCustomModel.LAYER_LOCATION)), 0.5f);
+		super(context, new ModelCustomModel<DragonEntity>(context.bakeLayer(ModelCustomModel.LAYER_LOCATION)), 0.5f);
 	}
 
 	@Override

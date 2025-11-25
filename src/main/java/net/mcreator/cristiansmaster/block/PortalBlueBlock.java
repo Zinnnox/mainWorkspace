@@ -6,8 +6,12 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.core.BlockPos;
+
+import net.mcreator.cristiansmaster.procedures.PortalBlueEntityCollidesInTheBlockProcedure;
 
 public class PortalBlueBlock extends Block {
 	public PortalBlueBlock() {
@@ -17,5 +21,11 @@ public class PortalBlueBlock extends Block {
 	@Override
 	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
 		return 15;
+	}
+
+	@Override
+	public void entityInside(BlockState blockstate, Level world, BlockPos pos, Entity entity) {
+		super.entityInside(blockstate, world, pos, entity);
+		PortalBlueEntityCollidesInTheBlockProcedure.execute(world, entity);
 	}
 }
