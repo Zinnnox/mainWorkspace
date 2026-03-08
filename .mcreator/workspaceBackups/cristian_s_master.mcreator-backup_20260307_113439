@@ -506,35 +506,16 @@
       "path": "~/MedievalFantasy/ManaSetup"
     },
     {
-      "name": "ManaDisplay",
-      "type": "overlay",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "mana_display",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/cristiansmaster/client/screens/ManaDisplayOverlay.java"
-        ]
-      },
-      "path": "~/MedievalFantasy/ManaSetup"
-    },
-    {
       "name": "DisplayManaOverlay",
       "type": "procedure",
       "compiles": true,
       "locked_code": false,
       "registry_name": "display_mana_overlay",
       "metadata": {
-        "return_type": "string",
         "files": [
           "src/main/java/net/mcreator/cristiansmaster/procedures/DisplayManaOverlayProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/MedievalFantasy/ManaSetup"
     },
@@ -4727,6 +4708,10 @@
           {
             "name": "dist",
             "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       }
@@ -4752,6 +4737,21 @@
           }
         ]
       }
+    },
+    {
+      "name": "RainbowBiome",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rainbow_biome",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cristian_s_master/worldgen/biome/rainbow_biome.json",
+          "src/main/resources/data/cristian_s_master/worldgen/placed_feature/rainbow_biome_tree.json",
+          "src/main/resources/data/cristian_s_master/worldgen/configured_feature/rainbow_biome_tree.json"
+        ]
+      },
+      "path": "~/RainbowBiome"
     }
   ],
   "variable_elements": [
@@ -5235,6 +5235,7 @@
       "subtitles.phoenixcry": "",
       "entity.cristian_s_master.ironclad": "Ironclad",
       "item.cristian_s_master.nerf_gun_2": "Nerf Gun 2",
+      "biome.cristian_s_master.rainbow_biome": "Rainbow Biome",
       "item_group.cristian_s_master.custom": "Custom",
       "item.cristian_s_master.grimoire": "Grimoire",
       "item.cristian_s_master.wall_of_ice_cast": "Wall Of Ice Cast",
@@ -5427,6 +5428,10 @@
       },
       {
         "name": "Pokemmon",
+        "children": []
+      },
+      {
+        "name": "RainbowBiome",
         "children": []
       }
     ]
