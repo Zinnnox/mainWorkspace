@@ -33,6 +33,7 @@ import net.mcreator.cristiansmaster.item.TNTDimensionItem;
 import net.mcreator.cristiansmaster.item.SpringJumperItem;
 import net.mcreator.cristiansmaster.item.SpringItem;
 import net.mcreator.cristiansmaster.item.SpawnerAnvilItem;
+import net.mcreator.cristiansmaster.item.SkyblockItem;
 import net.mcreator.cristiansmaster.item.SimpleBackpaclItem;
 import net.mcreator.cristiansmaster.item.ShootTheExplodingProjectileItemItem;
 import net.mcreator.cristiansmaster.item.RocketLauncherItem;
@@ -144,6 +145,7 @@ public class CristianSMasterModItems {
 	public static final DeferredItem<Item> BETTER_AXE = REGISTRY.register("better_axe", BetterAxeItem::new);
 	public static final DeferredItem<Item> REDSTONE_BATTERY = REGISTRY.register("redstone_battery", RedstoneBatteryItem::new);
 	public static final DeferredItem<Item> ORE_LOCATOR = REGISTRY.register("ore_locator", OreLocatorItem::new);
+	public static final DeferredItem<Item> SKYBLOCK = REGISTRY.register("skyblock", SkyblockItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items

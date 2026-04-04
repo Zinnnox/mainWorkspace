@@ -99,6 +99,7 @@ public class CristianSMasterModTabs {
 			tabData.accept(CristianSMasterModItems.X_RAY_AMULET.get());
 			tabData.accept(CristianSMasterModItems.TELEPORTER_BUTTON.get());
 			tabData.accept(CristianSMasterModItems.BETTER_AXE.get());
+			tabData.accept(CristianSMasterModItems.SKYBLOCK.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
 			tabData.accept(CristianSMasterModItems.WYRM_POTION.get());
 			tabData.accept(CristianSMasterModItems.FAIRY_DUST.get());

@@ -506,19 +506,6 @@
       "path": "~/MedievalFantasy/ManaSetup"
     },
     {
-      "name": "ManaDisplay",
-      "type": "overlay",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "mana_display",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/cristiansmaster/client/screens/ManaDisplayOverlay.java"
-        ]
-      },
-      "path": "~/MedievalFantasy/ManaSetup"
-    },
-    {
       "name": "DisplayManaOverlay",
       "type": "procedure",
       "compiles": true,
@@ -4750,6 +4737,114 @@
           }
         ]
       }
+    },
+    {
+      "name": "RainbowBiome",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rainbow_biome",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cristian_s_master/worldgen/biome/rainbow_biome.json",
+          "src/main/resources/data/cristian_s_master/worldgen/placed_feature/rainbow_biome_tree.json",
+          "src/main/resources/data/cristian_s_master/worldgen/configured_feature/rainbow_biome_tree.json"
+        ]
+      },
+      "path": "~/RainbowBiome"
+    },
+    {
+      "name": "Skyblock",
+      "type": "dimension",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "skyblock",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cristian_s_master/dimension/skyblock.json",
+          "src/main/resources/assets/cristian_s_master/models/item/skyblock.json",
+          "src/main/java/net/mcreator/cristiansmaster/item/SkyblockItem.java",
+          "src/main/java/net/mcreator/cristiansmaster/world/dimension/SkyblockDimension.java",
+          "src/main/resources/data/cristian_s_master/dimension_type/skyblock.json",
+          "src/main/resources/assets/cristian_s_master/models/block/skyblock_portal_ns.json",
+          "src/main/resources/assets/cristian_s_master/blockstates/skyblock_portal.json",
+          "src/main/java/net/mcreator/cristiansmaster/world/teleporter/SkyblockPortalShape.java",
+          "src/main/resources/assets/cristian_s_master/models/block/skyblock_portal_ew.json",
+          "src/main/java/net/mcreator/cristiansmaster/world/teleporter/SkyblockTeleporter.java",
+          "src/main/java/net/mcreator/cristiansmaster/block/SkyblockPortalBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "SkyblockPlayerEntersDimension",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skyblock_player_enters_dimension",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/SkyblockPlayerEntersDimensionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Skyblockbiome",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skyblockbiome",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cristian_s_master/worldgen/biome/skyblockbiome.json"
+        ]
+      }
+    },
+    {
+      "name": "Sklyblockisland",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sklyblockisland",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cristian_s_master/worldgen/structure/sklyblockisland.json",
+          "src/main/resources/data/cristian_s_master/worldgen/structure_set/sklyblockisland.json",
+          "src/main/resources/data/cristian_s_master/worldgen/template_pool/sklyblockisland.json"
+        ]
+      }
+    },
+    {
+      "name": "Skyblockislandfeature",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skyblockislandfeature",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cristian_s_master/neoforge/biome_modifier/skyblockislandfeature_biome_modifier.json",
+          "src/main/resources/data/cristian_s_master/worldgen/configured_feature/skyblockislandfeature.json",
+          "src/main/resources/data/cristian_s_master/worldgen/placed_feature/skyblockislandfeature.json"
+        ],
+        "has_nbt_structure": true
+      }
     }
   ],
   "variable_elements": [
@@ -5115,6 +5210,8 @@
       "~CUSTOM:WallOfIceCast"
     ],
     "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~Blocks.AIR",
+      "~Blocks.NORMAL_STONE_STAIRS",
       "~Blocks.TNT",
       "~Blocks.REINFORCED_DEEPSLATE"
     ],
@@ -5152,16 +5249,16 @@
   "tab_element_order": {},
   "language_map": {
     "en_us": {
-      "effect.cristian_s_master.x_ray": "X Ray",
       "item.cristian_s_master.xray_armor_helmet": "Xray Goggles",
+      "effect.cristian_s_master.x_ray": "X Ray",
       "item.cristian_s_master.lightning_staff": "Template Staff",
       "gui.cristian_s_master.attribute_changer.button_1_speed": "-1 Speed",
       "gui.cristian_s_master.select_block.input": "Input Block Name",
       "item.cristian_s_master.remote": "Remote",
-      "item.minecraft.splash_potion.effect.xray_potion": "Splash Potion of XRay",
       "item.cristian_s_master.firework_stick": "Firework Stick",
-      "item.cristian_s_master.tnt_filler": "TNT Filler",
+      "item.minecraft.splash_potion.effect.xray_potion": "Splash Potion of XRay",
       "item.cristian_s_master.op_axe": "OP Axe",
+      "item.cristian_s_master.tnt_filler": "TNT Filler",
       "gui.cristian_s_master.fuel_cart_inventory.label_inventory": "Inventory",
       "item.cristian_s_master.nerf_gun": "Nerf Gun",
       "item.cristian_s_master.evil_golem_1_spawn_egg": "Evil Golem - Phase 1 Spawn Egg",
@@ -5171,8 +5268,8 @@
       "item.cristian_s_master.teleporter_button": "Teleporter Button",
       "item.cristian_s_master.portal_shooter": "Portal Shooter",
       "entity.cristian_s_master.pop": "Pop",
-      "subtitles.iceshard": "",
       "item.minecraft.lingering_potion.effect.randomizer_potion": "Lingering Randomizer Potion",
+      "subtitles.iceshard": "",
       "block.cristian_s_master.fuel_cart": "Fuel Cart",
       "gui.cristian_s_master.teleporter_button_gui.button_teleport_to_saved_position": "Teleport to Saved Position",
       "gui.cristian_s_master.attribute_changer.button_1_jump": "+1 Jump",
@@ -5181,8 +5278,8 @@
       "item.cristian_s_master.burnt_pheonix_feathter": "Burnt Pheonix Feather",
       "item.cristian_s_master.eyelasercannon": "EYELASERCANNON",
       "key.cristian_s_master.open_gui_builders_wand": "Open Gui Builders Wand",
-      "key.cristian_s_master.shoot_fireball": "Shoot Fireball",
       "item.minecraft.tipped_arrow.effect.xray_potion": "Arrow of XRay",
+      "key.cristian_s_master.shoot_fireball": "Shoot Fireball",
       "entity.cristian_s_master.bonnie": "Bonnie",
       "item.cristian_s_master.ant_man_watch": "Ant Man Watch",
       "item.cristian_s_master.magic_armor_helmet": "Magic Armor Helmet",
@@ -5233,6 +5330,7 @@
       "subtitles.phoenixcry": "",
       "entity.cristian_s_master.ironclad": "Ironclad",
       "item.cristian_s_master.nerf_gun_2": "Nerf Gun 2",
+      "biome.cristian_s_master.rainbow_biome": "Rainbow Biome",
       "item_group.cristian_s_master.custom": "Custom",
       "item.cristian_s_master.grimoire": "Grimoire",
       "item.cristian_s_master.wall_of_ice_cast": "Wall Of Ice Cast",
@@ -5246,6 +5344,8 @@
       "block.cristian_s_master.portal_orange": "Portal Orange",
       "item.cristian_s_master.mining_laser": "Mining Laser",
       "block.cristian_s_master.portal_blue": "Portal Blue",
+      "biome.cristian_s_master.skyblockbiome": "Skyblockbiome",
+      "item.cristian_s_master.skyblock": "Skyblock Portal Igniter",
       "item.cristian_s_master.spring_boots": "Spring Boots",
       "gui.cristian_s_master.attribute_changer.button_reset_all": "Reset All",
       "item_group.cristian_s_master.pokemon": "Pokemon",
@@ -5425,6 +5525,10 @@
       },
       {
         "name": "Pokemmon",
+        "children": []
+      },
+      {
+        "name": "RainbowBiome",
         "children": []
       }
     ]
