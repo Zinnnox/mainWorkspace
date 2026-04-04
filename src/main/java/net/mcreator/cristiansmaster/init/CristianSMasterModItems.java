@@ -38,6 +38,7 @@ import net.mcreator.cristiansmaster.item.ShootTheExplodingProjectileItemItem;
 import net.mcreator.cristiansmaster.item.RocketLauncherItem;
 import net.mcreator.cristiansmaster.item.RemoteItem;
 import net.mcreator.cristiansmaster.item.RedstoneBatteryItem;
+import net.mcreator.cristiansmaster.item.RandomPickaxeItem;
 import net.mcreator.cristiansmaster.item.PortalShooterItem;
 import net.mcreator.cristiansmaster.item.PhoenixFeatherItem;
 import net.mcreator.cristiansmaster.item.OreLocatorItem;
@@ -144,6 +145,8 @@ public class CristianSMasterModItems {
 	public static final DeferredItem<Item> BETTER_AXE = REGISTRY.register("better_axe", BetterAxeItem::new);
 	public static final DeferredItem<Item> REDSTONE_BATTERY = REGISTRY.register("redstone_battery", RedstoneBatteryItem::new);
 	public static final DeferredItem<Item> ORE_LOCATOR = REGISTRY.register("ore_locator", OreLocatorItem::new);
+	public static final DeferredItem<Item> BLOODY_GOLEM_SPAWN_EGG = REGISTRY.register("bloody_golem_spawn_egg", () -> new DeferredSpawnEggItem(CristianSMasterModEntities.BLOODY_GOLEM, -1, -1, new Item.Properties()));
+	public static final DeferredItem<Item> RANDOM_PICKAXE = REGISTRY.register("random_pickaxe", RandomPickaxeItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items

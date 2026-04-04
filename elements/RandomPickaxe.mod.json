@@ -3,26 +3,26 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "poekball",
+    "texture": "randompixkca",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "Empty Pokeball",
+    "name": "Random Pickaxe",
     "rarity": "COMMON",
     "creativeTabs": [
       {
-        "value": "CUSTOM:Pokemon"
+        "value": "TOOLS"
       }
     ],
     "stackSize": 1,
     "enchantability": 0,
-    "useDuration": 0,
+    "useDuration": 32,
     "toolType": 1.0,
     "damageCount": 0,
     "recipeRemainder": {
       "value": ""
     },
-    "destroyAnyBlock": false,
+    "destroyAnyBlock": true,
     "immuneToFire": false,
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
@@ -36,16 +36,13 @@
     },
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "onEntityHitWith": {
-      "name": "EmptyPokeballLivingEntityIsHitWithItem"
-    },
-    "enableRanged": true,
+    "enableRanged": false,
     "shootConstantly": false,
     "rangedItemChargesPower": false,
     "projectile": {
-      "value": "CUSTOM:PokeballThrow"
+      "value": "CUSTOM:Iceshard"
     },
-    "projectileDisableAmmoCheck": true,
+    "projectileDisableAmmoCheck": false,
     "isFood": false,
     "nutritionalValue": 4,
     "saturation": 0.3,

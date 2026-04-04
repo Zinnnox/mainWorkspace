@@ -16,3 +16,7 @@
 /give dev cristian_s_master:redstone_battery
 /give dev cristian_s_master:redstone_battery 64
 /give Dev cristian_s_master:redstone_battery 64
+/kill @e
+/gamemode survival
+/clear Dev
+/give Dev cristian_s_master:random_pickaxe

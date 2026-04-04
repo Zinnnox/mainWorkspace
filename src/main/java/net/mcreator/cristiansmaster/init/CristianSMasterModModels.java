@@ -15,6 +15,7 @@ import net.mcreator.cristiansmaster.client.model.ModeltornadoWhoosh;
 import net.mcreator.cristiansmaster.client.model.Modelsillygoose;
 import net.mcreator.cristiansmaster.client.model.Modelpop;
 import net.mcreator.cristiansmaster.client.model.Modelpew_pew_laser;
+import net.mcreator.cristiansmaster.client.model.ModelnewIronClad;
 import net.mcreator.cristiansmaster.client.model.ModelmaryannF;
 import net.mcreator.cristiansmaster.client.model.Modeliceshard;
 import net.mcreator.cristiansmaster.client.model.Modelfireball;
@@ -29,18 +30,19 @@ public class CristianSMasterModModels {
 	@SubscribeEvent
 	public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
 		event.registerLayerDefinition(Modelpew_pew_laser.LAYER_LOCATION, Modelpew_pew_laser::createBodyLayer);
-		event.registerLayerDefinition(Modeliceshard.LAYER_LOCATION, Modeliceshard::createBodyLayer);
-		event.registerLayerDefinition(Modelbig_guy.LAYER_LOCATION, Modelbig_guy::createBodyLayer);
-		event.registerLayerDefinition(ModelxrayOutline.LAYER_LOCATION, ModelxrayOutline::createBodyLayer);
-		event.registerLayerDefinition(Modelsillygoose.LAYER_LOCATION, Modelsillygoose::createBodyLayer);
 		event.registerLayerDefinition(Modelfireball.LAYER_LOCATION, Modelfireball::createBodyLayer);
 		event.registerLayerDefinition(Modelwyrm.LAYER_LOCATION, Modelwyrm::createBodyLayer);
 		event.registerLayerDefinition(ModelIronGolemModel.LAYER_LOCATION, ModelIronGolemModel::createBodyLayer);
 		event.registerLayerDefinition(ModelCustomModel.LAYER_LOCATION, ModelCustomModel::createBodyLayer);
+		event.registerLayerDefinition(ModelmaryannF.LAYER_LOCATION, ModelmaryannF::createBodyLayer);
+		event.registerLayerDefinition(Modelbackpack.LAYER_LOCATION, Modelbackpack::createBodyLayer);
+		event.registerLayerDefinition(Modeliceshard.LAYER_LOCATION, Modeliceshard::createBodyLayer);
+		event.registerLayerDefinition(Modelbig_guy.LAYER_LOCATION, Modelbig_guy::createBodyLayer);
+		event.registerLayerDefinition(ModelxrayOutline.LAYER_LOCATION, ModelxrayOutline::createBodyLayer);
+		event.registerLayerDefinition(Modelsillygoose.LAYER_LOCATION, Modelsillygoose::createBodyLayer);
+		event.registerLayerDefinition(ModelnewIronClad.LAYER_LOCATION, ModelnewIronClad::createBodyLayer);
 		event.registerLayerDefinition(ModelDart.LAYER_LOCATION, ModelDart::createBodyLayer);
 		event.registerLayerDefinition(ModeltornadoWhoosh.LAYER_LOCATION, ModeltornadoWhoosh::createBodyLayer);
-		event.registerLayerDefinition(ModelmaryannF.LAYER_LOCATION, ModelmaryannF::createBodyLayer);
 		event.registerLayerDefinition(Modelpop.LAYER_LOCATION, Modelpop::createBodyLayer);
-		event.registerLayerDefinition(Modelbackpack.LAYER_LOCATION, Modelbackpack::createBodyLayer);
 	}
 }

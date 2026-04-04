@@ -70,6 +70,7 @@ public class CristianSMasterModTabs {
 			tabData.accept(CristianSMasterModItems.OUTLINE_SPAWN_EGG.get());
 			tabData.accept(CristianSMasterModItems.EVIL_GOLEM_1_SPAWN_EGG.get());
 			tabData.accept(CristianSMasterModItems.EVIL_GOLEM_2_SPAWN_EGG.get());
+			tabData.accept(CristianSMasterModItems.BLOODY_GOLEM_SPAWN_EGG.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
 			tabData.accept(CristianSMasterModItems.ANT_MAN_WATCH.get());
 			tabData.accept(CristianSMasterModItems.GRIMOIRE.get());
@@ -99,6 +100,7 @@ public class CristianSMasterModTabs {
 			tabData.accept(CristianSMasterModItems.X_RAY_AMULET.get());
 			tabData.accept(CristianSMasterModItems.TELEPORTER_BUTTON.get());
 			tabData.accept(CristianSMasterModItems.BETTER_AXE.get());
+			tabData.accept(CristianSMasterModItems.RANDOM_PICKAXE.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
 			tabData.accept(CristianSMasterModItems.WYRM_POTION.get());
 			tabData.accept(CristianSMasterModItems.FAIRY_DUST.get());

@@ -20,6 +20,7 @@ import net.mcreator.cristiansmaster.entity.TornadoEntity;
 import net.mcreator.cristiansmaster.entity.TheBOMBEntity;
 import net.mcreator.cristiansmaster.entity.PortalShootToPlaceEntity;
 import net.mcreator.cristiansmaster.entity.PopEntity;
+import net.mcreator.cristiansmaster.entity.PokeballThrowEntity;
 import net.mcreator.cristiansmaster.entity.OutlineEntity;
 import net.mcreator.cristiansmaster.entity.MaryannTheSlimeEntity;
 import net.mcreator.cristiansmaster.entity.MagicalDartEntity;
@@ -34,6 +35,7 @@ import net.mcreator.cristiansmaster.entity.EvilGolem1Entity;
 import net.mcreator.cristiansmaster.entity.DragonEntity;
 import net.mcreator.cristiansmaster.entity.BouncyBallEntity;
 import net.mcreator.cristiansmaster.entity.BonnieEntity;
+import net.mcreator.cristiansmaster.entity.BloodyGolemEntity;
 import net.mcreator.cristiansmaster.entity.BigGuyEntity;
 import net.mcreator.cristiansmaster.CristianSMasterMod;
 
@@ -97,6 +99,12 @@ public class CristianSMasterModEntities {
 					.sized(0.6f, 1.8f));
 	public static final DeferredHolder<EntityType<?>, EntityType<HomingProjectileEntity>> HOMING_PROJECTILE = register("homing_projectile",
 			EntityType.Builder.<HomingProjectileEntity>of(HomingProjectileEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final DeferredHolder<EntityType<?>, EntityType<BloodyGolemEntity>> BLOODY_GOLEM = register("bloody_golem",
+			EntityType.Builder.<BloodyGolemEntity>of(BloodyGolemEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+
+					.sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<PokeballThrowEntity>> POKEBALL_THROW = register("pokeball_throw",
+			EntityType.Builder.<PokeballThrowEntity>of(PokeballThrowEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -116,6 +124,7 @@ public class CristianSMasterModEntities {
 		BonnieEntity.init(event);
 		EvilGolem1Entity.init(event);
 		EvilGolem2Entity.init(event);
+		BloodyGolemEntity.init(event);
 	}
 
 	@SubscribeEvent
@@ -130,5 +139,6 @@ public class CristianSMasterModEntities {
 		event.put(BONNIE.get(), BonnieEntity.createAttributes().build());
 		event.put(EVIL_GOLEM_1.get(), EvilGolem1Entity.createAttributes().build());
 		event.put(EVIL_GOLEM_2.get(), EvilGolem2Entity.createAttributes().build());
+		event.put(BLOODY_GOLEM.get(), BloodyGolemEntity.createAttributes().build());
 	}
 }

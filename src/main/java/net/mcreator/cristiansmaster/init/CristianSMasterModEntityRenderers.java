@@ -23,6 +23,7 @@ import net.mcreator.cristiansmaster.client.renderer.EvilGolem2Renderer;
 import net.mcreator.cristiansmaster.client.renderer.EvilGolem1Renderer;
 import net.mcreator.cristiansmaster.client.renderer.DragonRenderer;
 import net.mcreator.cristiansmaster.client.renderer.BonnieRenderer;
+import net.mcreator.cristiansmaster.client.renderer.BloodyGolemRenderer;
 import net.mcreator.cristiansmaster.client.renderer.BigGuyRenderer;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
@@ -48,5 +49,7 @@ public class CristianSMasterModEntityRenderers {
 		event.registerEntityRenderer(CristianSMasterModEntities.EVIL_GOLEM_1.get(), EvilGolem1Renderer::new);
 		event.registerEntityRenderer(CristianSMasterModEntities.EVIL_GOLEM_2.get(), EvilGolem2Renderer::new);
 		event.registerEntityRenderer(CristianSMasterModEntities.HOMING_PROJECTILE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(CristianSMasterModEntities.BLOODY_GOLEM.get(), BloodyGolemRenderer::new);
+		event.registerEntityRenderer(CristianSMasterModEntities.POKEBALL_THROW.get(), ThrownItemRenderer::new);
 	}
 }
