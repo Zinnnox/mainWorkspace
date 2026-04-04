@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
+    "minecraft:air",
+    "minecraft:stone_stairs",
     "minecraft:tnt",
     "minecraft:reinforced_deepslate"
   ]

@@ -4754,6 +4754,7 @@
       "path": "~/RainbowBiome"
     },
     {
+<<<<<<<< HEAD:.mcreator/workspaceBackups/cristian_s_master.mcreator-backup_20260314_110532
       "name": "BloodyGolem",
       "type": "livingentity",
       "compiles": true,
@@ -4764,10 +4765,31 @@
           "src/main/java/net/mcreator/cristiansmaster/client/renderer/BloodyGolemRenderer.java",
           "src/main/java/net/mcreator/cristiansmaster/entity/BloodyGolemEntity.java",
           "src/main/resources/assets/cristian_s_master/models/item/bloody_golem_spawn_egg.json"
+========
+      "name": "Skyblock",
+      "type": "dimension",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "skyblock",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cristian_s_master/dimension/skyblock.json",
+          "src/main/resources/assets/cristian_s_master/models/item/skyblock.json",
+          "src/main/java/net/mcreator/cristiansmaster/item/SkyblockItem.java",
+          "src/main/java/net/mcreator/cristiansmaster/world/dimension/SkyblockDimension.java",
+          "src/main/resources/data/cristian_s_master/dimension_type/skyblock.json",
+          "src/main/resources/assets/cristian_s_master/models/block/skyblock_portal_ns.json",
+          "src/main/resources/assets/cristian_s_master/blockstates/skyblock_portal.json",
+          "src/main/java/net/mcreator/cristiansmaster/world/teleporter/SkyblockPortalShape.java",
+          "src/main/resources/assets/cristian_s_master/models/block/skyblock_portal_ew.json",
+          "src/main/java/net/mcreator/cristiansmaster/world/teleporter/SkyblockTeleporter.java",
+          "src/main/java/net/mcreator/cristiansmaster/block/SkyblockPortalBlock.java"
+>>>>>>>> 0774dae330d26f57ddfab68437f118671dd8a2b9:.mcreator/workspaceBackups/cristian_s_master.mcreator-backup_20260403_231551
         ]
       }
     },
     {
+<<<<<<<< HEAD:.mcreator/workspaceBackups/cristian_s_master.mcreator-backup_20260314_110532
       "name": "BloodyGolemEntityIsHurt",
       "type": "procedure",
       "compiles": true,
@@ -4871,6 +4893,19 @@
             "type": "entity"
           },
           {
+========
+      "name": "SkyblockPlayerEntersDimension",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skyblock_player_enters_dimension",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/SkyblockPlayerEntersDimensionProcedure.java"
+        ],
+        "dependencies": [
+          {
+>>>>>>>> 0774dae330d26f57ddfab68437f118671dd8a2b9:.mcreator/workspaceBackups/cristian_s_master.mcreator-backup_20260403_231551
             "name": "x",
             "type": "number"
           },
@@ -4888,6 +4923,50 @@
           }
         ]
       }
+<<<<<<<< HEAD:.mcreator/workspaceBackups/cristian_s_master.mcreator-backup_20260314_110532
+========
+    },
+    {
+      "name": "Skyblockbiome",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skyblockbiome",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cristian_s_master/worldgen/biome/skyblockbiome.json"
+        ]
+      }
+    },
+    {
+      "name": "Sklyblockisland",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sklyblockisland",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cristian_s_master/worldgen/structure/sklyblockisland.json",
+          "src/main/resources/data/cristian_s_master/worldgen/structure_set/sklyblockisland.json",
+          "src/main/resources/data/cristian_s_master/worldgen/template_pool/sklyblockisland.json"
+        ]
+      }
+    },
+    {
+      "name": "Skyblockislandfeature",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skyblockislandfeature",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cristian_s_master/neoforge/biome_modifier/skyblockislandfeature_biome_modifier.json",
+          "src/main/resources/data/cristian_s_master/worldgen/configured_feature/skyblockislandfeature.json",
+          "src/main/resources/data/cristian_s_master/worldgen/placed_feature/skyblockislandfeature.json"
+        ],
+        "has_nbt_structure": true
+      }
+>>>>>>>> 0774dae330d26f57ddfab68437f118671dd8a2b9:.mcreator/workspaceBackups/cristian_s_master.mcreator-backup_20260403_231551
     }
   ],
   "variable_elements": [
@@ -5253,6 +5332,7 @@
       "~CUSTOM:WallOfIceCast"
     ],
     "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~Blocks.NORMAL_STONE_STAIRS",
       "~Blocks.TNT",
       "~Blocks.REINFORCED_DEEPSLATE"
     ],
@@ -6781,8 +6861,12 @@
       "gui.cristian_s_master.attribute_changer.button_1_speed": "-1 Speed",
       "gui.cristian_s_master.select_block.input": "Input Block Name",
       "item.cristian_s_master.remote": "Remote",
-      "item.minecraft.splash_potion.effect.xray_potion": "Splash Potion of XRay",
       "item.cristian_s_master.firework_stick": "Firework Stick",
+<<<<<<<< HEAD:.mcreator/workspaceBackups/cristian_s_master.mcreator-backup_20260314_110532
+========
+      "item.minecraft.splash_potion.effect.xray_potion": "Splash Potion of XRay",
+      "item.cristian_s_master.op_axe": "OP Axe",
+>>>>>>>> 0774dae330d26f57ddfab68437f118671dd8a2b9:.mcreator/workspaceBackups/cristian_s_master.mcreator-backup_20260403_231551
       "item.cristian_s_master.tnt_filler": "TNT Filler",
       "item.cristian_s_master.op_axe": "OP Axe",
       "gui.cristian_s_master.fuel_cart_inventory.label_inventory": "Inventory",
@@ -6858,7 +6942,10 @@
       "entity.cristian_s_master.ironclad": "Ironclad",
       "item.cristian_s_master.nerf_gun_2": "Nerf Gun 2",
       "biome.cristian_s_master.rainbow_biome": "Rainbow Biome",
+<<<<<<<< HEAD:.mcreator/workspaceBackups/cristian_s_master.mcreator-backup_20260314_110532
       "item.cristian_s_master.random_pickaxe": "Random Pickaxe",
+========
+>>>>>>>> 0774dae330d26f57ddfab68437f118671dd8a2b9:.mcreator/workspaceBackups/cristian_s_master.mcreator-backup_20260403_231551
       "item_group.cristian_s_master.custom": "Custom",
       "item.cristian_s_master.grimoire": "Grimoire",
       "item.cristian_s_master.wall_of_ice_cast": "Wall Of Ice Cast",
@@ -6873,6 +6960,8 @@
       "block.cristian_s_master.portal_orange": "Portal Orange",
       "item.cristian_s_master.mining_laser": "Mining Laser",
       "block.cristian_s_master.portal_blue": "Portal Blue",
+      "biome.cristian_s_master.skyblockbiome": "Skyblockbiome",
+      "item.cristian_s_master.skyblock": "Skyblock Portal Igniter",
       "item.cristian_s_master.spring_boots": "Spring Boots",
       "gui.cristian_s_master.attribute_changer.button_reset_all": "Reset All",
       "item_group.cristian_s_master.pokemon": "Pokemon",

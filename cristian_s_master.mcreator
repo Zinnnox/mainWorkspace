@@ -4754,7 +4754,7 @@
       "path": "~/RainbowBiome"
     },
     {
-<<<<<<< HEAD
+<<<<<<<< HEAD:.mcreator/workspaceBackups/cristian_s_master.mcreator-backup_20260314_130946
       "name": "BloodyGolem",
       "type": "livingentity",
       "compiles": true,
@@ -4765,7 +4765,7 @@
           "src/main/java/net/mcreator/cristiansmaster/client/renderer/BloodyGolemRenderer.java",
           "src/main/java/net/mcreator/cristiansmaster/entity/BloodyGolemEntity.java",
           "src/main/resources/assets/cristian_s_master/models/item/bloody_golem_spawn_egg.json"
-=======
+========
       "name": "Skyblock",
       "type": "dimension",
       "compiles": true,
@@ -4784,12 +4784,12 @@
           "src/main/resources/assets/cristian_s_master/models/block/skyblock_portal_ew.json",
           "src/main/java/net/mcreator/cristiansmaster/world/teleporter/SkyblockTeleporter.java",
           "src/main/java/net/mcreator/cristiansmaster/block/SkyblockPortalBlock.java"
->>>>>>> 0774dae330d26f57ddfab68437f118671dd8a2b9
+>>>>>>>> 0774dae330d26f57ddfab68437f118671dd8a2b9:.mcreator/workspaceBackups/cristian_s_master.mcreator-backup_20260403_232151
         ]
       }
     },
     {
-<<<<<<< HEAD
+<<<<<<<< HEAD:.mcreator/workspaceBackups/cristian_s_master.mcreator-backup_20260314_130946
       "name": "BloodyGolemEntityIsHurt",
       "type": "procedure",
       "compiles": true,
@@ -4893,7 +4893,7 @@
             "type": "entity"
           },
           {
-=======
+========
       "name": "SkyblockPlayerEntersDimension",
       "type": "procedure",
       "compiles": true,
@@ -4905,7 +4905,7 @@
         ],
         "dependencies": [
           {
->>>>>>> 0774dae330d26f57ddfab68437f118671dd8a2b9
+>>>>>>>> 0774dae330d26f57ddfab68437f118671dd8a2b9:.mcreator/workspaceBackups/cristian_s_master.mcreator-backup_20260403_232151
             "name": "x",
             "type": "number"
           },
@@ -4923,56 +4923,10 @@
           }
         ]
       }
+<<<<<<<< HEAD:.mcreator/workspaceBackups/cristian_s_master.mcreator-backup_20260314_130946
+========
     },
     {
-<<<<<<< HEAD
-      "name": "PokeballThrow",
-      "type": "projectile",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "pokeball_throw",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/cristiansmaster/entity/PokeballThrowEntity.java"
-        ]
-      },
-      "path": "~/Pokemmon"
-    },
-    {
-      "name": "EmptyPokeballLivingEntityIsHitWithItem",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "empty_pokeball_living_entity_is_hit_with_item",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/cristiansmaster/procedures/EmptyPokeballLivingEntityIsHitWithItemProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Pokemmon"
-=======
       "name": "Skyblockbiome",
       "type": "biome",
       "compiles": true,
@@ -5012,7 +4966,7 @@
         ],
         "has_nbt_structure": true
       }
->>>>>>> 0774dae330d26f57ddfab68437f118671dd8a2b9
+>>>>>>>> 0774dae330d26f57ddfab68437f118671dd8a2b9:.mcreator/workspaceBackups/cristian_s_master.mcreator-backup_20260403_232151
     }
   ],
   "variable_elements": [
@@ -5267,18 +5221,6 @@
       "type": "number",
       "scope": "map",
       "value": "0"
-    },
-    {
-      "name": "hasCaptured",
-      "type": "logic",
-      "scope": "map",
-      "value": "false"
-    },
-    {
-      "name": "capturedPokemon",
-      "type": "string",
-      "scope": "map",
-      "value": "\"\""
     }
   ],
   "sound_elements": [
@@ -6997,7 +6939,10 @@
       "entity.cristian_s_master.ironclad": "Ironclad",
       "item.cristian_s_master.nerf_gun_2": "Nerf Gun 2",
       "biome.cristian_s_master.rainbow_biome": "Rainbow Biome",
+<<<<<<<< HEAD:.mcreator/workspaceBackups/cristian_s_master.mcreator-backup_20260314_130946
       "item.cristian_s_master.random_pickaxe": "Random Pickaxe",
+========
+>>>>>>>> 0774dae330d26f57ddfab68437f118671dd8a2b9:.mcreator/workspaceBackups/cristian_s_master.mcreator-backup_20260403_232151
       "item_group.cristian_s_master.custom": "Custom",
       "item.cristian_s_master.grimoire": "Grimoire",
       "item.cristian_s_master.wall_of_ice_cast": "Wall Of Ice Cast",

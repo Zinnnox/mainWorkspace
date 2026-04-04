@@ -4754,6 +4754,7 @@
       "path": "~/RainbowBiome"
     },
     {
+<<<<<<<< HEAD:.mcreator/workspaceBackups/cristian_s_master.mcreator-backup_20260308_113022
       "name": "BloodyGolem",
       "type": "livingentity",
       "compiles": true,
@@ -4764,10 +4765,31 @@
           "src/main/java/net/mcreator/cristiansmaster/client/renderer/BloodyGolemRenderer.java",
           "src/main/java/net/mcreator/cristiansmaster/entity/BloodyGolemEntity.java",
           "src/main/resources/assets/cristian_s_master/models/item/bloody_golem_spawn_egg.json"
+========
+      "name": "Skyblock",
+      "type": "dimension",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "skyblock",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cristian_s_master/dimension/skyblock.json",
+          "src/main/resources/assets/cristian_s_master/models/item/skyblock.json",
+          "src/main/java/net/mcreator/cristiansmaster/item/SkyblockItem.java",
+          "src/main/java/net/mcreator/cristiansmaster/world/dimension/SkyblockDimension.java",
+          "src/main/resources/data/cristian_s_master/dimension_type/skyblock.json",
+          "src/main/resources/assets/cristian_s_master/models/block/skyblock_portal_ns.json",
+          "src/main/resources/assets/cristian_s_master/blockstates/skyblock_portal.json",
+          "src/main/java/net/mcreator/cristiansmaster/world/teleporter/SkyblockPortalShape.java",
+          "src/main/resources/assets/cristian_s_master/models/block/skyblock_portal_ew.json",
+          "src/main/java/net/mcreator/cristiansmaster/world/teleporter/SkyblockTeleporter.java",
+          "src/main/java/net/mcreator/cristiansmaster/block/SkyblockPortalBlock.java"
+>>>>>>>> 0774dae330d26f57ddfab68437f118671dd8a2b9:.mcreator/workspaceBackups/cristian_s_master.mcreator-backup_20260403_230251
         ]
       }
     },
     {
+<<<<<<<< HEAD:.mcreator/workspaceBackups/cristian_s_master.mcreator-backup_20260308_113022
       "name": "BloodyGolemEntityIsHurt",
       "type": "procedure",
       "compiles": true,
@@ -4838,6 +4860,33 @@
           {
             "name": "entity",
             "type": "entity"
+========
+      "name": "SkyblockPlayerEntersDimension",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skyblock_player_enters_dimension",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cristiansmaster/procedures/SkyblockPlayerEntersDimensionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+>>>>>>>> 0774dae330d26f57ddfab68437f118671dd8a2b9:.mcreator/workspaceBackups/cristian_s_master.mcreator-backup_20260403_230251
           }
         ]
       }
@@ -5206,6 +5255,7 @@
       "~CUSTOM:WallOfIceCast"
     ],
     "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~Blocks.NORMAL_STONE_STAIRS",
       "~Blocks.TNT",
       "~Blocks.REINFORCED_DEEPSLATE"
     ],
@@ -5338,6 +5388,7 @@
       "block.cristian_s_master.portal_orange": "Portal Orange",
       "item.cristian_s_master.mining_laser": "Mining Laser",
       "block.cristian_s_master.portal_blue": "Portal Blue",
+      "item.cristian_s_master.skyblock": "Skyblock Portal Igniter",
       "item.cristian_s_master.spring_boots": "Spring Boots",
       "gui.cristian_s_master.attribute_changer.button_reset_all": "Reset All",
       "item_group.cristian_s_master.pokemon": "Pokemon",
