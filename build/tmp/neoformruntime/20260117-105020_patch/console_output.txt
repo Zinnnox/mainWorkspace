@@ -1,0 +1,25 @@
+--------------------------------------------------------------------------------
+
+Command-Line:
+ - /home/cristian/Documents/MCreator20244/jdk/bin/java
+ - -jar
+ - /home/cristian/.mcreator/gradle/caches/modules-2/files-2.1/codechicken/DiffPatch/1.5.0.29/da63995592cfbd64b5b33d3824a3c30946f0d1e1/DiffPatch-1.5.0.29-all.jar
+ - /home/cristian/.mcreator/gradle/caches/neoformruntime/intermediate_results/inject_82ea4b43ca6af665a84b3db6b7bd2458a866109e_output.jar
+ - /home/cristian/.mcreator/gradle/caches/modules-2/files-2.1/net.neoforged/neoform/1.21.1-20240808.144430/811e2bd86fa2cda2812e5e8e51d718ea8bd6d3f4/neoform-1.21.1-20240808.144430.zip
+ - --prefix
+ - patches/joined/
+ - --patch
+ - --archive
+ - ZIP
+ - --output
+ - ./output.zip
+ - --log-level
+ - WARN
+ - --mode
+ - OFFSET
+ - --archive-rejects
+ - ZIP
+ - --reject
+ - ./outputRejects.zip
+--------------------------------------------------------------------------------
+
