@@ -11,7 +11,6 @@ import net.minecraft.world.level.block.Block;
 
 import net.mcreator.cristiansmaster.block.TestBlockBlock;
 import net.mcreator.cristiansmaster.block.TNTDimensionPortalBlock;
-import net.mcreator.cristiansmaster.block.SkyblockPortalBlock;
 import net.mcreator.cristiansmaster.block.SimpleFuelCartBlock;
 import net.mcreator.cristiansmaster.block.SimpleDrillCartBlock;
 import net.mcreator.cristiansmaster.block.SimpleCargoCartBlock;
@@ -38,7 +37,6 @@ public class CristianSMasterModBlocks {
 	public static final DeferredBlock<Block> SIMPLE_FUEL_CART = REGISTRY.register("simple_fuel_cart", SimpleFuelCartBlock::new);
 	public static final DeferredBlock<Block> TEST_BLOCK = REGISTRY.register("test_block", TestBlockBlock::new);
 	public static final DeferredBlock<Block> FRIEND = REGISTRY.register("friend", FriendBlock::new);
-	public static final DeferredBlock<Block> SKYBLOCK_PORTAL = REGISTRY.register("skyblock_portal", SkyblockPortalBlock::new);
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

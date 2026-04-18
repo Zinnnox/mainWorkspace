@@ -100,11 +100,7 @@ public class CristianSMasterModTabs {
 			tabData.accept(CristianSMasterModItems.X_RAY_AMULET.get());
 			tabData.accept(CristianSMasterModItems.TELEPORTER_BUTTON.get());
 			tabData.accept(CristianSMasterModItems.BETTER_AXE.get());
-<<<<<<< HEAD
 			tabData.accept(CristianSMasterModItems.RANDOM_PICKAXE.get());
-=======
-			tabData.accept(CristianSMasterModItems.SKYBLOCK.get());
->>>>>>> 0774dae330d26f57ddfab68437f118671dd8a2b9
 		} else if (tabData.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
 			tabData.accept(CristianSMasterModItems.WYRM_POTION.get());
 			tabData.accept(CristianSMasterModItems.FAIRY_DUST.get());

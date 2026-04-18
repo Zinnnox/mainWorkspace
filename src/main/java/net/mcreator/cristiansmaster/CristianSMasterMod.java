@@ -18,7 +18,6 @@ import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.FriendlyByteBuf;
 
-import net.mcreator.cristiansmaster.world.features.StructureFeature;
 import net.mcreator.cristiansmaster.network.CristianSMasterModVariables;
 import net.mcreator.cristiansmaster.init.CristianSMasterModTabs;
 import net.mcreator.cristiansmaster.init.CristianSMasterModSounds;
@@ -56,7 +55,6 @@ public class CristianSMasterMod {
 		CristianSMasterModTabs.REGISTRY.register(modEventBus);
 		CristianSMasterModVariables.ATTACHMENT_TYPES.register(modEventBus);
 
-		StructureFeature.REGISTRY.register(modEventBus);
 		CristianSMasterModPotions.REGISTRY.register(modEventBus);
 		CristianSMasterModMobEffects.REGISTRY.register(modEventBus);
 		CristianSMasterModMenus.REGISTRY.register(modEventBus);
